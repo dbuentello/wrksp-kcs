@@ -1,0 +1,295 @@
+INFO  2016-11-14 23:31:07,312 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app                                         +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:31:07,424 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-14 23:31:07,523 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-14 23:31:07,644 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-14 23:31:07,645 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-14 23:31:07,731 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@77a9aacd: startup date [Mon Nov 14 23:31:07 CST 2016]; root of context hierarchy
+INFO  2016-11-14 23:31:09,063 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-14 23:31:10,054 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2016-11-14 23:31:10,265 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx2.log
+INFO  2016-11-14 23:31:10,273 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx2.log
+INFO  2016-11-14 23:31:10,355 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-14 23:31:10,360 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:31:10,360 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@54924bf7
+INFO  2016-11-14 23:31:10,381 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:31:10,390 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-insert-incident
+INFO  2016-11-14 23:31:10,390 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@692e45cb
+INFO  2016-11-14 23:31:10,393 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-insert-incident.stage1
+INFO  2016-11-14 23:31:10,394 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:31:10,394 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@640805d7
+INFO  2016-11-14 23:31:10,398 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:31:10,399 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:31:10,399 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1e0e6472
+INFO  2016-11-14 23:31:10,402 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:31:10,403 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:31:10,403 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6e8d92f
+INFO  2016-11-14 23:31:10,406 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:31:10,625 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:31:10,625 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:31:13,649 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app                                             +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:31:13,650 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-14 23:31:13,650 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-14 23:31:13,695 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/incident_metric
+INFO  2016-11-14 23:31:13,698 [main] org.mule.modules.servicenow.generated.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:31:13,702 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-14 23:31:13,703 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:31:13,704 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:31:13,708 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-insert-incident
+INFO  2016-11-14 23:31:13,708 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-insert-incident.stage1
+INFO  2016-11-14 23:31:13,710 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:31:13,710 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:31:13,712 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:31:13,712 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:31:13,714 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:31:13,714 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:31:13,753 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-14 23:31:13,771 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: example-servicenow-operations-demo-weave-views        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-14 23:32:09,293 [[example-servicenow-operations-demo-weave-views].HTTP_Listener_Configuration.worker.02] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-14 23:32:22,295 [[example-servicenow-operations-demo-weave-views].HTTP_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Success in GetKeys
+INFO  2016-11-14 23:32:22,341 [[example-servicenow-operations-demo-weave-views].HTTP_Listener_Configuration.worker.02] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-14 23:32:25,017 [[example-servicenow-operations-demo-weave-views].HTTP_Listener_Configuration.worker.02] org.mule.api.processor.LoggerMessageProcessor: Success in GetKeys
+INFO  2016-11-14 23:35:13,993 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app                                             +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:35:13,995 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:35:13,995 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:35:14,181 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-insert-incident
+INFO  2016-11-14 23:35:14,181 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-insert-incident.stage1
+INFO  2016-11-14 23:35:14,351 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:35:14,351 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:35:14,396 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:35:14,396 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:35:14,586 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:35:14,586 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:35:14,788 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-14 23:35:14,791 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081/incident_metric
+INFO  2016-11-14 23:35:14,792 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-14 23:35:14,792 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-14 23:35:14,796 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app                                            +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:35:14,796 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-14 23:35:14,797 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:35:14,797 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:35:14,798 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-insert-incident
+INFO  2016-11-14 23:35:14,798 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-insert-incident.stage1
+INFO  2016-11-14 23:35:14,798 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:35:14,798 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:35:14,799 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:35:14,799 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:35:14,799 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:35:14,799 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:35:14,800 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-14 23:35:14,974 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@77a9aacd: startup date [Mon Nov 14 23:31:07 CST 2016]; root of context hierarchy
+INFO  2016-11-14 23:35:15,170 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "example-servicenow-operations-demo-weave-views" shut  *
+* down normally on: 11/14/16 11:35 PM                                *
+* Up for: 0 days, 0 hours, 4 mins, 1.518 sec                         *
+**********************************************************************
+INFO  2016-11-14 23:35:15,305 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app                                         +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-14 23:35:15,308 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app example-servicenow-operations-demo-weave-views
+INFO  2016-11-14 23:35:15,310 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-14 23:35:15,314 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-14 23:35:15,328 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-14 23:35:15,328 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-14 23:35:15,332 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@34f3b545: startup date [Mon Nov 14 23:35:15 CST 2016]; root of context hierarchy
+INFO  2016-11-14 23:35:15,630 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2016-11-14 23:35:15,814 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx2.log
+INFO  2016-11-14 23:35:15,815 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx2.log
+INFO  2016-11-14 23:35:15,832 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-14 23:35:15,834 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:35:15,834 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2669bf5e
+INFO  2016-11-14 23:35:15,839 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:35:15,840 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-insert-incident
+INFO  2016-11-14 23:35:15,840 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@58b19082
+INFO  2016-11-14 23:35:15,844 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-insert-incident.stage1
+INFO  2016-11-14 23:35:15,844 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:35:15,844 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@666dc317
+INFO  2016-11-14 23:35:15,847 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:35:15,848 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:35:15,848 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7387fba6
+INFO  2016-11-14 23:35:15,851 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:35:15,851 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:35:15,851 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@44599f2c
+INFO  2016-11-14 23:35:15,854 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:35:15,883 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:35:15,883 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:35:18,887 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app                                             +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:35:18,889 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-14 23:35:18,889 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-14 23:35:18,896 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/incident_metric
+INFO  2016-11-14 23:35:18,898 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.servicenow.generated.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:35:18,901 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-14 23:35:18,902 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:35:18,902 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:35:18,905 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-insert-incident
+INFO  2016-11-14 23:35:18,905 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-insert-incident.stage1
+INFO  2016-11-14 23:35:18,906 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:35:18,907 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:35:18,908 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:35:18,909 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:35:18,910 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:35:18,910 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:35:18,921 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-14 23:35:18,927 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: example-servicenow-operations-demo-weave-views        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-14 23:38:29,053 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app                                             +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:38:29,054 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:38:29,054 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:38:29,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-insert-incident
+INFO  2016-11-14 23:38:29,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-insert-incident.stage1
+INFO  2016-11-14 23:38:29,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:38:29,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:38:29,436 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:38:29,436 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:38:29,507 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:38:29,507 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:38:29,598 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-14 23:38:29,600 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081/incident_metric
+INFO  2016-11-14 23:38:29,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-14 23:38:29,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-14 23:38:29,603 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app                                            +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:38:29,603 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-insert-incident
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-insert-incident.stage1
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:38:29,604 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:38:29,605 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:38:29,605 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:38:29,605 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:38:29,605 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:38:29,606 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-14 23:38:29,630 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@34f3b545: startup date [Mon Nov 14 23:35:15 CST 2016]; root of context hierarchy
+INFO  2016-11-14 23:38:29,709 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "example-servicenow-operations-demo-weave-views" shut  *
+* down normally on: 11/14/16 11:38 PM                                *
+* Up for: 0 days, 0 hours, 3 mins, 10.822 sec                        *
+**********************************************************************
+INFO  2016-11-14 23:38:29,885 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app                                         +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-14 23:38:29,888 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app example-servicenow-operations-demo-weave-views
+WARN  2016-11-14 23:38:29,888 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app example-servicenow-operations-demo-weave-views
+INFO  2016-11-14 23:38:29,890 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-14 23:38:29,894 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-14 23:38:30,012 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-14 23:38:30,012 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-14 23:38:30,016 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@622dd9de: startup date [Mon Nov 14 23:38:30 CST 2016]; root of context hierarchy
+INFO  2016-11-14 23:38:30,253 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+INFO  2016-11-14 23:38:30,406 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-tx-log/tx2.log
+INFO  2016-11-14 23:38:30,406 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/example-servicenow-operations-demo-weave-views/queue-xa-tx-log/tx2.log
+INFO  2016-11-14 23:38:30,418 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-14 23:38:30,419 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:38:30,419 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1b9b74d1
+INFO  2016-11-14 23:38:30,423 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:38:30,425 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-insert-incident
+INFO  2016-11-14 23:38:30,425 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@68db8fcf
+INFO  2016-11-14 23:38:30,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-insert-incident.stage1
+INFO  2016-11-14 23:38:30,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:38:30,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7b2aff3f
+INFO  2016-11-14 23:38:30,432 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:38:30,432 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:38:30,432 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@69efc85d
+INFO  2016-11-14 23:38:30,435 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:38:30,435 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:38:30,435 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@29c2a51c
+INFO  2016-11-14 23:38:30,438 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:38:30,465 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:38:30,465 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/example-servicenow-operations-demo-weave-views/example-servicenow-demo-views.xml'}]"
+INFO  2016-11-14 23:38:33,473 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app                                             +
++ 'example-servicenow-operations-demo-weave-views'         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:38:33,474 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-14 23:38:33,474 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-14 23:38:33,482 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081/incident_metric
+INFO  2016-11-14 23:38:33,484 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.servicenow.generated.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-14 23:38:33,486 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-14 23:38:33,487 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: servicenow-incident_metric-view-operations-form-Flow
+INFO  2016-11-14 23:38:33,487 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: servicenow-incident_metric-view-operations-form-Flow.stage1
+INFO  2016-11-14 23:38:33,489 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-insert-incident
+INFO  2016-11-14 23:38:33,489 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-insert-incident.stage1
+INFO  2016-11-14 23:38:33,491 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getkeys-incident_metric-view
+INFO  2016-11-14 23:38:33,491 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getkeys-incident_metric-view.stage1
+INFO  2016-11-14 23:38:33,492 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-getrecords-incident_metric
+INFO  2016-11-14 23:38:33,492 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-getrecords-incident_metric.stage1
+INFO  2016-11-14 23:38:33,494 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: demo-deletemultiple-incident
+INFO  2016-11-14 23:38:33,494 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: demo-deletemultiple-incident.stage1
+INFO  2016-11-14 23:38:33,503 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-14 23:38:33,508 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: example-servicenow-operations-demo-weave-views        *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************

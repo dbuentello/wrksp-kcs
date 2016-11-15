@@ -1,0 +1,8 @@
+INDEX VERSION 1.127+/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.metadata/.plugins/org.eclipse.jdt.core
+3248725960.index
+2540607589.index
+4088720613.index
+1360822873.index
+3765020915.index
+2199890640.index
+3879622598.index

@@ -1,0 +1,11 @@
+{
+    "inputMessageMetadata": {},
+    "outputMessageMetadata": {
+        "messagePayload": {
+            "connectorName": "ServiceNow__Basic_Configuration",
+            "typeId": "incident||getRecords"
+        }
+    },
+    "id": "8928c307-8247-44c2-860c-4620a6049467",
+    "version": "5.2.0.0"
+}

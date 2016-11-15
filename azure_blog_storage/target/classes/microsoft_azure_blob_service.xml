@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mule xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <http:listener-config name="microsoft_azure_blob_service-httpListenerConfig" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <apikit:config name="microsoft_azure_blob_service-config" raml="microsoft_azure_blob_service.raml" consoleEnabled="false" doc:name="Router"/>
+    <flow name="microsoft_azure_blob_service-main">
+        <http:listener config-ref="microsoft_azure_blob_service-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
+        <apikit:router config-ref="microsoft_azure_blob_service-config" doc:name="APIkit Router"/>
+        <exception-strategy ref="microsoft_azure_blob_service-apiKitGlobalExceptionMapping" doc:name="Reference Exception Strategy"/>
+    </flow>
+    <flow name="microsoft_azure_blob_service-console">
+        <http:listener config-ref="microsoft_azure_blob_service-httpListenerConfig" path="/console/*" doc:name="HTTP"/>
+        <apikit:console config-ref="microsoft_azure_blob_service-config" doc:name="APIkit Console"/>
+    </flow>
+    <flow name="put:/:application/xml:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="put:/{blob-resource}:application/xml:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="put:/{blob-resource}/{blob}:application/xml:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="delete:/{blob-resource}:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="delete:/{blob-resource}/{blob}:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="head:/{blob-resource}:microsoft_azure_blob_service-config">
+        <set-payload value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xA;&lt;SignedIdentifiers&gt;&#xA;  &lt;SignedIdentifier&gt;&#xA;    &lt;Id&gt;unique-value&lt;/Id&gt;&#xA;    &lt;AccessPolicy&gt;&#xA;      &lt;Start&gt;start-time&lt;/Start&gt;&#xA;      &lt;Expiry&gt;expiry-time&lt;/Expiry&gt;&#xA;      &lt;Permission&gt;abbreviated-permission-list&lt;/Permission&gt;&#xA;    &lt;/AccessPolicy&gt;&#xA;  &lt;/SignedIdentifier&gt;&#xA;&lt;/SignedIdentifiers&gt;" doc:name="Set Payload"/>
+    </flow>
+    <flow name="head:/{blob-resource}/{blob}:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="options:/{blob-resource}:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <flow name="get:/:microsoft_azure_blob_service-config">
+        <set-payload value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xA;  &lt;EnumerationResults ServiceEndpoint=&quot;https://myaccount.blob.core.windows.net&quot;&gt;&#xA;  &lt;Prefix&gt;string-value&lt;/Prefix&gt;&#xA;  &lt;Marker&gt;string-value&lt;/Marker&gt;&#xA;  &lt;MaxResults&gt;int-value&lt;/MaxResults&gt;&#xA;  &lt;Containers&gt;&#xA;    &lt;Container&gt;&#xA;      &lt;Name&gt;container-name&lt;/Name&gt;&#xA;      &lt;Properties&gt;&#xA;        &lt;Last-Modified&gt;date/time-value&lt;/Last-Modified&gt;&#xA;        &lt;Etag&gt;etag&lt;/Etag&gt;&#xA;        &lt;LeaseStatus&gt;locked | unlocked&lt;/LeaseStatus&gt;&#xA;        &lt;LeaseState&gt;available | leased | expired | breaking | broken&lt;/LeaseState&gt;&#xA;        &lt;LeaseDuration&gt;infinite | fixed&lt;/LeaseDuration&gt;&#xA;      &lt;/Properties&gt;&#xA;      &lt;Metadata&gt;&#xA;        &lt;metadata-name&gt;value&lt;/metadata-name&gt;&#xA;      &lt;/Metadata&gt;&#xA;    &lt;/Container&gt;&#xA;  &lt;/Containers&gt;&#xA;  &lt;NextMarker&gt;marker-value&lt;/NextMarker&gt;&#xA;&lt;/EnumerationResults&gt;" doc:name="Set Payload"/>
+    </flow>
+    <flow name="get:/{blob-resource}:microsoft_azure_blob_service-config">
+        <set-payload value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#xA;&lt;SignedIdentifiers&gt;&#xA;  &lt;SignedIdentifier&gt;&#xA;    &lt;Id&gt;unique-value&lt;/Id&gt;&#xA;    &lt;AccessPolicy&gt;&#xA;      &lt;Start&gt;start-time&lt;/Start&gt;&#xA;      &lt;Expiry&gt;expiry-time&lt;/Expiry&gt;&#xA;      &lt;Permission&gt;abbreviated-permission-list&lt;/Permission&gt;&#xA;    &lt;/AccessPolicy&gt;&#xA;  &lt;/SignedIdentifier&gt;&#xA;&lt;/SignedIdentifiers&gt;" doc:name="Set Payload"/>
+    </flow>
+    <flow name="get:/{blob-resource}/{blob}:microsoft_azure_blob_service-config">
+        <set-payload value="#[NullPayload.getInstance()]" doc:name="Set Payload"/>
+    </flow>
+    <apikit:mapping-exception-strategy name="microsoft_azure_blob_service-apiKitGlobalExceptionMapping">
+        <apikit:mapping statusCode="404">
+            <apikit:exception value="org.mule.module.apikit.exception.NotFoundException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Resource not found&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="405">
+            <apikit:exception value="org.mule.module.apikit.exception.MethodNotAllowedException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Method not allowed&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="415">
+            <apikit:exception value="org.mule.module.apikit.exception.UnsupportedMediaTypeException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Unsupported media type&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="406">
+            <apikit:exception value="org.mule.module.apikit.exception.NotAcceptableException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Not acceptable&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+        <apikit:mapping statusCode="400">
+            <apikit:exception value="org.mule.module.apikit.exception.BadRequestException" />
+            <set-property propertyName="Content-Type" value="application/json" doc:name="Property"/>
+            <set-payload value="{ &quot;message&quot;: &quot;Bad request&quot; }" doc:name="Set Payload"/>
+        </apikit:mapping>
+    </apikit:mapping-exception-strategy>
+</mule>

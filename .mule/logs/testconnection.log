@@ -1,0 +1,1357 @@
+2016-11-09 11:15:24,540 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:15:24,638 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:15:24,746 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:15:24,855 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:15:24,855 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:15:24,926 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7e750148: startup date [Wed Nov 09 11:15:24 CST 2016]; root of context hierarchy
+2016-11-09 11:15:25,987 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:15:26,340 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:15:26,340 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:15:26,930 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-09 11:15:27,229 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:15:27,242 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:15:27,354 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:15:27,358 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:15:27,358 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5cda42a3
+2016-11-09 11:15:27,384 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:15:27,654 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:15:27,654 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:15:30,686 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:15:30,688 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:15:30,688 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:15:30,733 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:15:30,735 [main] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:15:30,738 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:15:30,740 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:15:30,740 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:15:30,786 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:15:30,805 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:16:07,901 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : org.mule.module.db.internal.domain.connection.ConnectionCreationException: Unable to create connection to the provided dataSource: StandardDataSource:
+     driver=<com.mysql.jdbc.Driver@e521199>
+     url=<${jdbc.url}>
+     user=<null>
+CoreDataSource :
+     debug =<false>
+     description =<null>
+     login time out =<0>
+     user =<null>
+     verbose =<false>
+ (java.sql.SQLException)
+Payload               : {NullPayload}
+Element XML           : <db:stored-procedure config-ref="MySQL_Configuration" doc:name="Database">
+                        <db:parameterized-query>{call kcs.usp_1(:TRN_ID,:STN_NBR)}</db:parameterized-query>
+                        <db:in-param name="TRN_ID" value="CREATE"></db:in-param>
+                        <db:out-param name="STN_NBR" type="INTEGER"></db:out-param>
+                        </db:stored-procedure>
+Payload Type          : org.mule.transport.NullPayload
+Element               : /MySQL_Configuration @ app:storedprocedure.xml:13 (Generic Database Configuration)
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+org.mule.module.db.internal.domain.connection.ConnectionCreationException: Unable to create connection to the provided dataSource: StandardDataSource:
+     driver=<com.mysql.jdbc.Driver@e521199>
+     url=<${jdbc.url}>
+     user=<null>
+CoreDataSource :
+     debug =<false>
+     description =<null>
+     login time out =<0>
+     user =<null>
+     verbose =<false>
+
+	at org.mule.module.db.internal.domain.connection.AbstractConnectionFactory.create(AbstractConnectionFactory.java:27)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createDataSourceConnection(TransactionalDbConnectionFactory.java:84)
+	at org.mule.module.db.internal.domain.connection.TransactionalDbConnectionFactory.createConnection(TransactionalDbConnectionFactory.java:53)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:72)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:233)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:113)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:40)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:133)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:83)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:102)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:30)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2016-11-09 11:17:05,520 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:17:05,625 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:17:05,733 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:17:05,849 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:17:05,850 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:17:05,930 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@65869549: startup date [Wed Nov 09 11:17:05 CST 2016]; root of context hierarchy
+2016-11-09 11:17:07,017 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:17:07,354 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:17:07,354 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:17:07,966 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-09 11:17:08,233 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:17:08,244 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:17:08,338 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:17:08,343 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:17:08,343 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@473b05f5
+2016-11-09 11:17:08,366 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:17:08,578 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:17:08,578 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:17:11,596 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:17:11,598 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:17:11,598 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:17:11,641 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:17:11,643 [main] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:17:11,645 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:17:11,647 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:17:11,647 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:17:11,685 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:17:11,700 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:18:41,806 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:18:41,808 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:18:41,809 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:18:41,813 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {STN_NBR=null, updateCount1=0}
+2016-11-09 11:18:41,965 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:18:41,969 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:18:41,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:18:41,970 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:18:41,973 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:18:41,974 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:18:41,975 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:18:41,975 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:18:41,977 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:18:42,118 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@65869549: startup date [Wed Nov 09 11:17:05 CST 2016]; root of context hierarchy
+2016-11-09 11:18:42,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:18 AM                                                           *
+* Up for: 0 days, 0 hours, 1 mins, 30.621 sec                        *
+**********************************************************************
+2016-11-09 11:18:42,479 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:18:42,482 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:18:42,484 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:18:42,489 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:18:42,506 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:18:42,506 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:18:42,509 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@7a54435a: startup date [Wed Nov 09 11:18:42 CST 2016]; root of context hierarchy
+2016-11-09 11:18:42,782 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:18:42,837 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:18:42,837 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:18:42,946 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:18:42,946 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:18:42,960 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:18:42,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:18:42,961 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@40bd8763
+2016-11-09 11:18:42,964 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:18:42,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:18:42,992 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:18:45,998 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:18:46,000 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:18:46,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:18:46,008 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:18:46,010 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:18:46,012 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:18:46,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:18:46,013 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:18:46,022 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:18:46,026 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:19:06,041 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:06,042 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:19:06,042 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:19:06,090 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:19:06,092 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:19:06,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:19:06,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:19:06,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:06,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:19:06,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:19:06,095 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:19:06,096 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:19:06,117 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@7a54435a: startup date [Wed Nov 09 11:18:42 CST 2016]; root of context hierarchy
+2016-11-09 11:19:06,177 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:19 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 20.177 sec                        *
+**********************************************************************
+2016-11-09 11:19:06,708 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:06,710 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:19:06,710 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:19:06,712 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:19:06,717 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:19:06,731 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:19:06,731 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:19:06,734 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4e675c8e: startup date [Wed Nov 09 11:19:06 CST 2016]; root of context hierarchy
+2016-11-09 11:19:06,985 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:19:07,033 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:19:07,033 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:19:07,125 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:19:07,126 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:19:07,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:19:07,139 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:19:07,139 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@64c21f5f
+2016-11-09 11:19:07,144 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:19:07,178 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:19:07,178 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:19:10,182 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:10,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:19:10,183 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:19:10,190 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:19:10,192 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:10,193 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:19:10,194 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:19:10,194 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:19:10,204 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:19:10,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:19:25,212 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:25,213 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:19:25,213 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:19:25,382 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:19:25,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:19:25,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:19:25,386 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:19:25,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:25,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:19:25,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:19:25,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:19:25,390 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:19:25,416 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@4e675c8e: startup date [Wed Nov 09 11:19:06 CST 2016]; root of context hierarchy
+2016-11-09 11:19:25,586 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:19 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 15.403 sec                        *
+**********************************************************************
+2016-11-09 11:19:26,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:26,137 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:19:26,137 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:19:26,137 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:19:26,139 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:19:26,144 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:19:26,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:19:26,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:19:26,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6dc5ee41: startup date [Wed Nov 09 11:19:26 CST 2016]; root of context hierarchy
+2016-11-09 11:19:26,437 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:19:26,477 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:19:26,477 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:19:26,556 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:19:26,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:19:26,567 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:19:26,568 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:19:26,568 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@44f485c
+2016-11-09 11:19:26,572 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:19:26,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:19:26,597 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:19:29,603 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:29,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:19:29,605 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:19:29,611 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:19:29,613 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:19:29,614 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:19:29,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:19:29,615 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:19:29,624 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:19:29,627 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:22:14,739 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:22:14,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:22:14,741 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:22:14,744 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {STN_NBR=null, updateCount1=0}
+2016-11-09 11:22:14,790 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:22:14,793 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:22:14,793 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:22:14,793 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:22:14,795 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:22:14,795 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:22:14,796 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:22:14,796 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:22:14,797 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:22:14,815 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6dc5ee41: startup date [Wed Nov 09 11:19:26 CST 2016]; root of context hierarchy
+2016-11-09 11:22:14,991 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:22 AM                                                           *
+* Up for: 0 days, 0 hours, 2 mins, 45.388 sec                        *
+**********************************************************************
+2016-11-09 11:22:15,129 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:22:15,131 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:22:15,131 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:22:15,131 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:22:15,131 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:22:15,134 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:22:15,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:22:15,151 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:22:15,151 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:22:15,153 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@480ae408: startup date [Wed Nov 09 11:22:15 CST 2016]; root of context hierarchy
+2016-11-09 11:22:15,354 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:22:15,398 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:22:15,398 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:22:15,473 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:22:15,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:22:15,486 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:22:15,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:22:15,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3338c603
+2016-11-09 11:22:15,491 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:22:15,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:22:15,514 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:22:18,519 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:22:18,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:22:18,521 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:22:18,528 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:22:18,529 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:22:18,531 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:22:18,531 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:22:18,531 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:22:18,540 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:22:18,543 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:25:03,648 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:03,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:25:03,649 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:25:03,657 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] ERROR org.mule.exception.DefaultMessagingExceptionStrategy - 
+********************************************************************************
+Message               : Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem (java.lang.IllegalArgumentException).
+Payload               : {NullPayload}
+Element XML           : <db:stored-procedure config-ref="MySQL_Configuration" doc:name="Database">
+                        <db:parameterized-query>{call kcs.usp_0()}</db:parameterized-query>
+                        <db:in-param name="TRN_ID" value="CREATE"></db:in-param>
+                        <db:out-param name="STN_NBR" type="INTEGER"></db:out-param>
+                        </db:stored-procedure>
+Payload Type          : org.mule.transport.NullPayload
+Element               : /testconnectionFlow/processors/1 @ storedProcedureTest:storedprocedure.xml:17
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem
+	at org.mule.module.db.internal.result.row.InsensitiveMapRowHandler.process(InsensitiveMapRowHandler.java:50)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:42)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:24)
+	at org.mule.module.db.internal.result.statement.StatementResultIterator.doProcessResultSet(StatementResultIterator.java:275)
+	at org.mule.module.db.internal.result.statement.StatementResultIterator.processResultSet(StatementResultIterator.java:262)
+	at org.mule.module.db.internal.result.statement.StatementResultIterator.next(StatementResultIterator.java:153)
+	at org.mule.module.db.internal.result.statement.AbstractMapStatementResultHandler.processStatement(AbstractMapStatementResultHandler.java:43)
+	at org.mule.module.db.internal.result.statement.EagerStatementResultHandler.processStatement(EagerStatementResultHandler.java:38)
+	at org.mule.module.db.internal.result.statement.EagerStatementResultHandler.processStatement(EagerStatementResultHandler.java:25)
+	at org.mule.module.db.internal.domain.executor.StoredProcedureExecutor.doExecuteQuery(StoredProcedureExecutor.java:45)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.execute(AbstractSingleQueryExecutor.java:48)
+	at org.mule.module.db.internal.processor.StoredProcedureMessageProcessor.doExecuteQuery(StoredProcedureMessageProcessor.java:58)
+	at org.mule.module.db.internal.processor.AbstractSingleQueryDbMessageProcessor.executeQuery(AbstractSingleQueryDbMessageProcessor.java:52)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:81)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:233)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:113)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:40)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:133)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:83)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:102)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:30)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+2016-11-09 11:25:03,843 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:25:03,845 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:25:03,846 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:25:03,846 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:25:03,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:03,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:25:03,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:25:03,848 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:25:03,849 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:25:03,867 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@480ae408: startup date [Wed Nov 09 11:22:15 CST 2016]; root of context hierarchy
+2016-11-09 11:25:04,068 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:25 AM                                                           *
+* Up for: 0 days, 0 hours, 2 mins, 45.548 sec                        *
+**********************************************************************
+2016-11-09 11:25:04,237 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:04,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:25:04,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:25:04,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:25:04,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:25:04,240 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:25:04,241 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:25:04,245 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:25:04,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:25:04,259 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:25:04,262 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@10abdaf8: startup date [Wed Nov 09 11:25:04 CST 2016]; root of context hierarchy
+2016-11-09 11:25:04,443 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:25:04,478 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:25:04,478 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:25:04,545 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:25:04,545 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:25:04,556 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:25:04,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:25:04,557 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3d2ce2f8
+2016-11-09 11:25:04,560 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:25:04,581 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:25:04,581 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:25:07,587 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:07,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:25:07,588 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:25:07,593 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:25:07,594 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:07,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:25:07,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:25:07,596 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:25:07,604 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:25:07,606 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:25:20,702 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:20,801 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:25:20,901 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:25:21,010 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:25:21,010 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:25:21,082 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@477e5e19: startup date [Wed Nov 09 11:25:21 CST 2016]; root of context hierarchy
+2016-11-09 11:25:22,153 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:25:22,485 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:25:22,485 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:25:23,047 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-09 11:25:23,309 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:25:23,321 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:25:23,415 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:25:23,419 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:25:23,419 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@387623ab
+2016-11-09 11:25:23,441 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:25:23,706 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:25:23,706 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:25:26,728 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:26,730 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:25:26,730 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:25:26,774 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:25:26,776 [main] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:25:26,779 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:25:26,781 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:25:26,781 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:25:26,819 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:25:26,837 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:29:02,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:02,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:29:02,051 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:29:02,057 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {updateCount1=0, resultSet1=[{STN_NBR=40001710}]}
+2016-11-09 11:29:02,206 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:29:02,210 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:29:02,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:29:02,211 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:29:02,214 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:02,215 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:29:02,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:29:02,216 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:29:02,217 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:29:02,352 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@477e5e19: startup date [Wed Nov 09 11:25:21 CST 2016]; root of context hierarchy
+2016-11-09 11:29:02,502 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:29 AM                                                           *
+* Up for: 0 days, 0 hours, 3 mins, 35.772 sec                        *
+**********************************************************************
+2016-11-09 11:29:02,673 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:02,676 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:29:02,678 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:29:02,682 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:29:02,699 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:29:02,699 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:29:02,702 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1ccaac61: startup date [Wed Nov 09 11:29:02 CST 2016]; root of context hierarchy
+2016-11-09 11:29:03,066 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:29:03,115 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:29:03,115 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:29:03,220 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:29:03,221 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:29:03,234 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:29:03,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:29:03,236 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@62cdbb40
+2016-11-09 11:29:03,239 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:29:03,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:29:03,265 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:29:06,270 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:06,271 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:29:06,271 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:29:06,278 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:29:06,280 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:06,281 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:29:06,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:29:06,282 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:29:06,292 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:29:06,295 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:29:11,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:11,303 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:29:11,303 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:29:11,345 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:29:11,347 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:29:11,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:29:11,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:29:11,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:11,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:29:11,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:29:11,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:29:11,351 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:29:11,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@1ccaac61: startup date [Wed Nov 09 11:29:02 CST 2016]; root of context hierarchy
+2016-11-09 11:29:11,390 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:29 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 5.120 sec                         *
+**********************************************************************
+2016-11-09 11:29:11,515 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:11,517 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:29:11,518 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:29:11,520 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:29:11,524 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:29:11,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:29:11,538 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:29:11,541 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6c56de1b: startup date [Wed Nov 09 11:29:11 CST 2016]; root of context hierarchy
+2016-11-09 11:29:11,782 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:29:11,825 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:29:11,825 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:29:11,905 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:29:11,905 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:29:11,917 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:29:11,918 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:29:11,918 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7c145dc9
+2016-11-09 11:29:11,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:29:11,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:29:11,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:29:14,947 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:14,948 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:29:14,948 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:29:14,953 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:29:14,955 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:29:14,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:29:14,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:29:14,956 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:29:14,966 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:29:14,968 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:29:59,999 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:00,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:30:00,001 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:30:00,156 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:30:00,159 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:30:00,160 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:30:00,160 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:30:00,162 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:00,162 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:30:00,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:30:00,163 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:30:00,164 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:30:00,187 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6c56de1b: startup date [Wed Nov 09 11:29:11 CST 2016]; root of context hierarchy
+2016-11-09 11:30:00,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:30 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 45.411 sec                        *
+**********************************************************************
+2016-11-09 11:30:00,910 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:00,913 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:30:00,913 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:30:00,913 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:30:00,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:30:00,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:30:00,936 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:30:00,936 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:30:00,940 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@41389b37: startup date [Wed Nov 09 11:30:00 CST 2016]; root of context hierarchy
+2016-11-09 11:30:01,195 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:30:01,242 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:30:01,242 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:30:01,333 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:30:01,334 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:30:01,347 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:30:01,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:30:01,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7a1d8a07
+2016-11-09 11:30:01,352 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:30:01,384 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:30:01,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:30:04,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:04,389 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:30:04,390 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:30:04,397 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:30:04,399 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:04,400 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:30:04,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:30:04,401 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:30:04,411 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:30:04,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:30:17,176 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:17,277 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:30:17,384 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:30:17,495 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:30:17,495 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:30:17,567 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6bff8c9a: startup date [Wed Nov 09 11:30:17 CST 2016]; root of context hierarchy
+2016-11-09 11:30:18,780 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:30:19,117 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:30:19,117 [main] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:30:19,725 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-09 11:30:20,006 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:30:20,017 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:30:20,111 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:30:20,115 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:30:20,116 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3b7d43bd
+2016-11-09 11:30:20,143 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:30:20,411 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:30:20,411 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:30:20,426 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:20,428 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:30:20,428 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:30:20,471 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:30:20,473 [main] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:30:20,476 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:30:20,477 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:30:20,478 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:30:20,515 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:30:20,530 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:32:21,487 [pool-3-thread-1] INFO  com.mulesoft.mule.debugger.commands.LoadInnerFieldsCommand - Load Inner Fields From : FieldPath{name='#[message.payload.resultSet1]', orderedPathElements=[com.mulesoft.mule.debugger.response.FieldNode@33f67b05]}
+2016-11-09 11:32:38,594 [pool-3-thread-1] INFO  com.mulesoft.mule.debugger.commands.LoadInnerFieldsCommand - Load Inner Fields From : FieldPath{name='#[message.payload.resultSet1]', orderedPathElements=[com.mulesoft.mule.debugger.response.FieldNode@16ff6959]}
+2016-11-09 11:34:30,757 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:34:30,759 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:34:30,760 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:34:30,763 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - {updateCount1=0, resultSet1=[{STN_NBR=40001710}]}
+2016-11-09 11:34:30,906 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:34:30,910 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:34:30,911 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:34:30,911 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:34:30,914 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:34:30,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:34:30,915 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:34:30,916 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:34:30,917 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:34:31,049 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6bff8c9a: startup date [Wed Nov 09 11:30:17 CST 2016]; root of context hierarchy
+2016-11-09 11:34:31,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:34 AM                                                           *
+* Up for: 0 days, 0 hours, 4 mins, 10.705 sec                        *
+**********************************************************************
+2016-11-09 11:34:31,337 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:34:31,341 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:34:31,343 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:34:31,348 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:34:31,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:34:31,365 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:34:31,368 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4b911d5b: startup date [Wed Nov 09 11:34:31 CST 2016]; root of context hierarchy
+2016-11-09 11:34:31,702 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:34:31,754 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:34:31,754 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:34:31,864 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:34:31,865 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:34:31,878 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:34:31,880 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:34:31,880 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5dff0f89
+2016-11-09 11:34:31,884 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:34:31,911 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:34:31,911 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:34:34,918 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:34:34,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:34:34,920 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:34:34,928 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:34:34,929 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:34:34,931 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:34:34,932 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:34:34,932 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:34:34,941 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:34:34,945 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:35:44,985 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:44,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:35:44,986 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:35:45,067 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:35:45,069 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:35:45,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:35:45,070 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:35:45,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:45,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:35:45,072 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:35:45,073 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:35:45,074 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:35:45,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@4b911d5b: startup date [Wed Nov 09 11:34:31 CST 2016]; root of context hierarchy
+2016-11-09 11:35:45,270 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:35 AM                                                           *
+* Up for: 0 days, 0 hours, 1 mins, 10.351 sec                        *
+**********************************************************************
+2016-11-09 11:35:45,804 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:45,807 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:35:45,807 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:35:45,809 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:35:45,813 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:35:45,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:35:45,826 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:35:45,828 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@4e80723e: startup date [Wed Nov 09 11:35:45 CST 2016]; root of context hierarchy
+2016-11-09 11:35:46,094 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:35:46,140 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:35:46,140 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:35:46,301 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:35:46,302 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:35:46,315 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:35:46,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:35:46,316 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@492658b
+2016-11-09 11:35:46,319 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:35:46,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:35:46,350 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:35:49,359 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:49,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:35:49,361 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:35:49,370 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:35:49,371 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:49,373 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:35:49,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:35:49,374 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:35:49,385 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:35:49,388 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:35:54,392 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:54,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:35:54,393 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:35:54,443 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:35:54,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:35:54,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:35:54,447 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:35:54,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:54,450 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:35:54,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:35:54,451 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:35:54,452 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:35:54,478 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@4e80723e: startup date [Wed Nov 09 11:35:45 CST 2016]; root of context hierarchy
+2016-11-09 11:35:54,502 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:35 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 5.142 sec                         *
+**********************************************************************
+2016-11-09 11:35:54,643 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:54,646 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:35:54,646 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:35:54,646 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:35:54,648 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:35:54,653 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:35:54,668 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:35:54,668 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:35:54,672 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@6c63f619: startup date [Wed Nov 09 11:35:54 CST 2016]; root of context hierarchy
+2016-11-09 11:35:54,924 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:35:54,973 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:35:54,973 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:35:55,062 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:35:55,063 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:35:55,075 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:35:55,077 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:35:55,077 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2dcc674e
+2016-11-09 11:35:55,081 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:35:55,112 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:35:55,112 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:35:55,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:55,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:35:55,114 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:35:55,121 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:35:55,123 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:35:55,124 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:35:55,125 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:35:55,125 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:35:55,135 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:35:55,138 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-09 11:36:04,312 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  com.mulesoft.weave.mule.utils.MuleWeaveFactory$ - MimeType was not resolved '*/*' delegating to Java.
+2016-11-09 11:36:05,035 [[storedProcedureTest].HTTP_Listener_Configuration.worker.01] INFO  org.mule.api.processor.LoggerMessageProcessor - com.mulesoft.weave.reader.ByteArraySeekableStream@7b516dce
+2016-11-09 11:53:00,874 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:53:00,875 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Stopping flow: testconnectionFlow
+2016-11-09 11:53:00,875 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Stopping service: testconnectionFlow.stage1
+2016-11-09 11:53:00,895 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Stopping model: _muleSystemModel
+2016-11-09 11:53:00,898 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Stopped listener on http://0.0.0.0:8081
+2016-11-09 11:53:00,899 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopping ResourceManager
+2016-11-09 11:53:00,899 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Stopped ResourceManager
+2016-11-09 11:53:00,901 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'storedProcedureTest'                      +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:53:00,901 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing RegistryBroker
+2016-11-09 11:53:00,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Disposing flow: testconnectionFlow
+2016-11-09 11:53:00,902 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Disposing service: testconnectionFlow.stage1
+2016-11-09 11:53:00,903 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Disposing model: _muleSystemModel
+2016-11-09 11:53:00,921 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Closing org.mule.config.spring.MuleArtifactContext@6c63f619: startup date [Wed Nov 09 11:35:54 CST 2016]; root of context hierarchy
+2016-11-09 11:53:00,930 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application "storedProcedureTest" shut down normally on: 11/9/16   *
+* 11:53 AM                                                           *
+* Up for: 0 days, 0 hours, 17 mins, 5.816 sec                        *
+**********************************************************************
+2016-11-09 11:53:01,093 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'storedProcedureTest'                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:53:01,095 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:53:01,095 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:53:01,095 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:53:01,095 [Mule.app.deployer.monitor.1.thread.1] WARN  com.mulesoft.module.client.APIPlatformClientCoreExtension - Client ID or Client Secret were not provided. API Manager client is DISABLED for app storedProcedureTest
+2016-11-09 11:53:01,097 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-09 11:53:01,100 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-09 11:53:01,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-09 11:53:01,113 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-09 11:53:01,116 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@24d9d7ae: startup date [Wed Nov 09 11:53:01 CST 2016]; root of context hierarchy
+2016-11-09 11:53:01,305 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-09 11:53:01,342 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:53:01,342 [Mule.app.deployer.monitor.1.thread.1] WARN  org.mule.expression.DefaultExpressionManager - Expression string is not an expression.  Use isExpression(String) to validate first
+2016-11-09 11:53:01,413 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-tx-log/tx2.log
+2016-11-09 11:53:01,414 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/storedProcedureTest/queue-xa-tx-log/tx2.log
+2016-11-09 11:53:01,426 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-09 11:53:01,427 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: testconnectionFlow
+2016-11-09 11:53:01,427 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@63235406
+2016-11-09 11:53:01,430 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: testconnectionFlow.stage1
+2016-11-09 11:53:01,457 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:53:01,457 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/storedProcedureTest/storedprocedure.xml'}]"
+2016-11-09 11:53:04,462 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'storedProcedureTest'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:53:04,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-09 11:53:04,464 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-09 11:53:04,471 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-09 11:53:04,472 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.modules.azureblobservice.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-09 11:53:04,474 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-09 11:53:04,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: testconnectionFlow
+2016-11-09 11:53:04,475 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: testconnectionFlow.stage1
+2016-11-09 11:53:04,483 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-09 11:53:04,487 [Mule.app.deployer.monitor.1.thread.1] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: storedProcedureTest                                   *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   Wrapper Manager                                                  *
+**********************************************************************

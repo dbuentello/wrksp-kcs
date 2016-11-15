@@ -1,0 +1,71 @@
+INFO  2016-11-04 09:12:59,723 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-04 09:12:59,824 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-04 09:12:59,924 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-04 09:13:00,041 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-04 09:13:00,041 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-04 09:13:00,127 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@5f5e8baa: startup date [Fri Nov 04 09:13:00 CDT 2016]; root of context hierarchy
+INFO  2016-11-04 09:13:01,386 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-04 09:13:01,721 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-04 09:13:01,721 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-04 09:13:02,371 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2016-11-04 09:13:02,563 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-04 09:13:02,574 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-04 09:13:02,639 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-04 09:13:02,643 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-04 09:13:02,643 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3c9e6fd5
+INFO  2016-11-04 09:13:02,661 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-04 09:13:02,669 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-04 09:13:02,669 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@327c022
+INFO  2016-11-04 09:13:02,672 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-04 09:13:02,674 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-04 09:13:02,674 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6eea9c1e
+INFO  2016-11-04 09:13:02,677 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-04 09:13:02,678 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-04 09:13:02,678 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5b8dbd69
+INFO  2016-11-04 09:13:02,680 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-04 09:13:02,681 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-04 09:13:02,681 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@591aa90
+INFO  2016-11-04 09:13:02,684 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-04 09:13:02,888 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-04 09:13:02,888 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-04 09:13:05,911 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-04 09:13:05,913 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-04 09:13:05,914 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-04 09:13:05,954 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-04 09:13:05,957 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-04 09:13:05,960 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-04 09:13:05,961 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-04 09:13:05,961 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-04 09:13:05,964 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-04 09:13:05,964 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-04 09:13:05,966 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-04 09:13:05,966 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-04 09:13:05,968 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-04 09:13:05,968 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-04 09:13:05,971 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-04 09:13:05,971 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-04 09:13:06,004 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-04 09:13:06,022 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-04 09:13:37,884 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-04 09:37:00,373 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: SELECT * FROM kcs.tactical_train_def where TRN_NBR = '40001710';
+INFO  2016-11-04 09:37:00,379 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.

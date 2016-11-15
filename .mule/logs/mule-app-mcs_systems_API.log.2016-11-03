@@ -1,0 +1,997 @@
+INFO  2016-11-03 00:09:52,020 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:09:52,021 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: stations
+INFO  2016-11-03 00:09:52,021 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: stations.stage1
+INFO  2016-11-03 00:09:52,186 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: station_by_number
+INFO  2016-11-03 00:09:52,186 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: station_by_number.stage1
+INFO  2016-11-03 00:09:52,387 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: trains
+INFO  2016-11-03 00:09:52,387 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: trains.stage1
+INFO  2016-11-03 00:09:52,564 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_id
+INFO  2016-11-03 00:09:52,564 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_id.stage1
+INFO  2016-11-03 00:09:52,572 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_number
+INFO  2016-11-03 00:09:52,572 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_number.stage1
+INFO  2016-11-03 00:09:52,594 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-03 00:09:52,597 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2016-11-03 00:09:52,598 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-03 00:09:52,598 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-03 00:09:52,600 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mcs_systems_API'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:09:52,600 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: stations
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: stations.stage1
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: station_by_number
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: station_by_number.stage1
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: trains
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: trains.stage1
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_id
+INFO  2016-11-03 00:09:52,601 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_id.stage1
+INFO  2016-11-03 00:09:52,602 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_number
+INFO  2016-11-03 00:09:52,602 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_number.stage1
+INFO  2016-11-03 00:09:52,603 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-03 00:09:52,619 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@40029b92: startup date [Wed Nov 02 23:59:03 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:09:52,766 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "mcs_systems_API" shut down normally on: 11/3/16       *
+* 12:09 AM                                                           *
+* Up for: 0 days, 0 hours, 10 mins, 46.255 sec                       *
+**********************************************************************
+INFO  2016-11-03 00:09:52,837 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-03 00:09:52,839 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:09:52,839 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:09:52,839 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:09:52,839 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+INFO  2016-11-03 00:09:52,841 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 00:09:52,843 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 00:09:52,855 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 00:09:52,855 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 00:09:52,857 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@2bebaa24: startup date [Thu Nov 03 00:09:52 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:09:53,061 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 00:09:53,091 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 00:09:53,091 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2016-11-03 00:09:53,170 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 00:09:53,170 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 00:09:53,177 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 00:09:53,178 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 00:09:53,178 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@646d0957
+INFO  2016-11-03 00:09:53,182 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 00:09:53,183 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 00:09:53,183 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6a1ed070
+INFO  2016-11-03 00:09:53,185 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 00:09:53,186 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 00:09:53,186 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e096a0c
+INFO  2016-11-03 00:09:53,188 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 00:09:53,189 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 00:09:53,189 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1706bfa
+INFO  2016-11-03 00:09:53,191 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 00:09:53,192 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 00:09:53,192 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5b1acca8
+INFO  2016-11-03 00:09:53,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 00:09:53,215 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:09:53,215 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:09:56,219 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:09:56,221 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 00:09:56,222 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 00:09:56,228 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 00:09:56,230 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:09:56,232 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 00:09:56,233 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 00:09:56,233 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 00:09:56,234 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 00:09:56,235 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 00:09:56,236 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 00:09:56,237 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 00:09:56,238 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 00:09:56,238 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 00:09:56,240 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 00:09:56,240 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 00:09:56,248 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 00:09:56,253 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-03 00:10:01,256 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:01,258 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: stations
+INFO  2016-11-03 00:10:01,258 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: stations.stage1
+INFO  2016-11-03 00:10:01,299 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: station_by_number
+INFO  2016-11-03 00:10:01,299 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: station_by_number.stage1
+INFO  2016-11-03 00:10:01,504 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: trains
+INFO  2016-11-03 00:10:01,504 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: trains.stage1
+INFO  2016-11-03 00:10:01,706 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_id
+INFO  2016-11-03 00:10:01,706 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_id.stage1
+INFO  2016-11-03 00:10:01,907 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_number
+INFO  2016-11-03 00:10:01,907 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_number.stage1
+INFO  2016-11-03 00:10:01,932 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-03 00:10:01,935 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2016-11-03 00:10:01,936 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-03 00:10:01,936 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-03 00:10:01,938 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mcs_systems_API'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:01,938 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: stations
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: stations.stage1
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: station_by_number
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: station_by_number.stage1
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: trains
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: trains.stage1
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_id
+INFO  2016-11-03 00:10:01,939 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_id.stage1
+INFO  2016-11-03 00:10:01,940 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_number
+INFO  2016-11-03 00:10:01,940 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_number.stage1
+INFO  2016-11-03 00:10:01,941 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-03 00:10:01,957 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@2bebaa24: startup date [Thu Nov 03 00:09:52 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:10:01,989 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "mcs_systems_API" shut down normally on: 11/3/16       *
+* 12:10 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 5.770 sec                         *
+**********************************************************************
+INFO  2016-11-03 00:10:02,050 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-03 00:10:02,052 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:02,052 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:02,052 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:02,052 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:02,052 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+INFO  2016-11-03 00:10:02,054 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 00:10:02,057 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 00:10:02,068 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 00:10:02,068 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 00:10:02,070 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@1ee39bc0: startup date [Thu Nov 03 00:10:02 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:10:02,278 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 00:10:02,307 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 00:10:02,307 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2016-11-03 00:10:02,386 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 00:10:02,386 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 00:10:02,393 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 00:10:02,394 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 00:10:02,394 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6b84bbdb
+INFO  2016-11-03 00:10:02,397 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 00:10:02,398 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 00:10:02,398 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7461d8f5
+INFO  2016-11-03 00:10:02,400 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 00:10:02,401 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 00:10:02,401 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@24a6f911
+INFO  2016-11-03 00:10:02,403 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 00:10:02,404 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 00:10:02,404 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2d8e455
+INFO  2016-11-03 00:10:02,406 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 00:10:02,407 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 00:10:02,407 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6125b19
+INFO  2016-11-03 00:10:02,409 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 00:10:02,433 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:10:02,433 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:10:05,442 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:05,443 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 00:10:05,443 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 00:10:05,450 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 00:10:05,451 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:05,453 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 00:10:05,454 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 00:10:05,454 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 00:10:05,456 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 00:10:05,456 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 00:10:05,458 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 00:10:05,458 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 00:10:05,459 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 00:10:05,459 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 00:10:05,461 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 00:10:05,461 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 00:10:05,471 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 00:10:05,476 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-03 00:10:30,489 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:30,490 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: stations
+INFO  2016-11-03 00:10:30,490 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: stations.stage1
+INFO  2016-11-03 00:10:30,625 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: station_by_number
+INFO  2016-11-03 00:10:30,625 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: station_by_number.stage1
+INFO  2016-11-03 00:10:30,787 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: trains
+INFO  2016-11-03 00:10:30,787 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: trains.stage1
+INFO  2016-11-03 00:10:30,987 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_id
+INFO  2016-11-03 00:10:30,987 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_id.stage1
+INFO  2016-11-03 00:10:31,029 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_number
+INFO  2016-11-03 00:10:31,029 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_number.stage1
+INFO  2016-11-03 00:10:31,188 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-03 00:10:31,191 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2016-11-03 00:10:31,192 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-03 00:10:31,192 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mcs_systems_API'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: stations
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: stations.stage1
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: station_by_number
+INFO  2016-11-03 00:10:31,194 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: station_by_number.stage1
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: trains
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: trains.stage1
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_id
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_id.stage1
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_number
+INFO  2016-11-03 00:10:31,195 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_number.stage1
+INFO  2016-11-03 00:10:31,196 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-03 00:10:31,222 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@1ee39bc0: startup date [Thu Nov 03 00:10:02 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:10:31,253 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "mcs_systems_API" shut down normally on: 11/3/16       *
+* 12:10 AM                                                           *
+* Up for: 0 days, 0 hours, 0 mins, 25.811 sec                        *
+**********************************************************************
+INFO  2016-11-03 00:10:31,665 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:10:31,668 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+INFO  2016-11-03 00:10:31,669 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 00:10:31,672 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 00:10:31,685 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 00:10:31,685 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 00:10:31,689 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@41b4d0eb: startup date [Thu Nov 03 00:10:31 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:10:31,927 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 00:10:31,963 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 00:10:31,963 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2016-11-03 00:10:32,051 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 00:10:32,051 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 00:10:32,059 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 00:10:32,060 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 00:10:32,061 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e75f8b8
+INFO  2016-11-03 00:10:32,064 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 00:10:32,065 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 00:10:32,065 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@9a5f961
+INFO  2016-11-03 00:10:32,068 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 00:10:32,068 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 00:10:32,069 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@43e6341b
+INFO  2016-11-03 00:10:32,072 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 00:10:32,072 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 00:10:32,072 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@38a09bc5
+INFO  2016-11-03 00:10:32,075 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 00:10:32,076 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 00:10:32,076 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6092f610
+INFO  2016-11-03 00:10:32,079 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 00:10:32,107 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:10:32,107 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:10:35,117 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:35,118 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 00:10:35,118 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 00:10:35,126 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 00:10:35,128 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:10:35,130 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 00:10:35,131 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 00:10:35,131 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 00:10:35,133 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 00:10:35,133 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 00:10:35,135 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 00:10:35,135 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 00:10:35,137 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 00:10:35,137 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 00:10:35,139 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 00:10:35,139 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 00:10:35,148 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 00:10:35,152 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-03 00:10:42,857 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-03 00:11:02,667 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: SELECT * FROM kcs.tactical_train_def where TRN_NBR = '40001710';
+INFO  2016-11-03 00:11:02,673 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-03 00:23:50,656 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:23:50,657 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: stations
+INFO  2016-11-03 00:23:50,657 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: stations.stage1
+INFO  2016-11-03 00:23:50,816 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: station_by_number
+INFO  2016-11-03 00:23:50,816 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: station_by_number.stage1
+INFO  2016-11-03 00:23:50,905 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: trains
+INFO  2016-11-03 00:23:50,905 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: trains.stage1
+INFO  2016-11-03 00:23:51,018 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_id
+INFO  2016-11-03 00:23:51,018 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_id.stage1
+INFO  2016-11-03 00:23:51,223 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_number
+INFO  2016-11-03 00:23:51,223 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_number.stage1
+INFO  2016-11-03 00:23:51,381 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-03 00:23:51,384 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2016-11-03 00:23:51,385 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-03 00:23:51,385 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-03 00:23:51,388 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mcs_systems_API'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:23:51,388 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-03 00:23:51,388 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: stations
+INFO  2016-11-03 00:23:51,388 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: stations.stage1
+INFO  2016-11-03 00:23:51,388 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: station_by_number
+INFO  2016-11-03 00:23:51,389 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: station_by_number.stage1
+INFO  2016-11-03 00:23:51,389 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: trains
+INFO  2016-11-03 00:23:51,389 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: trains.stage1
+INFO  2016-11-03 00:23:51,389 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_id
+INFO  2016-11-03 00:23:51,389 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_id.stage1
+INFO  2016-11-03 00:23:51,390 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_number
+INFO  2016-11-03 00:23:51,390 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_number.stage1
+INFO  2016-11-03 00:23:51,391 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-03 00:23:51,414 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@41b4d0eb: startup date [Thu Nov 03 00:10:31 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:23:51,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "mcs_systems_API" shut down normally on: 11/3/16       *
+* 12:23 AM                                                           *
+* Up for: 0 days, 0 hours, 13 mins, 16.311 sec                       *
+**********************************************************************
+INFO  2016-11-03 00:23:51,556 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:23:51,559 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+INFO  2016-11-03 00:23:51,560 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 00:23:51,563 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 00:23:51,575 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 00:23:51,575 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 00:23:51,578 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@49310717: startup date [Thu Nov 03 00:23:51 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:23:51,779 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 00:23:51,807 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 00:23:51,807 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2016-11-03 00:23:51,934 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 00:23:51,935 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 00:23:51,942 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 00:23:51,943 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 00:23:51,943 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@1e27f089
+INFO  2016-11-03 00:23:51,946 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 00:23:51,946 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 00:23:51,947 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@278a58e1
+INFO  2016-11-03 00:23:51,949 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 00:23:51,949 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 00:23:51,949 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3e8af469
+INFO  2016-11-03 00:23:51,951 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 00:23:51,952 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 00:23:51,952 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@742599c
+INFO  2016-11-03 00:23:51,954 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 00:23:51,955 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 00:23:51,955 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4490516b
+INFO  2016-11-03 00:23:51,957 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 00:23:51,979 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:23:51,979 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:23:54,986 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:23:54,988 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 00:23:54,988 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 00:23:54,995 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 00:23:54,996 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:23:54,998 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 00:23:54,999 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 00:23:54,999 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 00:23:55,000 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 00:23:55,000 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 00:23:55,002 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 00:23:55,002 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 00:23:55,003 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 00:23:55,003 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 00:23:55,004 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 00:23:55,004 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 00:23:55,011 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 00:23:55,015 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+ERROR 2016-11-03 00:24:02,023 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.exception.DefaultMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem (java.lang.IllegalArgumentException).
+Payload               : {NullPayload}
+Element XML           : <db:select config-ref="MySQL_Configuration" doc:name="Perform a query in MySQL">
+                        <db:dynamic-query>SELECT * FROM kcs.tactical_train_def TDLEFT JOIN kcs.tactical_trn_sched TS on TD.TRN_NBR = TS.TRN_NBRLEFT JOIN kcs.oper_stn_mstr SM on TS.STN_NBR = SM.STN_NBR;</db:dynamic-query>
+                        </db:select>
+Payload Type          : org.mule.transport.NullPayload
+Element               : /trains/processors/0 @ mcs_systems_API:trains-system-apis.xml:11
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem
+	at org.mule.module.db.internal.result.row.InsensitiveMapRowHandler.process(InsensitiveMapRowHandler.java:50)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:42)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:24)
+	at org.mule.module.db.internal.domain.executor.SelectExecutor.doExecuteQuery(SelectExecutor.java:51)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.execute(AbstractSingleQueryExecutor.java:38)
+	at org.mule.module.db.internal.processor.SelectMessageProcessor.doExecuteQuery(SelectMessageProcessor.java:67)
+	at org.mule.module.db.internal.processor.AbstractSingleQueryDbMessageProcessor.executeQuery(AbstractSingleQueryDbMessageProcessor.java:52)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:81)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:233)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:113)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:40)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:133)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:83)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:102)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:30)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+ERROR 2016-11-03 00:27:03,859 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.exception.DefaultMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem (java.lang.IllegalArgumentException).
+Payload               : {NullPayload}
+Element XML           : <db:select config-ref="MySQL_Configuration" doc:name="Perform a query in MySQL">
+                        <db:dynamic-query>SELECT * FROM kcs.tactical_train_def TDLEFT JOIN kcs.tactical_trn_sched TS on TD.TRN_NBR = TS.TRN_NBRLEFT JOIN kcs.oper_stn_mstr SM on TS.STN_NBR = SM.STN_NBR;</db:dynamic-query>
+                        </db:select>
+Payload Type          : org.mule.transport.NullPayload
+Element               : /trains/processors/0 @ mcs_systems_API:trains-system-apis.xml:11
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem
+	at org.mule.module.db.internal.result.row.InsensitiveMapRowHandler.process(InsensitiveMapRowHandler.java:50)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:42)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:24)
+	at org.mule.module.db.internal.domain.executor.SelectExecutor.doExecuteQuery(SelectExecutor.java:51)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.execute(AbstractSingleQueryExecutor.java:38)
+	at org.mule.module.db.internal.processor.SelectMessageProcessor.doExecuteQuery(SelectMessageProcessor.java:67)
+	at org.mule.module.db.internal.processor.AbstractSingleQueryDbMessageProcessor.executeQuery(AbstractSingleQueryDbMessageProcessor.java:52)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:81)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:233)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:113)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:40)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:133)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:83)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:102)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:30)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+ERROR 2016-11-03 00:27:05,811 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.exception.DefaultMessagingExceptionStrategy: 
+********************************************************************************
+Message               : Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem (java.lang.IllegalArgumentException).
+Payload               : {NullPayload}
+Element XML           : <db:select config-ref="MySQL_Configuration" doc:name="Perform a query in MySQL">
+                        <db:dynamic-query>SELECT * FROM kcs.tactical_train_def TDLEFT JOIN kcs.tactical_trn_sched TS on TD.TRN_NBR = TS.TRN_NBRLEFT JOIN kcs.oper_stn_mstr SM on TS.STN_NBR = SM.STN_NBR;</db:dynamic-query>
+                        </db:select>
+Payload Type          : org.mule.transport.NullPayload
+Element               : /trains/processors/0 @ mcs_systems_API:trains-system-apis.xml:11
+--------------------------------------------------------------------------------
+Root Exception stack trace:
+java.lang.IllegalArgumentException: Record cannot be mapped as it contains multiple columns with the same label. Define column aliases to solve this problem
+	at org.mule.module.db.internal.result.row.InsensitiveMapRowHandler.process(InsensitiveMapRowHandler.java:50)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:42)
+	at org.mule.module.db.internal.result.resultset.ListResultSetHandler.processResultSet(ListResultSetHandler.java:24)
+	at org.mule.module.db.internal.domain.executor.SelectExecutor.doExecuteQuery(SelectExecutor.java:51)
+	at org.mule.module.db.internal.domain.executor.AbstractSingleQueryExecutor.execute(AbstractSingleQueryExecutor.java:38)
+	at org.mule.module.db.internal.processor.SelectMessageProcessor.doExecuteQuery(SelectMessageProcessor.java:67)
+	at org.mule.module.db.internal.processor.AbstractSingleQueryDbMessageProcessor.executeQuery(AbstractSingleQueryDbMessageProcessor.java:52)
+	at org.mule.module.db.internal.processor.AbstractDbMessageProcessor.process(AbstractDbMessageProcessor.java:81)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AsyncInterceptingMessageProcessor.process(AsyncInterceptingMessageProcessor.java:102)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.construct.DynamicPipelineMessageProcessor.process(DynamicPipelineMessageProcessor.java:55)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.interceptor.AbstractEnvelopeInterceptor.processBlocking(AbstractEnvelopeInterceptor.java:58)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractFilteringMessageProcessor.process(AbstractFilteringMessageProcessor.java:52)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:98)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.processBlocking(AbstractRequestResponseMessageProcessor.java:56)
+	at org.mule.processor.AbstractRequestResponseMessageProcessor.process(AbstractRequestResponseMessageProcessor.java:47)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.processor.BlockingProcessorExecutor.executeNext(BlockingProcessorExecutor.java:88)
+	at org.mule.processor.BlockingProcessorExecutor.execute(BlockingProcessorExecutor.java:59)
+	at org.mule.execution.ExceptionToMessagingExceptionExecutionInterceptor.execute(ExceptionToMessagingExceptionExecutionInterceptor.java:27)
+	at org.mule.execution.MessageProcessorNotificationExecutionInterceptor.execute(MessageProcessorNotificationExecutionInterceptor.java:108)
+	at org.mule.execution.MessageProcessorExecutionTemplate.execute(MessageProcessorExecutionTemplate.java:44)
+	at org.mule.construct.AbstractPipeline$3.process(AbstractPipeline.java:233)
+	at org.mule.module.http.internal.listener.HttpMessageProcessorTemplate.routeEvent(HttpMessageProcessorTemplate.java:73)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:72)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase$1.process(AsyncResponseFlowProcessingPhase.java:59)
+	at org.mule.execution.ExecuteCallbackInterceptor.execute(ExecuteCallbackInterceptor.java:16)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:35)
+	at org.mule.execution.CommitTransactionInterceptor.execute(CommitTransactionInterceptor.java:22)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:30)
+	at org.mule.execution.HandleExceptionInterceptor.execute(HandleExceptionInterceptor.java:14)
+	at org.mule.execution.BeginAndResolveTransactionInterceptor.execute(BeginAndResolveTransactionInterceptor.java:67)
+	at org.mule.execution.ResolvePreviousTransactionInterceptor.execute(ResolvePreviousTransactionInterceptor.java:44)
+	at org.mule.execution.SuspendXaTransactionInterceptor.execute(SuspendXaTransactionInterceptor.java:50)
+	at org.mule.execution.ValidateTransactionalStateInterceptor.execute(ValidateTransactionalStateInterceptor.java:40)
+	at org.mule.execution.IsolateCurrentTransactionInterceptor.execute(IsolateCurrentTransactionInterceptor.java:41)
+	at org.mule.execution.ExternalTransactionInterceptor.execute(ExternalTransactionInterceptor.java:48)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:28)
+	at org.mule.execution.RethrowExceptionInterceptor.execute(RethrowExceptionInterceptor.java:13)
+	at org.mule.execution.TransactionalErrorHandlingExecutionTemplate.execute(TransactionalErrorHandlingExecutionTemplate.java:110)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:58)
+	at org.mule.execution.AsyncResponseFlowProcessingPhase.runPhase(AsyncResponseFlowProcessingPhase.java:35)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:69)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:187)
+	at com.mulesoft.mule.throttling.ThrottlingPhase.runPhase(ThrottlingPhase.java:58)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:93)
+	at com.mulesoft.gateway.http.phases.GatewayValidationPhase.runPhase(GatewayValidationPhase.java:49)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.phaseSuccessfully(PhaseExecutionEngine.java:65)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:113)
+	at org.mule.modules.cors.CorsPhase.runPhase(CorsPhase.java:40)
+	at org.mule.execution.PhaseExecutionEngine$InternalPhaseExecutionEngine.process(PhaseExecutionEngine.java:114)
+	at org.mule.execution.PhaseExecutionEngine.process(PhaseExecutionEngine.java:41)
+	at org.mule.execution.MuleMessageProcessingManager.processMessage(MuleMessageProcessingManager.java:32)
+	at org.mule.module.http.internal.listener.DefaultHttpListener$1.handleRequest(DefaultHttpListener.java:133)
+	at org.mule.module.http.internal.listener.grizzly.GrizzlyRequestDispatcherFilter.handleRead(GrizzlyRequestDispatcherFilter.java:83)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:526)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.run0(ExecutorPerServerAddressIOStrategy.java:102)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy.access$100(ExecutorPerServerAddressIOStrategy.java:30)
+	at org.mule.module.http.internal.listener.grizzly.ExecutorPerServerAddressIOStrategy$WorkerThreadRunnable.run(ExecutorPerServerAddressIOStrategy.java:125)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+********************************************************************************
+
+INFO  2016-11-03 00:27:50,184 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:27:50,184 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: stations
+INFO  2016-11-03 00:27:50,184 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: stations.stage1
+INFO  2016-11-03 00:27:50,237 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: station_by_number
+INFO  2016-11-03 00:27:50,237 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: station_by_number.stage1
+INFO  2016-11-03 00:27:50,242 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: trains
+INFO  2016-11-03 00:27:50,242 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: trains.stage1
+INFO  2016-11-03 00:27:50,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_id
+INFO  2016-11-03 00:27:50,429 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_id.stage1
+INFO  2016-11-03 00:27:50,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Stopping flow: train_by_number
+INFO  2016-11-03 00:27:50,634 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Stopping service: train_by_number.stage1
+INFO  2016-11-03 00:27:50,642 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Stopping model: _muleSystemModel
+INFO  2016-11-03 00:27:50,645 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Stopped listener on http://0.0.0.0:8081
+INFO  2016-11-03 00:27:50,645 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopping ResourceManager
+INFO  2016-11-03 00:27:50,646 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Stopped ResourceManager
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing app 'mcs_systems_API'                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing RegistryBroker
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: stations
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: stations.stage1
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: station_by_number
+INFO  2016-11-03 00:27:50,648 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: station_by_number.stage1
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: trains
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: trains.stage1
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_id
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_id.stage1
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Disposing flow: train_by_number
+INFO  2016-11-03 00:27:50,649 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Disposing service: train_by_number.stage1
+INFO  2016-11-03 00:27:50,650 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Disposing model: _muleSystemModel
+INFO  2016-11-03 00:27:50,667 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Closing org.mule.config.spring.MuleArtifactContext@49310717: startup date [Thu Nov 03 00:23:51 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:27:50,845 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application "mcs_systems_API" shut down normally on: 11/3/16       *
+* 12:27 AM                                                           *
+* Up for: 0 days, 0 hours, 3 mins, 55.859 sec                        *
+**********************************************************************
+INFO  2016-11-03 00:27:50,989 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+WARN  2016-11-03 00:27:50,991 [Mule.app.deployer.monitor.1.thread.1] com.mulesoft.module.client.APIPlatformClientCoreExtension: Client ID or Client Secret were not provided. API Manager client is DISABLED for app mcs_systems_API
+INFO  2016-11-03 00:27:50,993 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 00:27:50,996 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 00:27:51,005 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 00:27:51,005 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 00:27:51,007 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@55dc4df: startup date [Thu Nov 03 00:27:51 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 00:27:51,198 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 00:27:51,222 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 00:27:51,222 [Mule.app.deployer.monitor.1.thread.1] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+INFO  2016-11-03 00:27:51,290 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 00:27:51,291 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 00:27:51,297 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 00:27:51,298 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 00:27:51,298 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2d07ef99
+INFO  2016-11-03 00:27:51,301 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 00:27:51,301 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 00:27:51,301 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@5df08f52
+INFO  2016-11-03 00:27:51,303 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 00:27:51,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 00:27:51,304 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@66ce77cc
+INFO  2016-11-03 00:27:51,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 00:27:51,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 00:27:51,306 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@67d0f35a
+INFO  2016-11-03 00:27:51,308 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 00:27:51,309 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 00:27:51,309 [Mule.app.deployer.monitor.1.thread.1] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@e9b1f
+INFO  2016-11-03 00:27:51,311 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 00:27:51,331 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:27:51,331 [Mule.app.deployer.monitor.1.thread.1] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 00:27:54,339 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:27:54,340 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 00:27:54,340 [Mule.app.deployer.monitor.1.thread.1] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 00:27:54,347 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 00:27:54,348 [Mule.app.deployer.monitor.1.thread.1] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 00:27:54,350 [Mule.app.deployer.monitor.1.thread.1] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 00:27:54,351 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 00:27:54,351 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 00:27:54,352 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 00:27:54,352 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 00:27:54,354 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 00:27:54,354 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 00:27:54,356 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 00:27:54,356 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 00:27:54,357 [Mule.app.deployer.monitor.1.thread.1] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 00:27:54,357 [Mule.app.deployer.monitor.1.thread.1] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 00:27:54,366 [Mule.app.deployer.monitor.1.thread.1] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 00:27:54,370 [Mule.app.deployer.monitor.1.thread.1] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-03 00:27:59,254 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-03 09:45:14,736 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'mcs_systems_API'                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 09:45:14,841 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising RegistryBroker
+INFO  2016-11-03 09:45:14,946 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Starting discovery of extensions
+INFO  2016-11-03 09:45:15,064 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Discovered 1 extensions
+INFO  2016-11-03 09:45:15,064 [main] org.mule.module.extension.internal.manager.DefaultExtensionManager: Registering extension validation (version 3.8)
+INFO  2016-11-03 09:45:15,146 [main] org.mule.config.spring.MuleArtifactContext: Refreshing org.mule.config.spring.MuleArtifactContext@6f933ab: startup date [Thu Nov 03 09:45:15 CDT 2016]; root of context hierarchy
+INFO  2016-11-03 09:45:16,356 [main] org.mule.config.spring.processors.NoDevkitInjectorProcessor: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+WARN  2016-11-03 09:45:16,693 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 09:45:16,693 [main] org.mule.expression.DefaultExpressionManager: Expression string is not an expression.  Use isExpression(String) to validate first
+WARN  2016-11-03 09:45:17,337 [main] org.mule.module.ognl.expression.OgnlExpressionEvaluator: OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+INFO  2016-11-03 09:45:17,535 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-tx-log/tx2.log
+INFO  2016-11-03 09:45:17,544 [main] org.mule.util.journal.TransactionJournal: Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/mcs_systems_API/queue-xa-tx-log/tx2.log
+INFO  2016-11-03 09:45:17,619 [main] org.mule.lifecycle.AbstractLifecycleManager: Initialising model: _muleSystemModel
+INFO  2016-11-03 09:45:17,622 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: stations
+INFO  2016-11-03 09:45:17,623 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@3cf85ede
+INFO  2016-11-03 09:45:17,642 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: stations.stage1
+INFO  2016-11-03 09:45:17,649 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: station_by_number
+INFO  2016-11-03 09:45:17,649 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@2e9bfe43
+INFO  2016-11-03 09:45:17,653 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: station_by_number.stage1
+INFO  2016-11-03 09:45:17,654 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: trains
+INFO  2016-11-03 09:45:17,654 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@7e3ac040
+INFO  2016-11-03 09:45:17,657 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: trains.stage1
+INFO  2016-11-03 09:45:17,658 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_id
+INFO  2016-11-03 09:45:17,658 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@58095281
+INFO  2016-11-03 09:45:17,660 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_id.stage1
+INFO  2016-11-03 09:45:17,661 [main] org.mule.construct.FlowConstructLifecycleManager: Initialising flow: train_by_number
+INFO  2016-11-03 09:45:17,661 [main] org.mule.exception.DefaultMessagingExceptionStrategy: Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@6e3abaab
+INFO  2016-11-03 09:45:17,664 [main] org.mule.processor.SedaStageLifecycleManager: Initialising service: train_by_number.stage1
+INFO  2016-11-03 09:45:17,857 [main] org.mule.config.spring.SpringXmlConfigurationBuilder: Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 09:45:17,857 [main] org.mule.config.builders.AutoConfigurationBuilder: Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/_global.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/stations-system-apis.xml'}, ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/mcs_systems_API/trains-system-apis.xml'}]"
+INFO  2016-11-03 09:45:17,873 [main] org.mule.module.launcher.application.DefaultMuleApplication: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'mcs_systems_API'                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 09:45:17,875 [main] org.mule.util.queue.QueueXaResourceManager: Starting ResourceManager
+INFO  2016-11-03 09:45:17,875 [main] org.mule.util.queue.QueueXaResourceManager: Started ResourceManager
+INFO  2016-11-03 09:45:17,912 [main] org.mule.module.http.internal.listener.DefaultHttpListenerConfig: Listening for requests on http://0.0.0.0:8081
+INFO  2016-11-03 09:45:17,915 [main] org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2016-11-03 09:45:17,918 [main] org.mule.lifecycle.AbstractLifecycleManager: Starting model: _muleSystemModel
+INFO  2016-11-03 09:45:17,919 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: stations
+INFO  2016-11-03 09:45:17,920 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: stations.stage1
+INFO  2016-11-03 09:45:17,922 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: station_by_number
+INFO  2016-11-03 09:45:17,923 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: station_by_number.stage1
+INFO  2016-11-03 09:45:17,924 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: trains
+INFO  2016-11-03 09:45:17,925 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: trains.stage1
+INFO  2016-11-03 09:45:17,926 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_id
+INFO  2016-11-03 09:45:17,926 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_id.stage1
+INFO  2016-11-03 09:45:17,928 [main] org.mule.construct.FlowConstructLifecycleManager: Starting flow: train_by_number
+INFO  2016-11-03 09:45:17,929 [main] org.mule.processor.SedaStageLifecycleManager: Starting service: train_by_number.stage1
+INFO  2016-11-03 09:45:17,958 [main] org.mule.module.management.agent.WrapperManagerAgent: This JVM hasn't been launched by the wrapper, the agent will not run.
+INFO  2016-11-03 09:45:17,981 [main] org.mule.DefaultMuleContext: 
+**********************************************************************
+* Application: mcs_systems_API                                       *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   JMX Agent                                                        *
+*   DevKit Extension Information                                     *
+*   Batch module default engine                                      *
+*   Wrapper Manager                                                  *
+**********************************************************************
+INFO  2016-11-03 09:45:35,033 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-03 09:46:00,577 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: No listener found for request: (GET)/trains/definition/id/I-KCVN%20%20-24
+INFO  2016-11-03 09:46:00,577 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.module.http.internal.listener.HttpListenerRegistry: Available listeners are: [([get])/train/definition/id/{id}/, ([get])/trains/definition/, ([get])/station/definition/number/{number}/, ([get])/stations/definition/, ([get])/train/definition/number/{number}/]
+INFO  2016-11-03 09:46:09,919 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: SELECT * FROM kcs.tactical_train_def where TRN_ID = 'I-KCVN  -24';
+INFO  2016-11-03 09:46:09,925 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.
+INFO  2016-11-03 09:46:32,203 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] org.mule.api.processor.LoggerMessageProcessor: SELECT * FROM kcs.tactical_train_def where TRN_NBR = '16195523';
+INFO  2016-11-03 09:46:32,208 [[mcs_systems_API].HTTP_Listener_Configuration.worker.01] com.mulesoft.weave.mule.utils.MuleWeaveFactory$: MimeType was not resolved '*/*' delegating to Java.

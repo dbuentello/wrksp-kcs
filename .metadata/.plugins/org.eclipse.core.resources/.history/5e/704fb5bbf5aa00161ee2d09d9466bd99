@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:json="http://www.mulesoft.org/schema/mule/json"
+	xmlns:servicenow="http://www.mulesoft.org/schema/mule/servicenow"
+	xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:tracking="http://www.mulesoft.org/schema/mule/ee/tracking" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/json/current/mule-json.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/servicenow http://www.mulesoft.org/schema/mule/servicenow/current/mule-servicenow.xsd
+http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration" basePath="/incident_metric"/>
+    <servicenow:config name="ServiceNow_Connector__configuration" username="${servicenow.username}" password="${servicenow.password}" serviceAddress="${servicenow.serviceEndpoint}"  doc:name="ServiceNow: Basic Configuration">
+        <servicenow:list-of-user-table>
+            <servicenow:list-of-user-table>incident_metric</servicenow:list-of-user-table>
+        </servicenow:list-of-user-table>
+    </servicenow:config>
+    <flow name="servicenow-incident_metric-view-operations-form-Flow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/" doc:name="HTTP"/>
+        <parse-template location="servicenow-operations-demo.html" doc:name="Parse Template"/>
+        <set-property propertyName="Content-Type" value="text/html" doc:name="Property"/>
+    </flow>
+    
+        <flow name="demo-insert-incident">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/insert" doc:name="/insert"/>
+        <dw:transform-message doc:name="Create Insert Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.service-now.com/incident
+---
+{
+	ns0#insert: {
+		ns0#active: true,		
+		ns0#category: inboundProperties.'http.query.params'.category,		
+		ns0#description: inboundProperties.'http.query.params'.description,		
+		ns0#impact: 1		
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <logger message="Payload is created. Ready to call Insert operation." level="INFO" doc:name="Logger"/>
+        <servicenow:invoke config-ref="ServiceNow_Connector__configuration" type="incident||insert" doc:name="ServiceNow - Insert"/>
+
+        <logger message="After Insert" level="INFO" doc:name="Logger"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>        
+    </flow>
+    
+    
+<flow name="demo-getkeys-incident_metric-view">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/getkeys" doc:name="/getkeys"/>
+        <dw:transform-message doc:name="Create GetKeys Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.service-now.com/incident_metric
+---
+{
+	ns0#getKeys: {
+		ns0#inc_description: inboundProperties.'http.query.params'.description
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <servicenow:invoke config-ref="ServiceNow_Connector__configuration" type="incident_metric||getKeys" doc:name="ServiceNow - GetKeys"/>
+        <logger message="Success in GetKeys" level="INFO" doc:name="Logger"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>
+        
+    </flow>
+    
+    <flow name="demo-getrecords-incident_metric">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/getrecords" doc:name="/getrecords"/>
+        <dw:transform-message doc:name="Create GetRecords Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.service-now.com/incident_metric
+---
+{
+	ns0#getRecords: {
+		ns0#inc_description: inboundProperties.'http.query.params'.description
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <servicenow:invoke config-ref="ServiceNow_Connector__configuration" type="incident_metric||getRecords" doc:name="ServiceNow - GetRecords"/>
+
+        <logger message="Success in GetRecords" level="INFO" doc:name="Logger"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>
+        
+    </flow>
+    
+      <flow name="demo-deletemultiple-incident">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/deletemultiple" doc:name="/deletemultiple"/>
+        <dw:transform-message doc:name="Create DeleteMultiple Request">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/xml
+%namespace ns0 http://www.service-now.com/incident
+---
+{
+	ns0#deleteMultiple: {
+		ns0#description: inboundProperties.'http.query.params'.description
+	}
+}]]></dw:set-payload>
+        </dw:transform-message>
+        <servicenow:invoke config-ref="ServiceNow_Connector__configuration" type="incident||deleteMultiple" doc:name="ServiceNow - DeleteMultiple"/>
+        <logger message="Success in DeleteMultiple" level="INFO" doc:name="Logger"/>
+        <json:xml-to-json-transformer doc:name="XML to JSON"/>
+        
+    </flow>    
+    
+
+</mule>
