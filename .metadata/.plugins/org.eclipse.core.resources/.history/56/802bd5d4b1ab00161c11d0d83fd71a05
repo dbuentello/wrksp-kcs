@@ -28,9 +28,14 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 %output application/java
 ---
 payload]]></dw:set-payload>
+            <dw:set-variable variableName="objStore"><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-variable>
         </dw:transform-message>
         <set-variable variableName="XMLCollection" value="#[[]]" doc:name="Variable"/>
         <foreach collection="#[payload.variables]" doc:name="For Each">
+            <logger message="counter = #[flowVars.counter] id = #[payload.id] value = #[payload.value]" level="INFO" doc:name="Logger"/>
             <invoke name="Invoke" object-ref="TransformMap" method="doTransform" methodArguments="#[payload]" doc:name="Invoke"/>
             <dw:transform-message doc:name="Transform Message">
                 <dw:set-payload><![CDATA[%dw 1.0
