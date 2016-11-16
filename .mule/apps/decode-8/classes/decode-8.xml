@@ -16,6 +16,9 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 	    </global-functions>
 	  </expression-language>
 	</configuration>
+    <spring:beans>
+        <spring:bean id="Bean" name="TransformMap" class="com.mule.custom.kcs.TransformMap"/>
+    </spring:beans>
 
     <flow name="custom-transFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/decode" allowedMethods="POST" doc:name="HTTP /decode"/>
@@ -33,7 +36,7 @@ payload]]></dw:set-variable>
         <set-variable variableName="XMLCollection" value="#[[]]" doc:name="Variable"/>
         <foreach collection="#[payload.variables]" doc:name="For Each">
             <logger message="counter = #[flowVars.counter] id = #[payload.id] value = #[payload.value]" level="INFO" doc:name="Logger"/>
-            <invoke object-ref="com.mule.custom.kcs.TransformMap" method="doTransform" methodArguments="#[payload]" doc:name="Invoke"/>
+            <invoke name="Invoke" object-ref="TransformMap" method="doTransform" methodArguments="#[payload]" doc:name="Invoke"/>
             <dw:transform-message doc:name="Transform Message">
                 <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
@@ -45,16 +48,11 @@ payload]]></dw:set-variable>
             </dw:transform-message>
             <expression-component doc:name="Expression"><![CDATA[#[flowVars.XMLCollection.add(payload)]]]></expression-component>
         </foreach>
-        <enricher doc:name="Message Enricher">
-            <logger level="INFO" doc:name="Logger"/>
-            <enrich source="#[java.util.Base64.getDecoder().decode(payload.value)]" target="#[payload.value]"/>
-            <enrich source="#[com.mule.custom.kcs.Hex2value.doTransform(payload.id)]" target="#[payload.id]"/>
-        </enricher>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 --- 
-payload]]></dw:set-payload>
+flowVars.XMLCollection]]></dw:set-payload>
         </dw:transform-message>
     </flow>
 </mule>

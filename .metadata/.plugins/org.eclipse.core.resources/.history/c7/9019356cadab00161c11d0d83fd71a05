@@ -17,7 +17,7 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 	  </expression-language>
 	</configuration>
     <spring:beans>
-        <spring:bean id="Bean" name="TransformMap" class="com.mule.custom.kcs.TransformMap"/>
+        <spring:bean id="Bean" name="Bean" class="com.mule.custom.kcs.TransformMap"/>
     </spring:beans>
 
     <flow name="custom-transFlow">
@@ -36,7 +36,7 @@ payload]]></dw:set-variable>
         <set-variable variableName="XMLCollection" value="#[[]]" doc:name="Variable"/>
         <foreach collection="#[payload.variables]" doc:name="For Each">
             <logger message="counter = #[flowVars.counter] id = #[payload.id] value = #[payload.value]" level="INFO" doc:name="Logger"/>
-            <invoke name="Invoke" object-ref="TransformMap" method="doTransform" methodArguments="#[payload]" doc:name="Invoke"/>
+            <invoke object-ref="TransformMap" method="doTransform" methodArguments="#[payload]" doc:name="Invoke"/>
             <dw:transform-message doc:name="Transform Message">
                 <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
@@ -48,11 +48,15 @@ payload]]></dw:set-variable>
             </dw:transform-message>
             <expression-component doc:name="Expression"><![CDATA[#[flowVars.XMLCollection.add(payload)]]]></expression-component>
         </foreach>
+        <enricher doc:name="Message Enricher">
+            <logger level="INFO" doc:name="Logger"/>
+            <enrich source="#[java.util.Base64.getDecoder().decode(payload.value)]" target="#[payload.value]"/>
+        </enricher>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 --- 
-flowVars.XMLCollection]]></dw:set-payload>
+payload]]></dw:set-payload>
         </dw:transform-message>
     </flow>
 </mule>

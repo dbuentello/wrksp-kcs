@@ -21,11 +21,12 @@ public class TransformMap {
 		
 		for (HashMap.Entry entry : items.entrySet()) {
 			key = entry.getKey()+"";
-			if (key.equals("id"))
-				val = translate(entry.getValue()+"");
-			if (key.equals("value"))
-				val = decode64(entry.getValue()+"");
-			
+			if (key == "id") {
+				val = translate(entry.getValue() + "");
+			}
+			if (key == "value") {
+				val = decode64(entry.getValue() + "");
+			}			
 			items.put(key, val);
 		}
 		return items;
