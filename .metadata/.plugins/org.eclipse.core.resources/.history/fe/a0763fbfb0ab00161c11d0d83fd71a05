@@ -18,7 +18,9 @@ public class TransformMap {
 				break;
 			default: outStr = "empty";
 		}
-		return outStr;
+		
+		
+		return str + "xxx";
 	}
 	
 	public String decode64 (String str) {

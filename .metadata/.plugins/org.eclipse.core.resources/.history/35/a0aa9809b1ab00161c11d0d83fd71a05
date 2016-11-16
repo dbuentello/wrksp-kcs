@@ -52,10 +52,7 @@ payload]]></dw:set-variable>
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 --- 
-{
-	"smid": payload.smid,
-	"variables": flowVars.XMLCollection
-}]]></dw:set-payload>
+flowVars.XMLCollection]]></dw:set-payload>
         </dw:transform-message>
     </flow>
 </mule>

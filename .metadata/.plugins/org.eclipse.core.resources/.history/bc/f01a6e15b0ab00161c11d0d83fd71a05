@@ -6,23 +6,12 @@ import java.util.LinkedHashMap;
 public class TransformMap {
 	
 	public String translate (String str) {
-		String outStr = "";
-		switch (str) {
-			case "11": outStr = "Hardware Type";
-				break;
-			case "12": outStr = "Hardware Vendor";
-				break;
-			case "13": outStr = "Hardware Model";
-				break;
-			case "16": outStr = "Hardware Serial Number";
-				break;
-			default: outStr = "empty";
-		}
-		return outStr;
+		return str + "xxx";
 	}
 	
 	public String decode64 (String str) {
-		return new String (java.util.Base64.getDecoder().decode(str));
+		return str + "yyy";
+		//#[java.util.Base64.getDecoder().decode(payload.value)]
 	}
 	
 	public HashMap doTransform(HashMap<String, String> items) {
