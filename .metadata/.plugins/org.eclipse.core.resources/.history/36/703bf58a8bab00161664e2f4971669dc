@@ -1,0 +1,20 @@
+package com.mule.custom.kcs;
+
+public class Hex2value {
+
+	public String doTransform(int inInt) {
+		String outStr = "";
+		switch (intInt) {
+			case 11: outStr = "Eleven";
+				break;
+			case 12: outStr = "dui";
+				break;
+			case 13: outStr = "tin";
+				break;
+			case 14: outStr = "chaar";
+				break;
+			default: outStr = "empty";
+			}
+		return outStr;
+	}
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:spring="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-current.xsd
+http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
+    <http:listener-config name="HTTP_Listener_Configuration" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <configuration doc:name="Configuration">
+	  <expression-language autoResolveVariables="false">
+	    <global-functions>
+	      def decodeBase64(data) { java.util.Base64.getDecoder().decode(data).getBytes() }
+	      def encodeBase64(data) { java.util.Base64.getEncoder().encode(data) }
+	    </global-functions>
+	  </expression-language>
+	</configuration>
+
+    <flow name="custom-transFlow">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/decode" allowedMethods="POST" doc:name="HTTP /decode"/>
+        <dw:transform-message doc:name="Transform Message">
+        	<dw:input-payload mimeType="application/json"/>
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-payload>
+            <dw:set-variable variableName="objStore"><![CDATA[%dw 1.0
+%output application/java
+---
+payload]]></dw:set-variable>
+        </dw:transform-message>
+        <set-variable variableName="XMLCollection" value="#[[]]" doc:name="Variable"/>
+        <foreach collection="#[payload.variables]" doc:name="For Each">
+            <logger message="counter = #[flowVars.counter] id = #[payload.id] value = #[payload.value]" level="INFO" doc:name="Logger"/>
+            <dw:transform-message doc:name="Transform Message">
+                <dw:set-payload><![CDATA[%dw 1.0
+%output application/java
+---
+{
+	"id": payload.id,
+	"value": decodeBase64(payload.value)
+}]]></dw:set-payload>
+            </dw:transform-message>
+            <expression-component doc:name="Expression"><![CDATA[#[flowVars.XMLCollection.add(payload)]]]></expression-component>
+        </foreach>
+        <logger message="In the end .... #[flowVars.XMLCollection]" level="INFO" doc:name="Logger"/>
+    </flow>
+</mule>

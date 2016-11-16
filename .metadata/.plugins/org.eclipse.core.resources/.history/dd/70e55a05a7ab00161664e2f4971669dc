@@ -1,0 +1,29 @@
+package com.mule.custom.kcs;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class TransformIdValue {
+	
+	public HashMap doTransform(String key, HashMap<String, String> hashMap) {
+		
+		String value = hashMap.get(key);
+		String outStr = "";
+		HashMap map = new HashMap();
+		
+		switch (key) {
+			case "11": outStr = "Eleven";
+				break;
+			case "12": outStr = "Twelve";
+				break;
+			case "13": outStr = "Thirteen";
+				break;
+			case "14": outStr = "Fourteen";
+				break;
+			default: outStr = "empty";
+			}
+		
+		return outStr;
+	}
+
+}
