@@ -1,0 +1,24 @@
+[
+        {
+          "Id": "0x0000 ",
+          "VariableName": "Initialization Time",
+          "Description": "Time at which the process was initialized (which process is dependent on the defined default or the context of the event) ",
+          "AssetType": "Others",
+          "Manufacturer": "Others",
+          "RailroadId": "Others",
+          "VariableType": "integer",
+          "ParsingRule": "unix time",
+          "ParsingStructure": "{}"
+        },
+        {
+          "Id": "0x0001 ",
+          "VariableName": "Total ISMP Messages Received",
+          "Description": "Count of total ISMP messages received since the last reset of the variable ",
+          "AssetType": "Others",
+          "Manufacturer": "Others",
+          "RailroadId": "Others",
+          "VariableType": "integer",
+          "ParsingRule": "count",
+          "ParsingStructure": "{}"
+        }
+]

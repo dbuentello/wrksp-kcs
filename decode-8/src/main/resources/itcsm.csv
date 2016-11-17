@@ -1,0 +1,1180 @@
+Id,VariableName,Description,AssetType,Manufacturer,RailroadId,VariableType,ParsingRule,ParsingStructure
+0x0000 ,Initialization Time,Time at which the process was initialized (which process is dependent on the defined default or the context of the event) ,Others,Others,Others,integer,unix time,{}
+0x0001 ,Total ISMP Messages Received,Count of total ISMP messages received since the last reset of the variable ,Others,Others,Others,integer,count,{}
+0x0002 ,Last ISMP Message Received Time,Time when the last ISMP message was received (not counting current request) ,Others,Others,Others,integer,unix time,{}
+0x0003 ,Total ISMP Messages Sent,Count of total ISMP messages sent since the last reset of the variable ,Others,Others,Others,integer,count,{}
+0x0004 ,Last ISMP Message Sent Time,Time when the last ISMP message was sent  ,Others,Others,Others,integer,unix time,{}
+0x0005 ,Total ISMP Protocol Errors,Total number of ISMP messages that failed due to ISMP protocol errors since the last reset of the variable  ,Others,Others,Others,integer,count,{}
+0x0006 ,Total ISMP Authentication Errors,Total number of ISMP messages that failed due to SMPK authentication since the last reset of the variable ,Others,Others,Others,integer,count,{}
+0x0007 ,Total ISMP Data Integrity Errors,Total number of ISMP messages that failed due to SMPK or EMP CRC data integrity errors since the last reset of the variable ,Others,Others,Others,integer,count,{}
+0x0008 ,Total ISMP Other Errors,"Total number of errors not including ISMP Authentication, ISMP Protocol or ISMP Data Integrity errors",Others,Others,Others,integer,count,{}
+0x0009 ,ISMP Statistics Reset Time,Time of last ISMP statistics reset ,Others,Others,Others,integer,unix time,{}
+0x000a ,Configuration Parameter Errors,List of software configuration errors.  Repeated for each parameter.,Others,Others,Others,string,string,{}
+0x000b ,Hardware Type ,"Indicates the type of hardware (for example, Locomotive Radio) ",Others,Others,Others,string,string,{}
+0x000c ,Hardware Vendor ,Vendor  ,Others,Others,Others,string,string,{}
+0x000d ,Hardware Model ,Model  ,Others,Others,Others,string,string,{}
+0x000e ,Hardware Version ,Version  ,Others,Others,Others,string,string,{}
+0x000f ,Hardware Version Date ,Version date ,Others,Others,Others,string,string,{}
+0x0010 ,Hardware Serial Number ,Serial number  ,Others,Others,Others,string,string,{}
+0x0011 ,Hardware Manufacturer ,Manufacturer  ,Others,Others,Others,string,string,{}
+0x0012 ,Software Type ,"Indicates the type of software (for example, OS, application or utility), set depending on the context of the event ",Others,Others,Others,string,string,{}
+0x0013 ,Software Vendor ,Vendor ,Others,Others,Others,string,string,{}
+0x0014 ,Software Model ,"Model (for example, workstation, server or professional)  ",Others,Others,Others,string,string,{}
+0x0015 ,Software Version ,Version  ,Others,Others,Others,string,string,{}
+0x0016 ,Software Version Date ,Version date  ,Others,Others,Others,string,string,{}
+0x0017 ,Software Install Date ,Install date  ,Others,Others,Others,string,string,{}
+0x0018 ,Software Serial Number ,Serial number  ,Others,Others,Others,string,string,{}
+0x0019 ,Software Manufacturer ,Manufacturer  ,Others,Others,Others,string,string,{}
+0x001a ,Active Software Kit ID ,Active Software Kit ID  ,Others,Others,Others,string,string,{}
+0x001b ,Active Configuration Kit ID ,Active Configuration Kit ID ,Others,Others,Others,string,string,{}
+0x001c ,Total Out-of-System Logins ,Count of total out-of-system logins since the last out of system login statistics reset time ,Others,Others,Others,integer,count,{}
+0x001d ,Total Failed Out-of-System Logins ,Count of total failed out-of-system logins since the last out-of-system login statistics reset time ,Others,Others,Others,integer,count,{}
+0x001e ,Out-of-System Login Reset Time ,Time when out-of-system login statistics were last reset ,Others,Others,Others,integer,unix time,{}
+0x001f ,Uptime ,The uptime in minutes of the operating environment ,Others,Others,Others,integer,minutes,{}
+0x0020 ,GPS location  ,Location of the asset at the time of event or status generation ,Others,Others,Others,string,string,{}
+0x0021,Time Synchronization,Time Synchronization,Others,Others,Others,integer,unix time,{}
+0x0022,Total Memory,Total Memory,Others,Others,Others,integer,MB,{}
+0x0023,Available Free Memory,Available Free Memory,Others,Others,Others,integer,MB,{}
+0x0024,Total Storage,Total Storage,Others,Others,Others,integer,MB,{}
+0x0025,Available Free Storage,Available Free Storage,Others,Others,Others,integer,MB,{}
+0x0026,Security State,Security State,Others,Others,Others,string,string,{}
+0x0027,System Contact,Contact information,Others,Others,Others,string,string,{}
+0x0028,Fragmented File Transfer Status,Fragment numbers that have been successfully sent or received,Others,Others,Others,string,string,{}
+0x0029 ,ISMP Statistics,Total ISMP Messages Received/ Last ISMP Message Received Time/ Total ISMP Messages Sent/ Last ISMP MessageSent Time/ Total ISMP Protocol Errors/ Total ISMP Authentication Errors/ Total ISMP Data Integrity Errors/ Total ISMP Other Errors/ ISMP Statistics Reset Time,Others,Others,Others,string,CSV Format,{} 
+0x002a ,Hardware Topology, Complete topology for all hardware on all components,Others,Others,Others,binary,structure,{}
+0x002b ,Software Topology, Complete topology for all software on all components,Others,Others,Others,binary,structure,{}
+0x002c ,Out-of-System Login Statistics,Total Out-of-System Logins/ Total Failed Out-of-System Logins/ Out-of-System Login Reset Time,Others,Others,Others,string,CSV Format,{}
+0x002d ,Archived Log File Name,Name of the log file that was rolled/archived,Others,Others,Others,string,string,{}
+0x002e ,Process list,cmd/ ppid/ pid/ uid/ time,Others,Others,Others,string,CSV Format,{}
+0x002f ,Current System Time,Current time the asset is using,Others,Others,Others,integer,unix time,{}
+0x0030 ,Swap space allocated,Amount of physical storage allocated for memory swapping,Others,Others,Others,integer,MB,{}
+0x0031 ,Swap space used, Amount of swap space used,Others,Others,Others,integer,MB,{}
+0x0032 ,CPU Load Average One Minute, Average processor load for a one minute time period,Others,Others,Others,integer,decimal,{}
+0x0033 ,CPU Load Average Five Minutes, Average processor load for a five minute time period,Others,Others,Others,integer,decimal,{}
+0x0034 ,CPU Load Average Fifteen Minutes, Average processor load over a fifteen minute time period,Others,Others,Others,integer,decimal,{}
+0x0035 ,Free Memory Ratio, 8age of free memory available,Others,Others,Others,integer,percent,{}
+0x0036 ,Swap Space Used Ratio, 8age of swap space used,Others,Others,Others,integer,percent,{}
+0x0037 ,Average Available Memory for Configured Time Period, Average available memory over Available Memory Configured Time Period ,Others,Others,Others,integer,decimal,{}
+0x0038 ,LowestAvailable Memory for Configured Time Period, Lowest available memory over Available Memory Configured Time Period ,Others,Others,Others,integer,decimal,{}
+0x0039 ,Configured Time Period, Configurable Time period in seconds,Others,Others,Others,integer,decimal,{}
+0x003A,Voltage,List of power sources and readings: Source/ Voltage,Others,Others,Others,integer,CSV Format,{}
+0x003B,Temperature,Temperature reading,Others,Others,Others,integer,integer,{}
+0x003C,SMID,System Management Identifier,Others,Others,Others,string,string,{}
+0x003D,Host,Host name,Others,Others,Others,string,string,{}
+0x003E,Process,Process Identification: Process ID/ Name,Others,Others,Others,integer,CSV Format,{}
+0x003F,Device Initiation ? Count,Count of boots and reboots,Others,Others,Others,integer,count,{}
+0x0040,Device Initiation ? Count Reset Time,Time device initiation counter was last reset,Others,Others,Others,integer,unix time,{}
+0x0041,Device Initiation - Reason,Reason for last reboot that occurred,Others,Others,Others,string,string,{}
+0x0042,Out-of-System Login - Time,Time of the last user log in,Others,Others,Others,integer,unix time,{}
+0x0043,Out-of-System Login - ID,ID of the last user log in,Others,Others,Others,string,string,{}
+0x0044,Out-of-System Login - Reason,Reason for last OOS login if provided by user,Others,Others,Others,string,string,{}
+0x0045,Out-of-System Change - Time,Time of last OOS change,Others,Others,Others,integer,unix time,{}
+0x0046,Out-of-System Change - Description,Last OOS change description,Others,Others,Others,string,string,{}
+0x0047,Kit Load - Time,Time of last kit load attempt,Others,Others,Others,integer,unix time,{}
+0x0048,Kit Load - ID,Kit ID of last kit load attempt,Others,Others,Others,integer,unix time,{}
+0x0049,Kit Load - Name,Kit Name of the last kit load attempt,Others,Others,Others,string,string,{}
+0x004A,Kit Load - Method,"Method of last Kit Load (ITCSM, manual)",Others,Others,Others,string,string,{}
+0x004B,Kit Load - Result,Result of last kit load attempt,Others,Others,Others,string,string,{}
+0x004C,Failure - Time,Time of Last Failure that occurred,Others,Others,Others,integer,unix time,{}
+0x004D,Failure - Description,Last Failure that occurred,Others,Others,Others,string,string,{}
+0x004E,Communication Test - Time,Time of last communication test event,Others,Others,Others,integer,unix time,{}
+0x004F,Certificates,List of certificates: Type/ Serial Name/ Expiration Date,Others,Others,Others,string,CSV Format,{}
+0x0050,Component MD5,MD5 of software component to verify integrity and track changes: Component Name/ MD5 Value,Others,Others,Others,string,CSV Format,{}
+0x0051,Interface,Interface State,Others,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 16, ""fieldDataType"": ""String"", ""fieldName"": ""Name"", ""fieldRank"": 1}, {""fieldBytes"": 6, ""fieldDataType"": ""2"", ""fieldName"": ""MAC Address"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""2"", ""fieldName"": ""Admin 0=down 1=up"", ""fieldRank"": 3}, {""fieldBytes"": 1, ""fieldDataType"": ""2"", ""fieldName"": ""Oper  0=down 1=up"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""MTU"", ""fieldRank"": 5}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""IP Address"", ""fieldRank"": 6}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Net Mask"", ""fieldRank"": 7}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Broadcast"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Speed"", ""fieldRank"": 9}]}"
+0x0052,Interface Statistics,Interface statistics,Others,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 16, ""fieldDataType"": ""String"", ""fieldName"": ""Name"", ""fieldRank"": 1}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Bytes"", ""fieldRank"": 2}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Packets "", ""fieldRank"": 3}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Errors "", ""fieldRank"": 4}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Dropped "", ""fieldRank"": 5}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Overrun "", ""fieldRank"": 6}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""RX Multicast"",  ""fieldRank"": 7}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Bytes"", ""fieldRank"": 8}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Packets"",  ""fieldRank"": 9}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Errors"",  ""fieldRank"": 9}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Dropped"",  ""fieldRank"": 10}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Carrier"", ""fieldRank"": 11}, {""fieldBytes"": 8, ""fieldDataType"": ""2"", ""fieldName"": ""TX Collisions "", ""fieldRank"": 12}]}"
+0x0053,IP Route,IP routing state,Others,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Destination"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Gateway"", ""fieldRank"": 2}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Mask"", ""fieldRank"": 3}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Status"", ""fieldRank"": 4}, {""fieldBytes"": 16, ""fieldDataType"": ""String"", ""fieldName"": ""Interface"", ""fieldRank"": 5}, {""fieldBytes"": 12, ""fieldDataType"": ""String"", ""fieldName"": ""Scope"", ""fieldRank"": 6}, {""fieldBytes"": 4, ""fieldDataType"": ""2"", ""fieldName"": ""Source"", ""fieldRank"": 7}]}"
+0x0054,Time Synchronization Failure Reason,Reason time synchronization failed,Others,Others,Others,integer,bitmask,"{""bitmask"": [{""0x00"": ""No failure"",""0x01"": ""No time sync source found"",""0x02"": ""GPS 1PP lost or failed"", ""0x03"": ""Time of Day signal lost or failed"", ""0x04"": ""Class C time source lost or failed"",""0x05"": ""GPS antenna failed"" ,""0x06"": ""No GPS NMEA stream""}]}"
+0x0400 ,Asset Type, Asset Type,Others,Others,Others,string,string,{}
+0x0410 ,Memory (Total) MB,Memory (Total) MB,Others,Others,Others,string,string,{}
+0x0411 ,Memory (Free/Available) MB,Memory (Free/Available) MB,Others,Others,Others,string,string,{}
+0x0412 ,Disk (Total) MB,Disk (Total) MB,Others,Others,Others,string,string,{}
+0x0413 ,Disk (Free/Available) MB,Disk (Free/Available) MB,Others,Others,Others,string,string,{}
+0x0414 ,System Version,System Version,Others,Others,Others,string,string,{}
+0x1001 ,CPU (Load average),CPU (Load average),Others,Others,Others,string,string,{}
+0x1002 ,"CPU (%user, %system)","CPU (%user, %system)",Others,Others,Others,string,string,{}
+0x1003 ,CPU (%system),CPU (%system),Others,Others,Others,string,string,{}
+0x1008 ,Memory (buffered) MB, Memory (buffered) MB,Others,Others,Others,string,string,{}
+0x1009 ,Memory (cached) MB, Memory (cached) MB,Others,Others,Others,string,string,{}
+0x1011 ,Temperature (X86), Temperature (X86),Others,Others,Others,string,string,{}
+0x1012 ,Temperature (KVM-Server), Temperature (KVM-Server),Others,Others,Others,string,string,{}
+0x1013 ,Temperature (Power supply), Temperature (Power supply),Others,Others,Others,string,string,{}
+0x1016 ,Voltage (VIN), Voltage (VIN),Others,Others,Others,string,string,{}
+0x1017 ,Voltage (12V), Voltage (12V),Others,Others,Others,string,string,{}
+0x1018 ,Voltage (5V), Voltage (5V),Others,Others,Others,string,string,{}
+0x1019 ,Voltage (3.3V), Voltage (3.3V),Others,Others,Others,string,string,{}
+0x1021 ,"Network (Bytes TX/RX, Packet TX/RX/Dropped) ETH0","Network (Bytes TX/RX, Packet TX/RX/Dropped) ETH0",Others,Others,Others,string,string,{}
+0x1022 ,"Network (Bytes TX/RX, Packet TX/RX/Dropped) ETH1","Network (Bytes TX/RX, Packet TX/RX/Dropped) ETH1",Others,Others,Others,string,string,{}
+0x1033 ,Disk (Usage %),Disk (Usage %),Others,Others,Others,string,string,{}
+0x2000,Instance 15,The unique messaging 15entifier of an instance of a component type. Only used in remote areas.,Messaging System,Others,Others,string,string,{}
+0x2000,Device Initiation Count,Count of radio boots and reboots,Radio,Others,Others,integer,count,{}
+0x2000,Total EMP Messages Received,CountoftotalEMP messages receivedsince the last reset of the variable,Wayside Interface Unit,Others,Others,integer,count,{}
+0x2001,Updated Configuration,"The updated configuration (deprecated, use Change Specifics instead)",Messaging System,Others,Others,string,string,{}
+0x2001,Device Initiation Counter Reset Time,Time the device initiation counter was last reset (Unix Time),Radio,Others,Others,integer,unix time,{}
+0x2001,Last EMP Message Received Time,Time when the last EMP message was received (not counting current request if applicable),Wayside Interface Unit,Others,Others,integer,unix time,{}
+0x2002,Link 15,"15entifier for a connection between two ITCM components, ITCM component to application, ITCM component to radio.",Messaging System,Others,Others,string,string,{}
+0x2002,Link ID,"Identifier for a connection between two ITCM components, ITCM component to application, ITCM component to radio.",Radio,Others,Others,string,string,{}
+0x2002,Total EMP Messages Sent,Count of total EMP messages sent since the last reset of the variable,Wayside Interface Unit,Others,Others,integer,count,{}
+0x2003,App Name,The Application name or 15entifier,Messaging System,Others,Others,string,string,{}
+0x2003,App Name,The Application name or identifier,Radio,Others,Others,string,string,{}
+0x2003,Last EMP Message Sent Time,Time when the last EMP message was sent,Wayside Interface Unit,Others,Others,integer,unix time,{}
+0x2004,App URI,"This is the URI of the connection, should be a combination of host/port (deprecated, use Link 15 instead)",Messaging System,Others,Others,string,string,{}
+0x2004,Low Battery,Low Battery,Platform,Others,Others,integer,unix time,{}
+0x2004,App URI,"This is the URI of the connection, should be a combination of host/port (deprecated, use Link ID instead)",Radio,Others,Others,string,string,{}
+0x2004,Total EMP Protocol Errors,Total number of EMP messages that failed due to EMP protocol errors since the last reset of the variable,Wayside Interface Unit,Others,Others,integer,count,{}
+0x2005,App Connection Type,"Type of connection between an application and an AG (AMQP, Class D)",Messaging System,Others,Others,string,string,{}
+0x2005,Loss Of Utility Power Detected,Loss Of Utility Power Detected,Platform,Others,Others,integer,unix time,{}
+0x2005,Login ID,ID of the last user logged in,Radio,Others,Others,string,string,{}
+0x2005,Total EMP Data Integrity Errors,Total number of EMP messages that failed due to EMP CRC data integrity errors since the last reset of the variable,Wayside Interface Unit,Others,Others,integer,count,{}
+0x2006,Transport 15,"The network transport connection 15entifier (deprecated, use Link 15 instead)",Messaging System,Others,Others,string,string,{}
+0x2006,Loss Of Utility Power Minutes,Loss Of Utility Power Minutes,Platform,Others,Others,integer,unix time,{}
+0x2006,Time Login Session Initiated,Time the most recent ID was logged on,Radio,Others,Others,integer,unix time,{}
+0x2006,Total EMP Other Errors,Countoftotal EMP errors other than protocol and data integrity errors,Wayside Interface Unit,Others,Others,integer,count,{}
+0x2007,Transport Type,The network transport connection type,Messaging System,Others,Others,string,string,{}
+0x2007,High Temperature (F),High Temperature (F),Platform,Others,Others,integer,unix time,{}
+0x2007,Login Status,Current login status,Radio,Others,Others,integer,enumeration,"{""enumeration"":[{""0"": ""Logged off"", ""1"": ""User logged on"",""2"": ""Super user logged on""}]}"
+0x2007,EMP Statistics Reset Time,Time of last asset statistics reset,Wayside Interface Unit,Others,Others,integer,unix time,{}
+0x2008,Remote Area 15,The remote area EMP 15entifier,Messaging System,Others,Others,string,string,{}
+0x2008,Low Temperature (F),Low Temperature (F),Platform,Others,Others,integer,unix time,{}
+0x2008,Remote Area ID,The remote area EMP identifier,Radio,Others,Others,string,string,{}
+0x2008,Previous WIU EMP Address,The WIU EMP address before the most recent change,Wayside Interface Unit,Others,Others,string,string,{}
+0x2009,Host,"The hostname (deprecated, use Host 15 instead)",Messaging System,Others,Others,string,string,{}
+0x2009,Vapp Checksum,Vapp Checksum,Platform,Others,Others,integer,unix time,{}
+0x2009,Host,"The hostname (deprecated, use Host ID instead)",Radio,Others,Others,string,string,{}
+0x2009,Current WIU Vital Software Checksum,The current vital software version checksum,Wayside Interface Unit,Others,Others,integer,string,{}
+0x200a,Previous WIU Vital Software Checksum,The vital software version checksum before the most recent checksum,Wayside Interface Unit,Others,Others,integer,string,{}
+0x200b,Battery Voltage,"Voltage and ID for each of the monitored battery banks (VDC) (ID, Voltage)",Wayside Interface Unit,Others,Others,string,string,{}
+0x200C,Protocol Name,The name of the protocol,Messaging System,Others,Others,string,string,{}
+0x200c,Protocol Name,The name of the protocol,Radio,Others,Others,integer,decimal,{}
+0x200c,Utility Power,"Power on/off (0 = Off, 1 = On)",Wayside Interface Unit,Others,Others,integer,boolean,"{""boolean"": [{""0"": ""off"",""1"": ""on""}]}"
+0x200d,Temperature,Current temperature of the wayside enclosure ( F),Wayside Interface Unit,Others,Others,integer,"degrees celsius,16-bits",{}
+0x200E,Message Protocol Version,The protocol version in the incoming message.,Messaging System,Others,Others,integer,integer,{}
+0x200e,Message Protocol Version,The protocol version in the incoming message,Radio,Others,Others,integer,decimal,{}
+0x200e,Enclosure door State,State of the wayside enclosure door,Wayside Interface Unit,Others,Others,integer,boolean,"{""boolean"": [{""0"": ""closed"",""1"": ""open""}]}"
+0x200F,Latest Protocol Version Supported (Component Protocol Version),The protocol version supported in the messaging component,Messaging System,Others,Others,integer,integer,{}
+0x200f,Latest Protocol Version Supported (Component Protocol Version),The protocol version supported in the messaging component,Radio,Others,Others,integer,decimal,{}
+0x200f,WIU Software Health,"Health status of WIU software (Software ID, Value)",Wayside Interface Unit,Others,Others,string,string,{}
+0x2010,WIU Logic Controller Health,Health status of the WIU logic controller,Wayside Interface Unit,Others,Others,string,string,{}
+0x2011,WIU Memory Health,Health status of the WIU memory,Wayside Interface Unit,Others,Others,string,string,{}
+0x2012,ClassD Link Disconnected,ClassD Link Disconnected,Platform,Others,Others,integer,unix time,{}
+0x2012,WIU Hardware Health,Health status of the WIU hardware,Wayside Interface Unit,Others,Others,string,string,{}
+0x2013,Aspect State,"Lamp ID andcorresponding aspectstate (ID, State)",Wayside Interface Unit,Others,Others,string,string,{}
+0x2014,Switch Position,"Switch ID and Position (ID, Position)",Wayside Interface Unit,Others,Others,string,string,{}
+0x2015,WIU Emp Change,WIU Emp Change,Platform,Others,Others,integer,unix time,{}
+0x2015,Communications Link State,Status of connection to ITCM application gateway,Wayside Interface Unit,Others,Others,integer,boolean,"{""boolean"": [{""0"": ""off"",""1"": ""on""}]}"
+0x2016,WIU Beacon On,WIU Beacon On,Platform,Others,Others,integer,unix time,{}
+0x2016,Beacon State,"Current state of WIU beacon (0 = Off, 1 = On)",Wayside Interface Unit,Others,Others,integer,boolean,"{""boolean"": [{""0"": ""off"",""1"": ""on""}]}"
+0x2017,WIU Reboot,WIU Reboot,Platform,Others,Others,integer,unix time,{}
+0x2017,WIU Reboot,Last WIU reboot,Wayside Interface Unit,Others,Others,integer,unix time,{}
+0x2018,Hazard Detector State,"(0 = Off, 1 = On)",Wayside Interface Unit,Others,Others,integer,boolean,"{""boolean"": [{""0"": ""off"",""1"": ""on""}]}"
+0x2019,I/O Status - Standalone WIU,"ID and current status of each individual I/O on WIU (ID, Status)",Wayside Interface Unit,Others,Others,string,string,{}
+0x201a,Out of System Password Expiry,"Time the out-of-system password expires (Login, Unix Time Expiration)",Wayside Interface Unit,Others,Others,string,string,{}
+0x201E,Component Instance 15,"The unique messaging 15entifier of a component instance (includes area information, component type and component instance). Only used in the back office.",Messaging System,Others,Others,string,string,{}
+0x201e,Component Instance ID,"The unique messaging identifier of a component instance (includes area information, component type and component instance). Only used in the back office.",Radio,Others,Others,string,string,{}
+0x2023,Reason Code,Reason for the failure,Messaging System,Others,Others,integer,integer,{}
+0x2023,Reason Code,Reason for the failure,Radio,Others,Others,integer,integer,{}
+0x2024,Process 15,P15 of the process triggering the notification,Messaging System,Others,Others,string,string,{}
+0x2024,Process ID,PID of the process triggering the notification,Radio,Others,Others,string,string,{}
+0x202A,Change Specifics (Changed Config Values),A list of the changes made to the configuration of the component,Messaging System,Others,Others,string,string,{}
+0x202A,Change Specifics (Changed Config Values),A list of the changes made to the configuration of the component,Radio,Others,Others,string,string,{}
+0x202B,Configuration Name,The name of the configuration file for the component,Messaging System,Others,Others,string,string,{}
+0x202B,Configuration Name,The name of the configuration file for the component,Radio,Others,Others,string,string,{}
+0x202C,User Name,The name of the user,Messaging System,Others,Others,string,string,{}
+0x202C,User Name,The name of the user,Radio,Others,Others,string,string,{}
+0x202D,Configuration Category,"Indication if a configuration is a running, start-up or named configuration",Messaging System,Others,Others,string,string,{}
+0x202D,Configuration Category,"Indication if a configuration is a running, start-up or named configuration",Radio,Others,Others,string,string,{}
+0x2400,External DC Voltage,"Voltage of the external DC power supply. For a wayside, this is the actual external voltage. For a base or loco, this is a comparator output",Radio,Others,Others,integer,milliVolts,{}
+0x2401,Supply Voltage Under Transmit Load,"External DC voltage while the radio is transmitting. For a wayside, this is the actual external voltage. For a base or loco, this is a comparator output",Radio,Others,Others,integer,milliVolts,{}
+0x2402,Forward (Transmit) Power,Radio transmit forward power,Radio,Others,Others,signed integer,dBm,{}
+0x2403,Reflected Power,Radio transmit reflected power,Radio,Others,Others,signed integer,dBm,{}
+0x2404,VSWR,Voltage Standing Wave Ratio * 10. A value of 0 represents Open or Short.,Radio,Others,Others,integer,"ratio,in tenths",{}
+0x2430,ITCnet Connection Status,Status of RF Connection,Radio,Others,Others,string,string,{}
+0x2431,Standby Status,"Status of Transmitter (On=0, or Off=1, per standby logic)",Radio,Others,Others,integer,boolean,"{""13"": [{""0"": ""on"",""1"": ""off""}]}"
+0x2433,Bad Transmitter/Antenna Reason,Reason(s) the bad transmitter/antenna condition exists (Refer to Section 4.3.2),Radio,Others,Others,integer,bitmask,"{""14"": [{""0x00"": ""No problem"",""0x01"": ""VSWR is more than 3:1"",""0x02"": ""Transmitter low power"",""0x04"": ""Transmitter over temperature"",""0x08"": ""CIM script failure""}]}"
+0x2580 ,RAM Address Test Status ,"The pass/fail status of the RAM Address test (0=Fail, 1=Pass) ",Radio,Others,Others,integer,boolean,"{""13"": [{""0"": ""Fail"",""1"": ""Pass""}]}"
+0x2581 ,RAM Data Test Status ,"The pass/fail status of the RAM Data test (0=Fail, 1=Pass) ",Radio,Others,Others,integer,boolean,"{""13"": [{""0"": ""Fail"",""1"": ""Pass""}]}"
+0x2600 ,Configured Power ,Transmit site-assigned power in 19 * 1000 units ,Radio,Others,Others,signed integer,dBm,{}
+0x2800 ,ITCM Connection Duration ,Duration of current HRX connection in minutes ,Radio,Others,Others,integer,minutes,{}
+0x2801 ,ITCM Connection Status ,"Status of HRX connection: 1=HRX connected, 0= HRX disconnected ",Radio,Others,Others,integer,boolean,"{""13"": [{""0"": ""HRX connected"",""1"": ""HRX disconnected""}]}"
+0x2802 ,Last ITCM Message Received Time ,Timestamp of last HRX Message received ,Radio,Others,Others,integer,unix time,{}
+0x2803 ,Last ITCM Message Sent Time ,Timestamp of last HRX Message transmitted ,Radio,Others,Others,integer,unix time,{}
+0x2804 ,ITCM  Statistics Reset Time ,Timestamp when HRX statistics were last reset ,Radio,Others,Others,integer,unix time,{}
+0x2805 ,Total ITCM Errors ,Total number of HRX Errors ,Radio,Others,Others,integer,count,{}
+0x2806 ,Total ITCM Messages Received ,Total number of HRX Messages Received ,Radio,Others,Others,integer,count,{}
+0x2807 ,Total ITCM Messages Sent ,Total number of HRX Messages Sent ,Radio,Others,Others,integer,count,{}
+0x2808 ,ITCM Statistics ,ITCM (HRX) Statistics (Refer to Section 4.3.3),Radio,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""ITCM Statistics Reset Time"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""Last ITCM Message Sent Time"", ""fieldRank"": 2}, {""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""Last ITCM Message Received Time"", ""fieldRank"": 3}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Message bytes Sent"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM messages Sent"", ""fieldRank"": 5}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Service messages Sent"", ""fieldRank"": 6}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Data messages Sent"", ""fieldRank"": 7}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Short Bdcast messages Sent"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Long Bdcast messages Sent"", ""fieldRank"": 9}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Unicast messages Sent"", ""fieldRank"": 10}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 00 messages sent"", ""fieldRank"": 11}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 01 messages sent"", ""fieldRank"": 12}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 02 messages sent"", ""fieldRank"": 13}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 03 messages sent"", ""fieldRank"": 14}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 04 messages sent"", ""fieldRank"": 15}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 05 messages sent"", ""fieldRank"": 16}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 06 messages sent"", ""fieldRank"": 17}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 07 messages sent"", ""fieldRank"": 18}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 08 messages sent"", ""fieldRank"": 19}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 09 messages sent"", ""fieldRank"": 20}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 10 messages sent"", ""fieldRank"": 21}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 11 messages sent"", ""fieldRank"": 22}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 12 messages sent"", ""fieldRank"": 23}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 13 messages sent"", ""fieldRank"": 24}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 14 messages sent"", ""fieldRank"": 25}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 15 messages sent"", ""fieldRank"": 26}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM ACK messages Sent"", ""fieldRank"": 27}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM NAK messages Sent"", ""fieldRank"": 28}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Message bytes Received"", ""fieldRank"": 29}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM messages Received"", ""fieldRank"": 30}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Service messages Received"", ""fieldRank"": 31}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Data messages Received"", ""fieldRank"": 32}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Short Bdcast messages Received"", ""fieldRank"": 33}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Long Bdcast messages Received "", ""fieldRank"": 34}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Unicast messages Received"", ""fieldRank"": 35}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 00 messages received"", ""fieldRank"": 36}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 01 messages received"", ""fieldRank"": 37}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 02 messages received"", ""fieldRank"": 38}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 03 messages received"", ""fieldRank"": 39}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 04 messages received"", ""fieldRank"": 40}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 05 messages received"", ""fieldRank"": 41}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 06 messages received"", ""fieldRank"": 42}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 07 messages received"", ""fieldRank"": 43}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 08 messages received"", ""fieldRank"": 44}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 09 messages received"", ""fieldRank"": 45}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 10 messages received"", ""fieldRank"": 46}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 11 messages received"", ""fieldRank"": 47}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 12 messages received"", ""fieldRank"": 48}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 13 messages received"", ""fieldRank"": 49}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 14 messages received"", ""fieldRank"": 50}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM SH 15 messages received"", ""fieldRank"": 51}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total ITCM Errors"", ""fieldRank"": 52}]}"
+0x2810 ,ITCSM Connection Duration ,Duration of current ISMP connection (in minutes) ,Radio,Others,Others,integer,minutes,{}
+0x2811 ,ITCSM Connection Status ,"Status of ISMP connection: 1= ISMP connected, 0=ISMP disconnected",Radio,Others,Others,integer,boolean,"{""13"": [{""0"": ""ISMP disconnected"",""1"": ""ISMP connected""}]}"
+0x2c80 ,Current Time ,Current time when query was received  ,Radio,Others,Others,integer,unix time,{}
+0x3000 ,Registered Radios ,"Registered radios as shown in SHOWREMOTES for base, or the selected master in RANK,LIST for remotes. Generates one variable per registered node.",Radio,Others,Others,integer,count,{}
+0x3002 ,RSSI per each radio link ,"Received Signal Strength Indicator  for the last packet received on the link (Radio ID, RSSI) (Refer to Section 4.3.4) ",Radio,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""RSSI"", ""fieldRank"": 2}]}"
+0x3003 ,Estimated Packet Error Rate ,Moving window average packet error rate for registered radios (Refer to Section 4.3.5) ,Radio,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Expected"", ""fieldRank"": 2}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Missed"", ""fieldRank"": 3}]}"
+0x3004 ,Total ITCnet Messages Received,Total ITCnet Messages Received over the air ,Radio,Others,Others,integer,count,{}
+0x3005 ,Total ITCnet Messages Sent ,Total ITCnet Messages Sent over the air ,Radio,Others,Others,integer,count,{}
+0x3006 ,Total ITCnet Other Errors ,All ITCnet errors that are not CRC errors ,Radio,Others,Others,integer,count,{}
+0x3007 ,Total ITCnet Data Integrity Errors ,Total ITCnet Data Integrity Errors ,Radio,Others,Others,integer,count,{}
+0x3008 ,Last ITCnet Message Received Time ,Time of the last ITCnet message received ,Radio,Others,Others,integer,unix time,{}
+0x3009 ,Last ITCnet Message Sent Time ,Time of the last ITCnet message sent ,Radio,Others,Others,integer,unix time,{}
+0x300a ,ITCnet Statistics Reset Time ,The date and time ITCnet statistics were last explicitly reset ,Radio,Others,Others,integer,unix time,{}
+0x300b ,Cumulative ITCnet Statistics ,"Cumulative ITCnet statistics, similar to STAT,RF CLI command output (Refer to Section 4.3.6) ",Radio,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""Last Reset Time"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""Last Tx Time"", ""fieldRank"": 2}, {""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""Last Rx Time"", ""fieldRank"": 3}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Bytes Transmitted"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Bytes Received"", ""fieldRank"": 5}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Segments Transmitted"", ""fieldRank"": 6}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Segments Received OK"", ""fieldRank"": 7}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Segments Received and Corrected"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Segments Received Incorrectly"", ""fieldRank"": 9}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Acknowledgeable Packets Transmitted"", ""fieldRank"": 10}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Packets Received"", ""fieldRank"": 11}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Transmitted Packets Acknowledged"", ""fieldRank"": 12}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Non-acknowledgeable Packets Transmitted"", ""fieldRank"": 13}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA Control Packets Transmitted"", ""fieldRank"": 14}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA Control Packets Received"", ""fieldRank"": 15}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA Outbound (B-TX) DSU Assigned"", ""fieldRank"": 16}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA Inbound (R-TX) DSU Assigned"", ""fieldRank"": 17}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA HP-CSMA DSU Assigned"", ""fieldRank"": 18}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""DTDMA AP-CSMA DSU Assigned"", ""fieldRank"": 19}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Queue Status Packets Transmitted"", ""fieldRank"": 20}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Queue Status Packets Received"", ""fieldRank"": 21}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Base Beacon Packets Transmitted"", ""fieldRank"": 22}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Base Beacon Packets Received"", ""fieldRank"": 23}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Ack Packets Transmitted"", ""fieldRank"": 24}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Ack Packets Received"", ""fieldRank"": 25}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Acq Packets Transmitted"", ""fieldRank"": 26}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Acq Packets Received"", ""fieldRank"": 27}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Posrpt Packets Transmitted"", ""fieldRank"": 28}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Posrpt Packets Received"", ""fieldRank"": 29}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time Of Day Packets Transmitted"", ""fieldRank"": 30}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time Of Day Packets Received"", ""fieldRank"": 31}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Short Broadcast (FTDMA) Packets Transmitted"", ""fieldRank"": 32}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Short Broadcast (FTDMA) Packets Received"", ""fieldRank"": 33}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Long Broadcast (DTDMA) Packets Transmitted"", ""fieldRank"": 34}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Long Broadcast (DTDMA) Packets Received"", ""fieldRank"": 35}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Long Broadcast (CSMA) Packets Transmitted"", ""fieldRank"": 36}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Long Broadcast (CSMA) Packets Received"", ""fieldRank"": 37}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (DTDMA) Packets Transmitted"", ""fieldRank"": 38}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (DTDMA) Packets Received"", ""fieldRank"": 39}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (DTDMA) Packets Acknowledged"", ""fieldRank"": 40}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (CSMA) Packets Transmitted"", ""fieldRank"": 41}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (CSMA) Packets Received"", ""fieldRank"": 42}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (CSMA) Packets Acknowledged"", ""fieldRank"": 43}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (DTDMA) BROADCAST ID Node Packets Transmitted"", ""fieldRank"": 44}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Unicast (DTDMA) BROADCAST ID Node Packets Received"", ""fieldRank"": 45}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (DTDMA) Packets Transmitted"", ""fieldRank"": 46}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (DTDMA) Packets Received"", ""fieldRank"": 47}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (DTDMA) Packets Acknowledged"", ""fieldRank"": 48}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (CSMA) Packets Transmitted"", ""fieldRank"": 49}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (CSMA) Packets Received"", ""fieldRank"": 50}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Other (CSMA) Packets Acknowledged"", ""fieldRank"": 51}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Illegal Packets Received"", ""fieldRank"": 52}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Message Fragments Successfully Transmitted"", ""fieldRank"": 53}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Message Fragments Received"", ""fieldRank"": 54}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total CRC Errors"", ""fieldRank"": 55}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Other Errors"", ""fieldRank"": 56}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Total Protocol Errors"", ""fieldRank"": 57}]}"
+0x300c ,ITCnet Statistics per link ,"ITCnet statistics for each link, similar to each line of LINKSTAT CLI command output (Refer to Section 4.3.7) ",Radio,Others,Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Messages Sent"", ""fieldRank"": 2}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Messages Received"", ""fieldRank"": 3}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Packets Transmitted"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Packets Received"", ""fieldRank"": 5}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Packets Acknowledged"", ""fieldRank"": 6}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Segments Sent"", ""fieldRank"": 7}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Segments Received"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITCnet Connection Duration"", ""fieldRank"": 9}, {""fieldBytes"": 4, ""fieldDataType"": ""Time"", ""fieldName"": ""ITCnet Statistics Reset Time"", ""fieldRank"": 10}]}"
+0x300E,ITCnet DSB Scheduler Status,Status of ITCnet DSB slot scheduler. 0 = DSB not enabled 1 = Within capacity 2 = Not within capacity,Radio,Others,Others,integer,unix time,{}
+0x300F,Total ITCnet DSB Slot Requests Rejected Since Device Initiation,Total ITCnet DSB slot requests rejected by base since device initiation,Radio,Others,Others,integer,unix time,{}
+0x3010,Wayside Slot Assignment Request Attempts,The number of times a wayside has requested a slot for a message.,Radio,Others,Others,integer,unix time,{}
+0x3011,Cumulative ITCnet Statistics,Includes available ITCnet statistics.Deprecates variable ID 0x300B.,Radio,Others,Others,integer,unix time,{}
+0x3200 ,Radio ID ,The unique Radio ID entered by a railroad ,Radio,Others,Others,integer,id,{}
+0x3FD3,PTC UCN/CRC,PTC UCN/CRC,Platform,Others,Others,integer,unix time,{}
+0x4000,Memory Check Interval,"The time, in seconds, between memory checks used for low available and average memory use",OBN,Presidio,Others,integer,integer,{}
+0x4000,DSP Version,DSP version number,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4000,General Information,General Information,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4000,Date&Time,Date&Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4001,LocoNet Query Interval,"The time, in seconds, between LocoNet survey statistics queries",OBN,Presidio,Others,integer,integer,{}
+0x4001,Lilee-Notification-ID,Lilee-Notification-ID,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4001,FPGA Version,FPGA version number,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4001,Railroad ,Railroad ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4001,      Date,Date,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4002,Message Sequence Number,Unique sequence number assigned to the status push or message event,OBN,Presidio,Others,integer,integer,{}
+0x4002,Lilee-Notification-Device-Type,Lilee-Notification-Device-Type,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4002,CPLD Version,CPLD version number,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4002,Subdivision ,Subdivision ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4002,      Time,Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4003,Message Name,The user friendly message name configured for the event/status push,OBN,Presidio,Others,string,string,{}
+0x4003,Lilee-Notification-Device-Name,Lilee-Notification-Device-Name,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4003,Boot Launcher Version,Bootlauncher version number,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4003,Address,Address,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4003,Site,Site,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4004,Lilee-Notification-Trap-Text,Lilee-Notification-Trap-Text,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4004,Device Initiation Reason,Reboot reason code (Refer to Section 4.4.1) ,Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Normal cold boot"", ""4"": ""New bootlauncher installed"",""5"": ""Software watchdog timeout"",""6"": ""Hardware watchdog timeout"",""7"": ""No CIM found"",""8"": ""Configuration change requiring reboot was completed"",""9"": ""BOOT Command executed"",""10"": ""FACTORY,DEFAULT,INIT command executed"",""11"": ""Intermediate state while reconfiguring"",""12"": ""Unknown restart reason""}]}"
+0x4004,Site ID ,Site ID ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4004,      Site_Name,Site_Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4005,Lilee-Notification-Trap-Reason,Lilee-Notification-Trap-Reason,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4005,Chassis ID ,Chassis ID ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4005,      DOT_Number,DOT_Number,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4006,Lilee-Notification-Time,Lilee-Notification-Time,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4006,Application EPROM Information,Application EPROM Information,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4006,      Milepost,Milepost,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4007,Lilee-Notification-Date,Lilee-Notification-Date,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4007,EPROM EPT CRC ,EPROM EPT CRC ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4007,      Timezone,Timezone,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4008,Lilee-Notification-Location,Lilee-Notification-Location,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4008,EPROM Checksum,EPROM Checksum,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4008,      Site_ATCS_Address,Site_ATCS_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4009,Lilee-Notification-Priority,Lilee-Notification-Priority,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4009,PTC Status Information,PTC Status Information,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4009,Check_Numbers,Check_Numbers,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400A,operationType,The operation type,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x400A,Lilee-Notification-Flag,Lilee-Notification-Flag,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400A,PTC Enabled ,PTC Enabled ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400A,      PTC_UCN,PTC_UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400B,oldRemoteAreaId,The old remote area identifier,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x400B,Lilee-Notification-Misc1,Lilee-Notification-Misc1,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400B,PTC Time ,PTC Time ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400B,      CCN,CCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400C,configFileDate,The timestamp on the configuration file,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x400C,Lilee-Notification-Misc2,Lilee-Notification-Misc2,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400C,PTC CRC Information,PTC CRC Information,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400C,      Check_Numbers UCN,Check_Numbers UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400D,shadowFileDate,The timestamp on the shadow file,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x400D,Lilee-Notification-Misc3,Lilee-Notification-Misc3,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400D,WIU Configuration CRC ,WIU Configuration CRC ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400D,      Check_Numbers MCF_CRC,Check_Numbers MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400E,Lilee-Notification-Misc4,Lilee-Notification-Misc4,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400E,PTC Mapping File CRC ,PTC Mapping File CRC ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400E,EMP_WIU,EMP_WIU,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x400F,Lilee-Notification-Misc5,Lilee-Notification-Misc5,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x400F,PTC Configuration File CRC ,PTC Configuration File CRC ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x400F,      WIU_Address,WIU_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4010,tnuSecurityValidationError,The error thrown when TNU security validation fails,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x4010,Lilee-Notification-Misc6,Lilee-Notification-Misc6,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4010,Applicability Settings CRC,Applicability Settings CRC,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4010,      WIU_Msg_Version,WIU_Msg_Version,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4011,securityCertificate,Security certificate notification,Messaging System,"Meteorcomm,LLC",Others,string,string,{}
+0x4011,Lilee-Notification-Misc7,Lilee-Notification-Misc7,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4011,System Time,System Time,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4011,      EMP_Source_Address,EMP_Source_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4012,Lilee-Notification-Misc8,Lilee-Notification-Misc8,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4012,Local Time ,Local Time ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4012,      EMP_Destination_Address,EMP_Destination_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4013,Lilee-Notification-Misc9,Lilee-Notification-Misc9,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4013,Time sync Source ,Time sync Source ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4013,      Beacon_TTL,Beacon_TTL,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4014,Lilee-Notification-Misc10,Lilee-Notification-Misc10,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4014,Last Reset:,Last Reset:,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4014,      Stat_Resp_TTL,Stat_Resp_TTL,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4015,AB Processor:,AB Processor:,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4015,      Beacon_QOS,Beacon_QOS,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4016,C Processor:,C Processor:,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4016,      Stat_Resp_QOS,Stat_Resp_QOS,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4017,Active Alarms:,Active Alarms:,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4017,      HMAC_Key,HMAC_Key,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4018,Comm Settings - Port 1,Comm Settings - Port 1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4018,      EMP_Msg_Flags,EMP_Msg_Flags,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4019,Port 1 MAC Address,Port 1 Mac Address,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4019,      Broadcast_On_Change,Broadcast_On_Change,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401A,Port 1 IP Address,Port 1 Ip Address,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401A,      Broadcast_Rate_ms,Broadcast_Rate_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401B,Port 1 SubnetMask,Port 1 Subnetmask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401B,      Beacon_Continuous,Beacon_Continuous,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401C,Port 1 DHCP Server,Port 1 Dhcp Server,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401C,      Beacon_Bit_Time_s,Beacon_Bit_Time_s,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401D,Port 1 DHCP Server IP Pool Start,Port 1 Dhcp Server Ip Pool Start,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401D,      Beacon_End_Time_s,Beacon_End_Time_s,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401E,Port 1 DHCP Server IP Pool End,Port 1 Dhcp Server Ip Pool End,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401E,      Max_Beacon_Interval_Enabled,Max_Beacon_Interval_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x401F,Port 1 DHCP Server Default Gateway,Port 1 Dhcp Server Default Gateway,Wayside Interface Unit,GETS,Others,string,string,{}
+0x401F,      Max_Beacon_Interval,Max_Beacon_Interval,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4020,CIM Signature,Signature of the last CIM executed,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4020,Comm Settings - Port 2,Comm Settings - Port 2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4020,Class_C,Class_C,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4021,Port 2 MAC Address,Port 2 Mac Address,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4021,      Multicast_IP,Multicast_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4021 ,CIM Failure Type ,Result code for the last attempt to run a CIM file (Refer to Section 4.4.2) ,Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"":[{""0"": ""CIM ran successfully"", ""1"": ""CIM file not found or could not be accessed"",""2"": ""Bad CIM file CRC""}]}"
+0x4022,Port 2 IP Address,Port 2 Ip Address,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4022,      Multicast_Port,Multicast_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4022 ,Out-of-System Software Change Reason Code,Reason code for the last out-of-system software change (Refer to Section 4.4.3) ,Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""-1"": ""Unknown"", ""0"": ""None"",""1"": ""CLI-initiated software change actions APPS; KIT; FILES,FORMAT; scheduled)"",""2"": ""Automatic software rollback"",""3"": ""Cloning"",""4"": ""Download""}]}"
+0x4023,Port 2 SubnetMask,Port 2 Subnetmask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4023,Class_D,Class_D,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4023 ,SSH Authorized Key Corrupted,Result of SSH authorized keys integrity check: 0 = No authorized keys are corrupted 1 = One or more corrupted keys detected,Radio,"Meteorcomm,LLC",Others,integer,boolean,"{""boolean"": [{""0"": ""No authorized keys are corrupted"",""1"": ""One or more corrupted keys detected""}]}"
+0x4024,Port 2 DHCP Server ,Port 2 Dhcp Server ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4024,      Mode,Mode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4024 ,SSH Server Key Bootstrap State,SSH server key bootstrap state (Refer to Section 4.4.4),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Unknown"",""1"": ""Bootstrap key in use"",""2"": ""Normal key pending"",""3"": ""Normal key in use""}]}"
+0x4025,Port 2 DHCP Server IP Pool Start,Port 2 Dhcp Server Ip Pool Start,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4025,      Primary_Gateway_IP,Primary_Gateway_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4025 ,SSH Authorized Keys Bootstrap State,SSH authorized key(s) state (Refer to Section 4.4.5),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Unknown"",""1"": ""Bootstrap key in use"",""3"": ""Normal key(s) in use""}]}"
+0x4026,Port 2 DHCP Server IP Pool End,Port 2 Dhcp Server Ip Pool End,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4026,      Primary_Gateway_Port,Primary_Gateway_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4027,Port 2 DHCP Server Default Gateway,Port 2 Dhcp Server Default Gateway,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4027,      Log_Traffic,Log_Traffic,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4028,Port 2 Default Gateway,Port 2 Default Gateway,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4028,      Keep_Alive_Interval_ms,Keep_Alive_Interval_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4029,Comm Settings - Routing Table,Comm Settings - Routing Table,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4029,      Keep_Alive_ACK_Timeout_ms,Keep_Alive_ACK_Timeout_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402A,Route #1 ,Route #1 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402A,      Ack_Timeout_ms,Ack_Timeout_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402B,Route #2 ,Route #2 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402B,      No_Ack_Retry_Limit,No_Ack_Retry_Limit,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402C,Route #3 ,Route #3 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402C,      Retransmit_Delay_ms,Retransmit_Delay_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402D,Route #4 ,Route #4 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402D,      Connect_Attempt_Timeout_ms,Connect_Attempt_Timeout_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402E,Route #5 ,Route #5 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402E,      Connect_Attempt_Delay_ms,Connect_Attempt_Delay_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x402F,Route #6 ,Route #6 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x402F,      Connect_Attempt_Retry_Count,Connect_Attempt_Retry_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4030,Route #7 ,Route #7 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4030,      Reconnection_Limit,Reconnection_Limit,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4031,Route #8,Route #8,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4031,      Data_Ack_Enable,Data_Ack_Enable,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4032,Comm Settings - HTTP Settings,Comm Settings - HTTP Settings,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4032,      Data_Ack_Timeout_ms,Data_Ack_Timeout_ms,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4033,HTTP Settings HTTP TCP Port,Http Settings Http Tcp Port,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4033,Time_Management,Time_Management,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4034,HTTP Settings Inactivity timeout,Http Settings Inactivity Timeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4034,      Time_Source,Time_Source,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4035,HTTP Settings Trusted Source 1 Status,Http Settings Trusted Source 1 Status,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4035,      Time_Msgs_Before_Sending_WSM,Time_Msgs_Before_Sending_WSM,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4036,HTTP Settings Trusted Source 1 IP Addr,Http Settings Trusted Source 1 Ip Addr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4036,      Time_Msg_Deviation_s,Time_Msg_Deviation_s,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4037,HTTP Settings Trusted Source 1 Net Mask,Http Settings Trusted Source 1 Net Mask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4037,      Ignored_Time_Difference_s,Ignored_Time_Difference_s,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4038,HTTP Settings Trusted Source 2 Status,Http Settings Trusted Source 2 Status,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4038,      Max_Seconds_Time_Change_s,Max_Seconds_Time_Change_s,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4039,HTTP Settings Trusted Source 2 IP Addr,Http Settings Trusted Source 2 Ip Addr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4039,      Max_Time_Change_Within_Minutes_min,Max_Time_Change_Within_Minutes_min,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403A,HTTP Settings Trusted Source 2 Net Mask,Http Settings Trusted Source 2 Net Mask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403A,      LRM_Max_Seconds_Diff,LRM_Max_Seconds_Diff,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403B,Comm Settings - Telnet Settings,Comm Settings - Telnet Settings,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403B,      No_Time_Sync_Msg,No_Time_Sync_Msg,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403C,Telnet Settings Telnet Port 1,Telnet Settings Telnet Port 1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403C,Preferred_TIme_Source,Preferred_TIme_Source,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403D,Telnet Settings Telnet Port 2,Telnet Settings Telnet Port 2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403D,      Preferred_Time_Source_Enabled,Preferred_Time_Source_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403E,Telnet Settings Inactivity timeout,Telnet Settings Inactivity Timeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403E,SNMP,SNMP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x403F,Telnet Settings HTTP TCP Port,Telnet Settings Http Tcp Port,Wayside Interface Unit,GETS,Others,string,string,{}
+0x403F,      SNMP Trap_Dest1_IP,SNMP Trap_Dest1_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4040,Temperature (X86),Temperature (X86),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4040,Temperature (X86),Temperature (X86),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4040,Telnet Settings Trusted Source 1 Status,Telnet Settings Trusted Source 1 Status,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4040,      SNMP Trap_Dest1_Port,SNMP Trap_Dest1_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4041,Temperature (KVM-Server),Temperature (KVM-Server),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4041,Temperature (KVM-Server),Temperature (KVM-Server),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4041,Telnet Settings Trusted Source 1 IP Addr,Telnet Settings Trusted Source 1 Ip Addr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4041,      SNMP Trap_Dest2_IP,SNMP Trap_Dest2_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4042,Temperature (Power supply),Temperature (Power supply),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4042,Temperature (Power supply),Temperature (Power supply),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4042,Telnet Settings Trusted Source 1 Net Mask,Telnet Settings Trusted Source 1 Net Mask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4042,      SNMP Trap_Dest2_Port,SNMP Trap_Dest2_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4043,Telnet Settings Trusted Source 2 Status,Telnet Settings Trusted Source 2 Status,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4043,      SNMP Trap_Dest3_IP,SNMP Trap_Dest3_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4044,Telnet Settings Trusted Source 2 IP Addr,Telnet Settings Trusted Source 2 Ip Addr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4044,      SNMP Trap_Dest3_Port,SNMP Trap_Dest3_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4045,Telnet Settings Trusted Source 2 Net Mask,Telnet Settings Trusted Source 2 Net Mask,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4045,      SNMP Trap_Dest4_IP,SNMP Trap_Dest4_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4046,Comm Settings - SSH Settings,Comm Settings - Ssh Settings,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4046,      SNMP Trap_Dest4_Port,SNMP Trap_Dest4_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4047,SSH Port 1 ,SSH Port 1 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4047,      SNMP Community,SNMP Community,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4048,SSH Port 2 ,SSH Port 2 ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4048,      SNMP Contact_Info,SNMP Contact_Info,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4049,SSH Inactivity timeout ,SSH Inactivity timeout ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4049,      SNMP Alarm_Suppression_Timer,SNMP Alarm_Suppression_Timer,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404A,SSH Server Port# ,SSH Server Port# ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404A,CAD,CAD,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404B,Comm Settings - Diagnostic Port Settings,Comm Settings - Diagnostic Port Settings,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404B,      Site_CAD_Address,Site_CAD_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404C,Baud Rate ,Baud Rate ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404C,      Indication_Ref_Period,Indication_Ref_Period,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404D,Parity ,Parity ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404D,      Indication_Holdoff     ,Indication_Holdoff,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404E,Data Bits ,Data Bits ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404E,WAMS                  ,WAMS,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x404F,Stop Bits ,Stop Bits ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x404F,      WAMS_Messaging         ,WAMS_Messaging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4050,Voltage (VIN),Voltage (VIN),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4050,Voltage (VIN),Voltage (VIN),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4050,Flow Control Disabled,Flow Control Disabled,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4050,      WAMS_Address           ,WAMS_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4051,Voltage (12V),Voltage (12V),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4051,Voltage (12V),Voltage (12V),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4051,Executive Information:PN,Executive Information:PN,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4051,      WAMS_Alarm_Retry_Time  ,WAMS_Alarm_Retry_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4052,Voltage (5V),Voltage (5V),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4052,Voltage (5V),Voltage (5V),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4052,Executive Information:Ver,Executive Information:Ver,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4052,WNC                  ,WNC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4053,Voltage (3.3V),Voltage (3.3V),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4053,Voltage (3.3V),Voltage (3.3V),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4053,Executive Information: Module,Executive Information: Module,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4053,      WNC_Install_Address    ,WNC_Install_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4054,Executive Information:Processor,Executive Information:Processor,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4054,Echelon                  ,Echelon,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4055,Executive Information:CRC,Executive Information:CRC,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4055,      Gateway_Node           ,Gateway_Node,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4056,Executive Information:PN,Executive Information:PN,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4056,GPS                  ,GPS,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4057,Executive Information:Ver,Executive Information:Ver,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4057,      GPS_Conf_Enabled       ,GPS_Conf_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4058,Executive Information: Module,Executive Information: Module,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4058,      GPS_Recv_Timeout_Sec   ,GPS_Recv_Timeout_Sec,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4059,Executive Information:Processor,Executive Information:Processor,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4059,      GPS_Sats_For_time      ,GPS_Sats_For_time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405a,Wayside AC Current,Wayside AC Current,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x405a,Wayside AC Current,Wayside AC Current,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x405A,Executive Information:CRC,Executive Information:CRC,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405A,      GPS_Time_Diff_Sec      ,GPS_Time_Diff_Sec,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405B,# PTC Application,# Ptc Application,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405B,Security                  ,Security,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405C,PTC Mapping File:PTC Editor Version,Ptc Mapping File:Ptc Editor Version,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405C,      Security WebUI_Username         ,Security WebUI_Username,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405D,PTC Mapping File:Source Filename,Ptc Mapping File:Source Filename,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405D,      Security WebUI_Password         ,Security WebUI_Password,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405E,PTC Mapping File:File Compile Date,Ptc Mapping File:File Compile Date,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405E,      Security LocalUI_username       ,Security LocalUI_username,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x405F,PTC Mapping File:Chassis,Ptc Mapping File:Chassis,Wayside Interface Unit,GETS,Others,string,string,{}
+0x405F,      Security LocalUI_Password       ,Security LocalUI_Password,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4060,Eth0 MAC address,Eth0 MAC address,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4060,Eth0 MAC address,Eth0 MAC address,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4060,PTC Mapping File:Library CRC,Ptc Mapping File:Library Crc,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4060,      Security LocalUI_Enabled        ,Security LocalUI_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4061,Eth0 rx bytes,Eth0 rx bytes,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4061,Eth0 rx bytes,Eth0 rx bytes,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4061,PTC Mapping File:Library Date,Ptc Mapping File:Library Date,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4061,      Security Session_Inactivity_Timeout,Security Session_Inactivity_Timeout,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4062,Eth0 rx packets,Eth0 rx packets,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4062,Eth0 rx packets,Eth0 rx packets,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4062,PTC Configuration File:PTC Editor Version,Ptc Configuration File:Ptc Editor Version,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4062,      Security Display_Hibernate_Timeout,Security Display_Hibernate_Timeout,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4063,Eth0 rx dropped,Eth0 rx dropped,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4063,Eth0 rx dropped,Eth0 rx dropped,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4063,PTC Configuration File:Source Filename,Ptc Configuration File:Source Filename,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4063,Web_Server                  ,Web_Server,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4064,Eth0 tx bytes,Eth0 tx bytes,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4064,Eth0 tx bytes,Eth0 tx bytes,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4064,PTC Configuration File:File Compile Date,Ptc Configuration File:File Compile Date,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4064,      Browser_Access         ,Browser_Access,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4065,Eth0 tx packets,Eth0 tx packets,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4065,Eth0 tx packets,Eth0 tx packets,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4065,PTC Configuration File:Chassis,Ptc Configuration File:Chassis,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4065,Event_Diag_Log               ,Event_Diag_Log,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4066,Eth0 tx dropped,Eth0 tx dropped,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4066,Eth0 tx dropped,Eth0 tx dropped,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4066,PTC Key Management Configuration,Ptc Key Management Configuration,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4066,      Event_Log_Server_IP    ,Event_Log_Server_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4067,Encrypted HMAC Key ,Encrypted Hmac Key ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4067,      DLOG_Server_IP         ,DLOG_Server_IP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4068,Encrypted HMAC CRC ,Encrypted Hmac Crc ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4068,Diag_Log                  ,Diag_Log,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4069,Pending Encrypted HMAC Key ,Pending Encrypted Hmac Key ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4069,      Msg_Process_Logging    ,Msg_Process_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406A,Pending Encrypted HMAC CRC ,Pending Encrypted Hmac Crc ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406A,      Routing_Logging        ,Routing_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406B,RC2 Key File CRC ,Rc2 Key File Crc ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406B,      Serial_Laptop_Port_Logging,Serial_Laptop_Port_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406C,Vital Application Information:Name,Vital Application Information:Name,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406C,      Serial_Port1_Logging   ,Serial_Port1_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406D,Vital Application Information:Index,Vital Application Information:Index,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406D,      Serial_Port2_Logging   ,Serial_Port2_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406E,Vital Application Information:EPT CRC,Vital Application Information:Ept Crc,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406E,      Serial_Port3_Logging   ,Serial_Port3_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x406F,Vital Application Information:EPT Checksum,Vital Application Information:Ept Checksum,Wayside Interface Unit,GETS,Others,string,string,{}
+0x406F,      RS485A_Logging         ,RS485A_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4070,Eth1 MAC address,Eth1 MAC address,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4070,Eth1 MAC address,Eth1 MAC address,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4070,Non-Vital Application Information:Name,Non-Vital Application Information:Name,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4070,      RS485B_Logging         ,RS485B_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4071,Eth1 rx bytes,Eth1 rx bytes,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4071,Eth1 rx bytes,Eth1 rx bytes,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4071,Non-Vital Application Information:Index,Non-Vital Application Information:Index,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4071,      Eth_Laptop_Port_Logging,Eth_Laptop_Port_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4072,Eth1 rx packets,Eth1 rx packets,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4072,Eth1 rx packets,Eth1 rx packets,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4072,Non-Vital Application Information:EPT CFC,Non-Vital Application Information:Ept Cfc,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4072,      Eth_Port1_Logging      ,Eth_Port1_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4073,Eth1 rx dropped,Eth1 rx dropped,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4073,Eth1 rx dropped,Eth1 rx dropped,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4073,Non-Vital Application Information:EPT Checksum,Non-Vital Application Information:Ept Checksum,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4073,      Eth_Port2_Logging      ,Eth_Port2_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4074,Eth1 tx bytes,Eth1 tx bytes,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4074,Eth1 tx bytes,Eth1 tx bytes,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4074,PTC Vital Configuration,Ptc Vital Configuration,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4074,      Eth_Port3_Logging      ,Eth_Port3_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4075,Eth1 tx packets,Eth1 tx packets,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4075,Eth1 tx packets,Eth1 tx packets,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4075,VEMP.WiuAddress,Vemp.Wiuaddress,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4075,      Echelon_Logging        ,Echelon_Logging,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4076,Eth1 tx dropped,Eth1 tx dropped,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4076,Eth1 tx dropped,Eth1 tx dropped,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4076,VEMP.TimeMessBeforeSendWSM,Vemp.Timemessbeforesendwsm,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4076,Diag_Verbosity               ,Diag_Verbosity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4077,VEMP.TimeMessDev ,Vemp.Timemessdev ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4077,      Console_DLog_Verbosity ,Console_DLog_Verbosity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4078,VEMP.IgnoredTimeDif ,Vemp.Ignoredtimedif ,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4078,      Console_CDL_Log_Verbosity,Console_CDL_Log_Verbosity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4079,VEMP.MaxSecsTimeChange,Vemp.Maxsecstimechange,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4079,      Cartridge1_DLog_Verbosity,Cartridge1_DLog_Verbosity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407A,VEMP.MaxTimeChangeWithinMins,Vemp.Maxtimechangewithinmins,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407A,DNS                  ,DNS,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407B,VEMP.WiuEnabled,Vemp.Wiuenabled,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407B,      DNS NameServer1            ,DNS NameServer1,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407C,PTC Non-Vital Configuration,Ptc Non-Vital Configuration,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407C,      DNS NameServer2            ,DNS NameServer2,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407D,WIUGEN.BcnContinuous,Wiugen.Bcncontinuous,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407D,      DNS NameServer3            ,DNS NameServer3,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407E,WIUGEN.BcnOnChange,Wiugen.Bcnonchange,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407E,Router                  ,Router,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x407F,WIUGEN.ExtTimeUpdTimeout,Wiugen.Exttimeupdtimeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x407F,      Route_Tbl_Entry_Timeout,Route_Tbl_Entry_Timeout,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4080,Filesystem checksum,Filesystem checksum,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4080,Filesystem checksum,Filesystem checksum,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4080,WIUGEN.BcnRate,Wiugen.Bcnrate,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4080,Laptop_Serial_Port           ,Laptop_Serial_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4081,LileeOS cell report,LileeOS cell report,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4081,LileeOS cell report,LileeOS cell report,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4081,WIUGEN.BcnBitTime,Wiugen.Bcnbittime,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4081,      Laptop_Serial_Port Baud_Rate              ,Laptop_Serial_Port Baud_Rate,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4082,Raven cell report,Raven cell report,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4082,Raven cell report,Raven cell report,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4082,WIUGEN.BcnEndTime,Wiugen.Bcnendtime,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4082,      Laptop_Serial_Port Data_Bits              ,Laptop_Serial_Port Data_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4083,LileeOS maint IP,LileeOS maint IP,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4083,LileeOS maint IP,LileeOS maint IP,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4083,WIUGEN.MaxBcnInterval,Wiugen.Maxbcninterval,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4083,      Laptop_Serial_Port Parity                 ,Laptop_Serial_Port Parity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4084,EMPWSM.SourceAddress,Empwsm.Sourceaddress,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4084,      Laptop_Serial_Port Stop_Bits              ,Laptop_Serial_Port Stop_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4085,EMPWSM.DestinationAddress,Empwsm.Destinationaddress,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4085,      Laptop_Serial_Port Flow_Ctrl              ,Laptop_Serial_Port Flow_Ctrl,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4086,EMPWSM.TimeFormat,Empwsm.Timeformat,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4086,Serial_Port1                 ,Serial_Port1,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4087,EMPWSM.Encryption,Empwsm.Encryption,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4087,      Serial_Port1 Baud_Rate              ,Serial_Port1 Baud_Rate,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4088,EMPWSM.Compression,Empwsm.Compression,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4088,      Serial_Port1 Data_Bits              ,Serial_Port1 Data_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4089,EMPWSM.DataIntegrity App,Empwsm.Dataintegrity App,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4089,      Serial_Port1 Parity                 ,Serial_Port1 Parity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408A,EMPWSM.PTC_ReSyncEnable,Empwsm.Ptc_Resyncenable,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408A,      Serial_Port1 Stop_Bits              ,Serial_Port1 Stop_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408B,EMPWSM.TTL_TimedBeacon,Empwsm.Ttl_Timedbeacon,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408B,      Serial_Port1 Flow_Ctrl              ,Serial_Port1 Flow_Ctrl,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408C,EMPWSM.QoS_TimedBeacon,Empwsm.Qos_Timedbeacon,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408C,      Serial_Port1 Path_Type              ,Serial_Port1 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408D,EMPWSM.TTL_GetWSM,Empwsm.Ttl_Getwsm,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408D,      Serial_Port1 Recovery_Time          ,Serial_Port1 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408E,EMPWSM.QoS_GetWSM,Empwsm.Qos_Getwsm,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408E,      Serial_Port1 Test_Period            ,Serial_Port1 Test_Period,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x408F,EMPWSM.LRMMaxSecsTimeDif,Empwsm.Lrmmaxsecstimedif,Wayside Interface Unit,GETS,Others,string,string,{}
+0x408F,      Serial_Port1 Fail_Count             ,Serial_Port1 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4090,EMPWSM.NoTimeSyncMessage,Empwsm.Notimesyncmessage,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4090,      Serial_Port1 Op_Traffic_Only        ,Serial_Port1 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4091,EMPD.DestinationIpAddress.1,Empd.Destinationipaddress.1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4091,      Serial_Port1 RSSI_Value             ,Serial_Port1 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4092,EMPD.DestinationIpAddress.2,Empd.Destinationipaddress.2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4092,      Serial_Port1 Protocol               ,Serial_Port1 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4093,EMPD.DestinationIpAddress.3,Empd.Destinationipaddress.3,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4093,Serial_Port2                 ,Serial_Port2,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4094,EMPD.DestinationIpAddress.4,Empd.Destinationipaddress.4,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4094,      Serial_Port2 Baud_Rate              ,Serial_Port2 Baud_Rate,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4095,EMPD.DestinationIpAddress.5,Empd.Destinationipaddress.5,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4095,      Serial_Port2 Data_Bits              ,Serial_Port2 Data_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4096,EMPD.DestinationIpAddress.6,Empd.Destinationipaddress.6,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4096,      Serial_Port2 Parity                 ,Serial_Port2 Parity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4097,EMPD.DestinationIpAddress.7,Empd.Destinationipaddress.7,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4097,      Serial_Port2 Stop_Bits              ,Serial_Port2 Stop_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4098,EMPD.DestinationIpAddress.8,Empd.Destinationipaddress.8,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4098,      Serial_Port2 Flow_Ctrl              ,Serial_Port2 Flow_Ctrl,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4099,EMPD.HighAvailabilityEnable,Empd.Highavailabilityenable,Wayside Interface Unit,GETS,Others,string,string,{}
+0x4099,      Serial_Port2 Port_Mode              ,Serial_Port2 Port_Mode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409A,EMPD.Mode,Empd.Mode,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409A,      Serial_Port2 Clk_Mode               ,Serial_Port2 Clk_Mode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409B,EMPD.DataAckEnabled,Empd.Dataackenabled,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409B,      Serial_Port2 TX_Clk_Source          ,Serial_Port2 TX_Clk_Source,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409C,EMPD.DestinationIpPort.1,Empd.Destinationipport.1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409C,      Serial_Port2 Path_Type              ,Serial_Port2 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409D,EMPD.DestinationIpPort.2,Empd.Destinationipport.2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409D,      Serial_Port2 Recovery_Time          ,Serial_Port2 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409E,EMPD.DestinationIpPort.3,Empd.Destinationipport.3,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409E,      Serial_Port2 Test_Period            ,Serial_Port2 Test_Period,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x409F,EMPD.DestinationIpPort.4,Empd.Destinationipport.4,Wayside Interface Unit,GETS,Others,string,string,{}
+0x409F,      Serial_Port2 Fail_Count             ,Serial_Port2 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A0,EMPD.DestinationIpPort.5,Empd.Destinationipport.5,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A0,      Serial_Port2 Op_Traffic_Only        ,Serial_Port2 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A1,EMPD.DestinationIpPort.6,Empd.Destinationipport.6,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A1,      Serial_Port2 RSSI_Value             ,Serial_Port2 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A2,EMPD.DestinationIpPort.7,Empd.Destinationipport.7,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A2,      Serial_Port2 Protocol               ,Serial_Port2 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A3,EMPD.DestinationIpPort.8,Empd.Destinationipport.8,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A3,Serial_Port3                 ,Serial_Port3,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A4,EMPD.KeepAliveInterval,Empd.Keepaliveinterval,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A4,      Serial_Port3 Baud_Rate              ,Serial_Port3 Baud_Rate,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A5,EMPD.KeepAliveAckTimeout,Empd.Keepaliveacktimeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A5,      Serial_Port3 Data_Bits              ,Serial_Port3 Data_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A6,EMPD.DataAckTimeout,Empd.Dataacktimeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A6,      Serial_Port3 Parity                 ,Serial_Port3 Parity,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A7,EMPD.DataNakRetryLimit,Empd.Datanakretrylimit,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A7,      Serial_Port3 Stop_Bits              ,Serial_Port3 Stop_Bits,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A8,EMPD.RetransmitDelay,Empd.Retransmitdelay,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A8,      Serial_Port3 Flow_Ctrl              ,Serial_Port3 Flow_Ctrl,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40A9,EMPD.ConnectionAttemptTimeout,Empd.Connectionattempttimeout,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40A9,      Serial_Port3 Path_Type              ,Serial_Port3 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AA,EMPD.ConnectionDelay,Empd.Connectiondelay,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AA,      Serial_Port3 Recovery_Time          ,Serial_Port3 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AB,EMPD.ConnectionRetryLimit,Empd.Connectionretrylimit,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AB,     Serial_Port3 Test_Period            ,Serial_Port3 Test_Period,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AC,EMPD.ReconnectionLimit,Empd.Reconnectionlimit,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AC,     Serial_Port3 Fail_Count             ,Serial_Port3 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AD,SNMP General Configuration,Snmp General Configuration,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AD,     Serial_Port3 Op_Traffic_Only        ,Serial_Port3 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AE,SNMP.TrapEnable,Snmp.Trapenable,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AE,     Serial_Port3 RSSI_Value             ,Serial_Port3 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40AF,SNMP.WiuHeartbeatLogEnable,Snmp.Wiuheartbeatlogenable,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40AF,      Serial_Port3 Protocol               ,Serial_Port3 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B0,SNMP.DestUdpPort.1,Snmp.Destudpport.1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B0,Laptop_Eth_Port              ,Laptop_Eth_Port,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B1,SNMP.DestAdd.1,Snmp.Destadd.1,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B1,     Laptop_Eth_Port DHCP                   ,Laptop_Eth_Port DHCP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B2,SNMP.DestUdpPort.2,Snmp.Destudpport.2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B2,     Laptop_Eth_Port IP_Address             ,Laptop_Eth_Port IP_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B3,SNMP.DestAdd.2,Snmp.Destadd.2,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B3,     Laptop_Eth_Port NetMask                ,Laptop_Eth_Port NetMask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B4,SNMP.DestUdpPort.3,Snmp.Destudpport.3,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B4,     Laptop_Eth_Port Gateway                ,Laptop_Eth_Port Gateway,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B5,SNMP.DestAdd.3,Snmp.Destadd.3,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B5,Eth_Port1                  ,Eth_Port1,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B6,SNMP.DestUdpPort.4,Snmp.Destudpport.4,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B6,      Eth_Port1 DHCP                   ,Eth_Port1 DHCP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B7,SNMP.DestAdd.4,Snmp.Destadd.4,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B7,      Eth_Port1 IP_Address             ,Eth_Port1 IP_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B8,SNMP.WaysideDevType,Snmp.Waysidedevtype,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B8,      Eth_Port1 NetMask                ,Eth_Port1 NetMask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40B9,SNMP.Location,Snmp.Location,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40B9,      Eth_Port1 Gateway                ,Eth_Port1 Gateway,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BA,SNMP.SysName,Snmp.Sysname,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40BA,      Eth_Port1 Path_Type              ,Eth_Port1 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BB,SNMP.SysContact,Snmp.Syscontact,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40BB,      Eth_Port1 Recovery_Time          ,Eth_Port1 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BC,SNMP.PriComStr,Snmp.Pricomstr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40BC,      Eth_Port1 Fail_Count             ,Eth_Port1 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BD,SNMP.PubComStr,Snmp.Pubcomstr,Wayside Interface Unit,GETS,Others,string,string,{}
+0x40BD,      Eth_Port1 Op_Traffic_Only        ,Eth_Port1 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BE,      Eth_Port1 RSSI_Value             ,Eth_Port1 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40BF,      Eth_Port1 Protocol               ,Eth_Port1 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C0,Eth_Port2                  ,Eth_Port2,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C1,      Eth_Port2 DHCP                   ,Eth_Port2 DHCP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C2,      Eth_Port2 IP_Address             ,Eth_Port2 IP_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C3,      Eth_Port2 NetMask                ,Eth_Port2 NetMask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C4,      Eth_Port2 Gateway                ,Eth_Port2 Gateway,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C5,      Eth_Port2 Path_Type              ,Eth_Port2 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C6,      Eth_Port2 Recovery_Time          ,Eth_Port2 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C7,      Eth_Port2 Fail_Count             ,Eth_Port2 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C8,      Eth_Port2 Op_Traffic_Only        ,Eth_Port2 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40C9,      Eth_Port2 RSSI_Value             ,Eth_Port2 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CA,      Eth_Port2 Protocol               ,Eth_Port2 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CB,Eth_Port3                  ,Eth_Port3,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CC,      Eth_Port3 DHCP                   ,Eth_Port3 DHCP,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CD,      Eth_Port3 IP_Address             ,Eth_Port3 IP_Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CE,      Eth_Port3 NetMask                ,Eth_Port3 NetMask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40CF,      Eth_Port3 Gateway                ,Eth_Port3 Gateway,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D0,      Eth_Port3 Path_Type              ,Eth_Port3 Path_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D1,      Eth_Port3 Recovery_Time          ,Eth_Port3 Recovery_Time,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D2,      Eth_Port3 Fail_Count             ,Eth_Port3 Fail_Count,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D3,      Eth_Port3 Op_Traffic_Only        ,Eth_Port3 Op_Traffic_Only,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D4,      Eth_Port3 RSSI_Value             ,Eth_Port3 RSSI_Value,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D5,      Eth_Port3 Protocol               ,Eth_Port3 Protocol,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D6,PTC                  ,PTC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D7,      GEO_PTC_Enabled        ,GEO_PTC_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D8,      Console_as_NV_logic_Ctr,Console_as_NV_logic_Ctr,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40D9,      Log_GEO_Events         ,Log_GEO_Events,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DA,      Sync_GEO_Sear_Clocks   ,Sync_GEO_Sear_Clocks,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DB,      WIU_Channel_Enabled    ,WIU_Channel_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DC,High_Availability            ,High_Availability,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DD,      HA_Enabled             ,HA_Enabled,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DE,Module1                  ,Module1,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40DF,      Module1 Name                   ,Module1 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E0,      Module1 Type                   ,Module1 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E1,      Module1 Connection_Type        ,Module1 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E2,      Module1 ATCS_Subnode           ,Module1 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E3,      Module1 Indication_Offset      ,Module1 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E4,      Module1 Indication_Size        ,Module1 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E5,      Module1 Control_Offset         ,Module1 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E6,      Module1 Control_Size           ,Module1 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E7,      Module1 UCN                   ,Module1 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E8,      Module1 MCF_CRC                ,Module1 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40E9,Module2                  ,Module2,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40EA,      Module2 Name                   ,Module2 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40EB,      Module2 Type                   ,Module2 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40EC,      Module2 Connection_Type        ,Module2 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40ED,      Module2 ATCS_Subnode           ,Module2 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40EE,      Module2 Indication_Offset      ,Module2 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40EF,      Module2 Indication_Size        ,Module2 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F0,      Module2 Control_Offset         ,Module2 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F1,      Module2 Control_Size           ,Module2 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F2,      Module2 UCN                   ,Module2 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F3,      Module2 MCF_CRC                ,Module2 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F4,Module3                  ,Module3,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F5,      Module3 Name                   ,Module3 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F6,      Module3 Type                   ,Module3 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F7,      Module3 Connection_Type        ,Module3 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F8,      Module3 ATCS_Subnode           ,Module3 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40F9,      Module3 Indication_Offset      ,Module3 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FA,      Module3 Indication_Size        ,Module3 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FB,      Module3 Control_Offset         ,Module3 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FC,      Module3 Control_Size           ,Module3 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FD,      Module3 UCN                   ,Module3 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FE,      Module3 MCF_CRC                ,Module3 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x40FF,Module4                  ,Module4,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4100,Input Voltage,Supply Voltage (V) from Locomotive to OBN Chassis,OBN,Presidio,Others,integer,integer,{}
+0x4100,ZCC manual.aid,ZCC manual.aid,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4100,ZCC manual.aid,ZCC manual.aid,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4100,      Module4 Name                   ,Module4 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4101,Input Current,Supply Current Draw (A) from Locomotive by OBN Chassis,OBN,Presidio,Others,integer,integer,{}
+0x4101,      Module4 Type                   ,Module4 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4102,MR Number,The MR number assigned to the OBN,OBN,Presidio,Others,string,string,{}
+0x4102,      Module4 Connection_Type        ,Module4 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4103,      Module4 ATCS_Subnode           ,Module4 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4104,      Module4 Indication_Offset      ,Module4 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4105,      Module4 Indication_Size        ,Module4 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4106,      Module4 Control_Offset         ,Module4 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4107,      Module4 Control_Size           ,Module4 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4108,      Module4 UCN                   ,Module4 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4109,      Module4 MCF_CRC                ,Module4 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410A,Module5       ,Module5,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410B,      Module5 Name                   ,Module5 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410C,      Module5 Type                   ,Module5 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410D,      Module5 Connection_Type        ,Module5 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410E,      Module5 ATCS_Subnode           ,Module5 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x410F,      Module5 Indication_Offset      ,Module5 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4110,IMG2 Ruggedcom Version,IMG2 Ruggedcom Version,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4110,IMG2 Ruggedcom Version,IMG2 Ruggedcom Version,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4110,      Module5 Indication_Size        ,Module5 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4111,IMG2 Ruggedcom Eth1 stats,IMG2 Ruggedcom Eth1 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4111,IMG2 Ruggedcom Eth1 stats,IMG2 Ruggedcom Eth1 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4111,      Module5 Control_Offset         ,Module5 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4112,IMG2 Ruggedcom Eth2 stats,IMG2 Ruggedcom Eth2 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4112,IMG2 Ruggedcom Eth2 stats,IMG2 Ruggedcom Eth2 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4112,      Module5 Control_Size           ,Module5 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4113,IMG2 Ruggedcom Eth3 stats,IMG2 Ruggedcom Eth3 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4113,IMG2 Ruggedcom Eth3 stats,IMG2 Ruggedcom Eth3 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4113,      Module5 UCN                   ,Module5 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4114,IMG2 Ruggedcom Eth4 stats,IMG2 Ruggedcom Eth4 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4114,IMG2 Ruggedcom Eth4 stats,IMG2 Ruggedcom Eth4 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4114,      Module5 MCF_CRC                ,Module5 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4115,IMG2 Ruggedcom Eth5 stats,IMG2 Ruggedcom Eth5 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4115,IMG2 Ruggedcom Eth5 stats,IMG2 Ruggedcom Eth5 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4115,Module6,Module6,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4116,IMG2 Ruggedcom Eth6 stats,IMG2 Ruggedcom Eth6 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4116,IMG2 Ruggedcom Eth6 stats,IMG2 Ruggedcom Eth6 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4116,      Module6 Name                   ,Module6 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4117,IMG2 Ruggedcom Eth7 stats,IMG2 Ruggedcom Eth7 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4117,IMG2 Ruggedcom Eth7 stats,IMG2 Ruggedcom Eth7 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4117,      Module6 Type                   ,Module6 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4118,IMG2 Ruggedcom Eth8 stats,IMG2 Ruggedcom Eth8 stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4118,IMG2 Ruggedcom Eth8 stats,IMG2 Ruggedcom Eth8 stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4118,      Module6 Connection_Type        ,Module6 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4119,IMG2 Ruggedcom Eth Mgmt stats,IMG2 Ruggedcom Eth Mgmt stats,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4119,IMG2 Ruggedcom Eth Mgmt stats,IMG2 Ruggedcom Eth Mgmt stats,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4119,      Module6 ATCS_Subnode           ,Module6 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411A,      Module6 Indication_Offset      ,Module6 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411B,      Module6 Indication_Size        ,Module6 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411C,      Module6 Control_Offset         ,Module6 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411D,      Module6 Control_Size           ,Module6 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411E,      Module6 UCN                   ,Module6 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x411F,      Module6 MCF_CRC                ,Module6 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4120,CRM CHMM Information,CRM CHMM Information,CHMM,CRM,Others,string,json,{}
+0x4120,Module7,Module7,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4121,CRM CHMM Leam Information,CRM CHMM Leam Information,CHMM,CRM,Others,string,json,{}
+0x4121,      Module7Name                   ,Module7Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4122,CRM CHMM Tag Information,CRM CHMM Tag Information,CHMM,CRM,Others,string,json,{}
+0x4122,      Module7 Type                   ,Module7 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4123,CRM CHMM Extern Link Information,CRM CHMM Extern Link Information,CHMM,CRM,Others,string,json,{}
+0x4123,      Module7 Connection_Type        ,Module7 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4124,CRM CHMM Data Information,CRM CHMM Data Information,CHMM,CRM,Others,string,json,{}
+0x4124,      Module7 ATCS_Subnode           ,Module7 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4125,CRM CHMM Locomotive Information,CRM CHMM Locomotive Information,CHMM,CRM,Others,string,json,{}
+0x4125,      Module7 Indication_Offset      ,Module7 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4126,LEAM_HARDWARE_MODEL,LEAM_HARDWARE_MODEL,CHMM,CRM,Others,string,string,{}
+0x4126,      Module7 Indication_Size        ,Module7 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4127,LEAM_HARDWARE_SERIAL_NUMBER,LEAM_HARDWARE_SERIAL_NUMBER,CHMM,CRM,Others,string,string,{}
+0x4127,      Module7 Control_Offset         ,Module7 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4128,LEAM_SOFTWARE_MODEL,LEAM_SOFTWARE_MODEL,CHMM,CRM,Others,string,string,{}
+0x4128,      Module7 Control_Size           ,Module7 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4129,LEAM_SOFTWARE_VERSION,LEAM_SOFTWARE_VERSION,CHMM,CRM,Others,string,string,{}
+0x4129,      Module7 UCN                   ,Module7 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412A,      Module7 MCF_CRC                ,Module7 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412B,Module8,Module8,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412C,      Module8 Name                   ,Module8 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412D,      Module8 Type                   ,Module8 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412E,      Module8 Connection_Type        ,Module8 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x412F,      Module8 ATCS_Subnode           ,Module8 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4130,TAG_SOFTWARE_MODEL,TAG_SOFTWARE_MODEL,CHMM,CRM,Others,string,string,{}
+0x4130,Staging folder checksum,Staging folder checksum,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4130,Staging folder checksum,Staging folder checksum,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4130,      Module8 Indication_Offset      ,Module8 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4131,CRM_CDA_VERSION,CRM_CDA_VERSION,CHMM,CRM,Others,string,string,{}
+0x4131,Staging folder version,Staging folder version,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4131,Staging folder version,Staging folder version,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4131,      Module8 Indication_Size        ,Module8 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4132,Locomotive ID,Locomotive ID,CHMM,CRM,Others,string,string,{}
+0x4132,      Module8 Control_Offset         ,Module8 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4133,Train ID,Train ID,CHMM,CRM,Others,string,string,{}
+0x4133,      Module8 Control_Size           ,Module8 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4134,Wheel Diameter,Wheel Diameter,CHMM,CRM,Others,string,string,{}
+0x4134,      Module8 UCN                   ,Module8 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4135,Wheel Size Description,Wheel Size Description,CHMM,CRM,Others,string,string,{}
+0x4135,      Module8 MCF_CRC                ,Module8 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4136,Traction Motor Current,Traction Motor Current,CHMM,CRM,Others,string,string,{}
+0x4136,Module9,Module9,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4137,IFA/ CCA Format,IFA/ CCA Format,CHMM,CRM,Others,string,string,{}
+0x4137,      Module9 Name                   ,Module9 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4138,Oldest To Newest On Board Data Range,Oldest To Newest On Board Data Range,CHMM,CRM,Others,string,string,{}
+0x4138,      Module9 Type                   ,Module9 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4139,Most Recent Downloaded Log Range,Most Recent Downloaded Log Range,CHMM,CRM,Others,string,string,{}
+0x4139,      Module9 Connection_Type        ,Module9 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413A,      Module9 ATCS_Subnode           ,Module9 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413B,      Module9 Indication_Offset      ,Module9 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413C,      Module9 Indication_Size        ,Module9 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413D,      Module9 Control_Offset         ,Module9 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413E,      Module9 Control_Size           ,Module9 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x413F,      Module9 UCN                   ,Module9 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4140,Most Recent Downloaded Log %,Most Recent Downloaded Log %,CHMM,CRM,Others,string,string,{}
+0x4140,Slot 0/1 information,Slot 0/1 information,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4140,Slot 0/1 information,Slot 0/1 information,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4140,      Module9 MCF_CRC                ,Module9 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4141,slot 0/2 information,slot 0/2 information,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4141,slot 0/2 information,slot 0/2 information,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4141,Module10,Module10,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4142,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4142,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4142,      Module10 Name                   ,Module10 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4143,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4143,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4143,      Module10 Type                   ,Module10 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4144,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4144,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4144,      Module10 Connection_Type        ,Module10 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4145,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4145,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4145,      Module10 ATCS_Subnode           ,Module10 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4146,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4146,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4146,      Module10 Indication_Offset      ,Module10 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4147,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4147,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4147,      Module10 Indication_Size        ,Module10 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4148,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4148,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4148,      Module10 Control_Offset         ,Module10 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4149,slot reserved,slot reserved,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4149,slot reserved,slot reserved,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4149,      Module10 Control_Size           ,Module10 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414A,      Module10 UCN                   ,Module10 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414B,     Module10  MCF_CRC                ,Module10 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414C,Module11,Module11,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414D,     Module11 Name                   ,Module11 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414E,     Module11 Type        ,Module11 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x414F,     Module11 Connection_Type        ,Module11 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4150,     Module11 ATCS_Subnode           ,Module11 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4151,     Module11 Indication_Offset      ,Module11 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4152,     Module11 Indication_Size        ,Module11 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4153,     Module11 Control_Offset         ,Module11 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4154,     Module11 Control_Size           ,Module11 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4155,     Module11 UCN                   ,Module11 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4156,     Module11 MCF_CRC                ,Module11 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4157,Module12,Module12,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4158,      Module12 Name                   ,Module12 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4159,      Module12 Type                   ,Module12 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415A,      Module12 Connection_Type        ,Module12 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415B,      Module12 ATCS_Subnode           ,Module12 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415C,      Module12 Indication_Offset      ,Module12 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415D,      Module12 Indication_Size        ,Module12 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415E,      Module12 Control_Offset         ,Module12 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x415F,      Module12 Control_Size           ,Module12 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4160,Itcm Version,Itcm Version,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4160,Itcm Version,Itcm Version,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4160,      Module12 UCN                   ,Module12 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4161,      Module12 MCF_CRC                ,Module12 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4162,Module13,Module13,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4163,      Module13 Name                   ,Module13 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4164,      Module13 Type                   ,Module13 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4165,      Module13 Connection_Type        ,Module13 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4166,      Module13 ATCS_Subnode           ,Module13 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4167,      Module13 Indication_Offset      ,Module13 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4168,      Module13 Indication_Size        ,Module13 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4169,      Module13 Control_Offset         ,Module13 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416A,      Module13 Control_Size           ,Module13 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416B,      Module13 UCN                   ,Module13 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416C,      Module13 MCF_CRC                ,Module13 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416D,Module14,Module14,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416E,      Module14 Name                   ,Module14 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x416F,      Module14 Type                   ,Module14 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4170,ITCM route index 0,ITCM route index 0,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4170,ITCM route index 0,ITCM route index 0,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4170,      Module14 Connection_Type        ,Module14 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4171,ITCM route index 1,ITCM route index 1,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4171,ITCM route index 1,ITCM route index 1,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4171,      Module14 ATCS_Subnode           ,Module14 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4172,ITCM route index 2,ITCM route index 2,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4172,ITCM route index 2,ITCM route index 2,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4172,      Module14 Indication_Offset      ,Module14 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4173,ITCM route index 3,ITCM route index 3,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4173,ITCM route index 3,ITCM route index 3,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4173,      Module14 Indication_Size        ,Module14 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4174,ITCM route index 4,ITCM route index 4,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4174,ITCM route index 4,ITCM route index 4,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4174,      Module14 Control_Offset         ,Module14 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4175,ITCM route index 5,ITCM route index 5,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4175,ITCM route index 5,ITCM route index 5,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4175,      Module14 Control_Size           ,Module14 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4176,ITCM route index 6,ITCM route index 6,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4176,ITCM route index 6,ITCM route index 6,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4176,      Module14 UCN                   ,Module14 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4177,ITCM route index 7,ITCM route index 7,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4177,ITCM route index 7,ITCM route index 7,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4177,      Module14 MCF_CRC                ,Module14 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4178,ITCM route index 8,ITCM route index 8,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4178,ITCM route index 8,ITCM route index 8,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4178,Module15,Module15,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4179,ITCM route index 9,ITCM route index 9,Platform,"Lilee Systems, Ltd.",Others,string,json,{}
+0x4179,ITCM route index 9,ITCM route index 9,Radio,"Meteorcomm,LLC",Others,string,json,{}
+0x4179,      Module15 Name                   ,Module15 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417A,      Module15 Type                   ,Module15 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417B,      Module15 Connection_Type        ,Module15 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417C,      Module15 ATCS_Subnode           ,Module15 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417D,      Module15 Indication_Offset      ,Module15 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417E,      Module15 Indication_Size        ,Module15 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x417F,      Module15 Control_Offset         ,Module15 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4180,Connected Base Radio ID,Connected Base Radio ID,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4180,Connected Base Radio ID,Connected Base Radio ID,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4180,      Module15 Control_Size           ,Module15 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4181,Radio Average RF Signal Strength (dB),Radio Average RF Signal Strength (dB),Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4181,Radio Average RF Signal Strength (dB),Radio Average RF Signal Strength (dB),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4181,      Module15 UCN                   ,Module15 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4182,Radio rank detail index 0,Radio rank detail index 0,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4182,      Module15 MCF_CRC                ,Module15 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4183,Radio rank detail index 1,Radio rank detail index 1,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4183,Module16,Module16,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4184,Radio rank detail index 2,Radio rank detail index 2,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4184,      Module16 Name                   ,Module16 Name,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4185,Radio rank detail index 3,Radio rank detail index 3,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4185,      Module16 Type                   ,Module16 Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4186,Radio rank detail index 4,Radio rank detail index 4,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4186,      Module16 Connection_Type        ,Module16 Connection_Type,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4187,Radio rank detail index 5,Radio rank detail index 5,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4187,      Module16 ATCS_Subnode           ,Module16 ATCS_Subnode,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4188,      Module16 Indication_Offset      ,Module16 Indication_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4189,      Module16 Indication_Size        ,Module16 Indication_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418A,      Module16 Control_Offset         ,Module16 Control_Offset,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418B,      Module16 Control_Size           ,Module16 Control_Size,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418C,      Module16 UCN                   ,Module16 UCN,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418D,      Module16 MCF_CRC                ,Module16 MCF_CRC,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418E,Board                  ,Board,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x418F,      Board Model                  ,Board Model,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4190,NTP Status,NTP Status,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4190,      Board Revision               ,Board Revision,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4191,NTP TimeSync,NTP TimeSync,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4191,      Board Serial #               ,Board Serial #,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4192,eth0                  ,eth0,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4193,      eth0 MAC Address            ,eth0 MAC Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4194,      eth0 IP Address             ,eth0 IP Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4195,      eth0 Mask                   ,eth0 Mask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4196,eth1                  ,eth1,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4197,      eth1 MAC Address            ,eth1 MAC Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4198,      eth1 IP Address             ,eth1 IP Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4199,      eth1 Mask                   ,eth1 Mask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419A,eth2                  ,eth2,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419B,      eth2 MAC Address            ,eth2 MAC Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419C,      eth2 IP Address             ,eth2 IP Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419D,      eth2 Mask                   ,eth2 Mask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419E,eth3                  ,eth3,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x419F,      eth3 MAC Address            ,eth3 MAC Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x41A0,      eth3 IP Address             ,eth3 IP Address,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x41A1,      eth3 Mask                   ,eth3 Mask,Wayside Interface Unit,Invensys,Others,string,string,{}
+0x4200,Router Health,The current health of the router (Healthy/Pingable/None/Shutdown),OBN,Presidio,Others,string,string,{}
+0x4200,ITCM service states,ITCM service states,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4201,Mobile IP State,Mobile IP Connection Status,OBN,Presidio,Others,string,string,{}
+0x4201,ITCM service pids,ITCM service pids,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4202,Mobile IP Current Path,Current Interface Mobile IP is Active Over,OBN,Presidio,Others,string,string,{}
+0x4202,ITCM classd states,ITCM classd states,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4203,Mobile IP State Age,Duration (sec) of the current MobileIP state,OBN,Presidio,Others,integer,integer,{}
+0x4203,ITCM classd ports,ITCM classd ports,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4204,Knife Switch Status,Knife Switch Status,OBN,Presidio,Others,string,string,{}
+0x4204,Number of ITCM WIU ClassD connections,Number of ITCM WIU ClassD connections,Platform,"Lilee Systems, Ltd.",Others,string,string,{}
+0x4205,Fuel Level,Fuel Level (Gallons),OBN,Presidio,Others,integer,integer,{}
+0x4206,Water Temperature,Engine Water Temperature (F),OBN,Presidio,Others,integer,integer,{}
+0x4207,EAP Lead/Trail,EAB lead/trail setting (Lead / Trail / RemoteLead),OBN,Presidio,Others,string,string,{}
+0x4208,Throttle Notch,Throttle Notch (Idle / N1 / N2 / N3 / N4 / N5 / N6 / N7 / N8 / N9 / LowIdle),OBN,Presidio,Others,string,string,{}
+0x4209,Reverser,Reverser (Forward / Reverse / Off),OBN,Presidio,Others,string,string,{}
+0x420A,Isolate Switch,Isolate Switch (Isolate / Run / Start),OBN,Presidio,Others,string,string,{}
+0x420B,Generator Voltage,Generator Voltage (Volts),OBN,Presidio,Others,integer,integer,{}
+0x420C,Dynamic Brake Excitation,Dynamic Brake Excitation (Volts),OBN,Presidio,Others,integer,integer,{}
+0x420D,Traction Motor Current A,Traction Motor Current (A Truck) (Amps),OBN,Presidio,Others,signed integer,integer,{}
+0x420E,Traction Motor Current B,Traction Motor Current (B Truck) (Amps),OBN,Presidio,Others,signed integer,integer,{}
+0x420F,Tractive Effort,Tractive Effort (ft-lbs),OBN,Presidio,Others,integer,integer,{}
+0x4210,Brake Pipe Pressure,Brake Pipe Pressure (PSI),OBN,Presidio,Others,integer,integer,{}
+0x4211,Brake Cylinder Pressure,Brake Cylinder Pressure (PSI),OBN,Presidio,Others,integer,integer,{}
+0x4212,Dynamic Brake On,Dynamic Brake On (TL21) (Off / On / Invalid),OBN,Presidio,Others,string,string,{}
+0x4213,Dynamic Brake Config,Dynamic Brake Setup (TL17) (Off / On / Invalid),OBN,Presidio,Others,string,string,{}
+0x4214,Switch Port ID,Switch Port ID,OBN,Presidio,Others,string,CSV Format,{}
+0x4215,MAC,MAC,OBN,Presidio,Others,string,CSV Format,{}
+0x4216,IP,IP,OBN,Presidio,Others,string,CSV Format,{}
+0x4217,Locomotive ID,The Locomotive ID (road number) as reported by the most recent EMP/C 3000 message,OBN,Presidio,Others,string,string,{}
+0x4218,EMP/C 3000 Present,"Set true when EMP/C 3000 messages are being received on the GPC, set false otherwise",OBN,Presidio,Others,integer,boolean,"{""boolean"": [{""0"": ""Missing"",""1"": ""Present""}]}"
+0x4219,EMP/C 3001 Present,"Set true when EMP/C 3001 messages are being received on the GPC, set false otherwise",OBN,Presidio,Others,integer,boolean,"{""boolean"": [{""0"": ""Missing"",""1"": ""Present""}]}"
+0x421A,LocoNet Present,"Set true when the LocoNet API is available on the GPC, set false otherwise",OBN,Presidio,Others,integer,boolean,"{""boolean"": [{""0"": ""Missing"",""1"": ""Present""}]}"
+0x421B,GPS Speed,Ground speed in Ft/s,OBN,Presidio,Others,integer,integer,{}
+0x421C,GPS Fix Status,GPS Fix Status,OBN,Presidio,Others,integer,boolean,"{""boolean"": [{""0"": ""Invalid"",""1"": ""Valid""}]}"
+0x421D,Interface Box Present,"Set true when EMP/C 6301 messages are being received on the GPC, set false otherwise",OBN,Presidio,Others,integer,boolean,"{""boolean"": [{""0"": ""Missing"",""1"": ""Present""}]}"
+0x421E,Locomotive API Version,The LocoNet API version last seen by the ITCSMA,OBN,Presidio,Others,string,string,{}
+0x421F,ITCSMA Version,The ITCSMA version running on the GPC,OBN,Presidio,Others,string,string,{}
+0x4300,Cell #1 Health,The current health of the Cell #1 interface (Healthy/Pingable/None/Shutdown),OBN,Presidio,Others,string,string,{}
+0x4301,Cell #1 Signal Strength,Signal Strength (dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4302,Cell #1 SnR,Signal to Noise Ratio (dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4303,Cell #1 Network Service,Radio Technology (LTE/UTMS),OBN,Presidio,Others,string,string,{}
+0x4304,Cell #1 Network State,Network State (Registering/Connected/etc),OBN,Presidio,Others,string,string,{}
+0x4305,Cell #1 Network Status,Cell #1 Network Status,OBN,Presidio,Others,string,string,{}
+0x4306,Cell #1 EC/IO,Cell #1 EC/IO,OBN,Presidio,Others,signed integer,integer,{}
+0x4307,Cell #1 Mobile IP Roaming Priority,Mobile IP Routing Priority,OBN,Presidio,Others,integer,integer,{}
+0x4400,Cell #2 Health,The current health of the Cell #2 interface (Healthy/Pingable/None/Shutdown),OBN,Presidio,Others,string,string,{}
+0x4400,Tx Timeout Occurrences,Tx timeout limit occurrences,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4401,Cell #2 Signal Strength,Signal Strength (dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4401,Average Noise,"One minute average of noise, in 19, for each receiver (Refer to Section 4.4.4) ",Radio,"Meteorcomm,LLC",Others,signed integer,"dBm,array,16-bits",{}
+0x4402,Cell #2 SnR,Signal to Noise Ratio (1/100 dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4402 ,CONFIG test error count ,Count of configuration test failures ,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4403,Cell #2 Network Service,Radio Technology (LTE/UTMS),OBN,Presidio,Others,string,string,{}
+0x4403,Power Amplifier (PA) Temperature,Temperature of the Power Amplifier ,Radio,"Meteorcomm,LLC",Others,signed integer,"degrees celsius,16-bits",{}
+0x4404,Cell #2 Network State,Network State (Registering/Connected/etc),OBN,Presidio,Others,string,string,{}
+0x4404,12 Volt Power Supply Temperature,Temperature of the 12-volt power supply (present on base and loco radios) ,Radio,"Meteorcomm,LLC",Others,signed integer,"degrees celsius,16-bits",{}
+0x4405,Cell #2 Network Status,Cell #2 Network Status,OBN,Presidio,Others,string,string,{}
+0x4405,28 Volt Power Supply Temperature,Temperature of the 28-volt power supply (present on Base and Locomotive radios) ,Radio,"Meteorcomm,LLC",Others,signed integer,"degrees celsius,16-bits",{}
+0x4406,Cell #2 EC/IO,Cell #2 EC/IO,OBN,Presidio,Others,signed integer,integer,{}
+0x4406,Driver Temperature,Temperature of the Driver (present on Base and Locomotive radios) ,Radio,"Meteorcomm,LLC",Others,signed integer,"degrees celsius,16-bits",{}
+0x4407,Cell #2 Mobile IP Roaming Priority,Mobile IP Routing Priority,OBN,Presidio,Others,integer,integer,{}
+0x4407,Main Board Temperature,Temperature of the Main Board ,Radio,"Meteorcomm,LLC",Others,signed integer,"degrees celsius,16-bits",{}
+0x440b ,CONFIG error region ,Radio configuration region where last config test error was found (Refer to Section 4.4.5) ,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4410,Average Noise RX1,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4411,Average Noise RX2,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4413,Average Noise RX4,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4414,Average Noise RX5,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4415,Average Noise RX6,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4416,Average Noise RX7 ,"One minute average of noise, in 19, for this receiver ",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4417,Average Noise RX8,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4418,Average Noise RX9,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4419,Average Noise Diversity RX1,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x441a,Average Noise Diversity RX2,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x441c,Average Noise Diversity RX4,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x441d,Average Noise Diversity RX5,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x441e,Average Noise Diversity RX6,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x441f,Average Noise Diversity RX7,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4420,Average Noise Diversity RX8,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4421,Average Noise Diversity RX9,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4422 ,28 Volt Power Supply Output Voltage,28-volt power supply output voltage used to power the final stage of the power amplifier (present on base and loco radios) ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4423 ,12 Volt Power Supply Output Voltage,12-volt power supply board output voltage used to drive voltage converters (present on base and loco radios) ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4424 ,5 Volt Power Supply Output Voltage,5-volt power supply output voltage ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4425 ,3.3 Volt Power Supply Output Voltage,3.3-volt power supply output voltage ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4426 ,2.5 Volt Power Supply Output Voltage,2.5-volt power supply output voltage ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4427 ,1.8 Volt ColdFire Power Supply Output Voltage,1.8-volt power supply output voltage for the ColdFire processor,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4428 ,1.8 Volt DSP Power Supply Output Voltage,1.8-volt power supply output voltage for the DSP (present on base and loco radios),Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x4429 ,1.5 Volt Power Supply Output Voltage,1.5-volt power supply output voltage ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x442a ,1.2 Volt Power Supply Output Voltage,1.2-volt power supply output voltage ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x442b ,6 Volt Power Supply Output Voltage,6-volt power supply output voltage (present on wayside radios) ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x442c ,3.3 Volt RESET Power Supply Output Voltage,3.3-volt power supply output voltage used to control reset circuitry (present on wayside radios) ,Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x442d ,1.25 Volt DSP Power Supply Output Voltage,1.25-volt power supply output voltage for the DSP core (present on base and loco radios),Radio,"Meteorcomm,LLC",Others,integer,milliVolts,{}
+0x442e ,Receiver Noise Level Stats ,Receiver Noise Level Stats by receiver for the duration of time tuned to the same channel (Refer to Section 4.4.6) ,Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Receiver Number"", ""fieldRank"": 1}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Channel Number"", ""fieldRank"": 2}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time Duration"", ""fieldRank"": 3}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Average Noise Level"", ""fieldRank"": 4}]}"
+0x4430 ,Diagnostics Failure Count ,Number of items that failed POST ,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4431 ,Diagnostics Failure Reason Code,Reason(s) for power on self-test diagnostic failure (Refer to Section 4.4.7) ,Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""ADDR_LINE"",""1"": ""DATA_LINE"",""2"": ""SPI"",""3"": ""SDCARD_PRESENT"",""4"": ""SDCARD_FAIL"",""5"": ""SDCARD_WP"",""6"": ""SDCARD_SR"",""7"": ""I2C"",""8"": ""I2C_MUX"",""9"": ""RTC"",""10"": ""BOOT_FLASH_C"",""11"": ""BOOT_FLASH_D"",""12"": ""DATA_FLASH"",""13"": ""SEEPROM_STAMP"",""14"": ""CAL"",""15"": ""REG"",""16"": ""ID"",""17"": ""CHAN"",""18"": ""SITENAME"",""19"": ""DHCPCTRL"",""20"": ""SERIALNUM"",""21"": ""FPGA_LOAD"",""22"": ""DSP_LOAD"",""23"": ""DSP_ALIVE"",""24"": ""FAN_CONTROLLER"",""25"": ""ETH0"",""26"": ""ETH1"",""27"": ""MAC0"",""28"": ""MAC1"",""29"": ""GPS"",""30"": ""CIM"",""31"": ""DSP_CLOCK"",""32"": ""DSP_EDMA"",""33"": ""DSP_GPIO"",""34"": ""DSP_SPI"",""35"": ""DSP_MCASP"",""36"": ""DSP_PSC"",""37"": ""DSP_EXT_CLOCK"",""38"": ""DSP_IQ_MIXER"",""39"": ""DSP_RX_ADC"",""40"": ""DSP_DDS"",""41"": ""DSP_PLL"",""42"": ""FPGA_MEM"",""43"": ""FPGA_CLKS"",""44"": ""FPGA_TX"",""45"": ""28V"",""46"": ""11.5V"",""47"": ""5V"",""48"": ""3.3V"",""49"": ""2.5V"",""50"": ""1.8V CF"",""51"": ""1.8V DSP"",""52"": ""1.5V"",""53"": ""1.2V"",""54"": ""1.25V DSP"",""55"": ""EXT V"",""56"": ""BATT V"",""57"": ""6V"",""58"": ""3.3V RESET"",""59"": ""PS_TEMP_12V"",""60"": ""PS_TEMP_28V"",""61"": ""PA_TEMP"",""62"": ""DRIVER_TEMP"",""63"": ""MB_TEMP"",""64"": ""PA_CURRENT"",""65"": ""DRIVER_CURRENT""}]}"
+0x4432,Standby Reason Code,Reason(s) the radio went into Standby mode (Refer to Section 4.4.8) ,Radio,"Meteorcomm,LLC",Others,integer,bitmask,"{""bitmask"": [{""0x00"": ""Unit is not in standby"",""0x01"": ""Sniffer mode"",""0x02"": ""CLI command (STOP entered)"",""0x04"": ""Transmitter over temperature"",""0x08"": ""Transmitter low power"",""0x10"": ""Bad CIM"",""0x20"": ""CANMSGOFF command"",""0x40"": ""Test mode"",""0x80"": ""Unit is in start-up""}]}"
+0x4433,Transmit Duty Cycle,Duty Cycle transmit time,Radio,"Meteorcomm,LLC",Others,integer,integer,{}
+0x4434,Transmit Limited By Duty Cycle,Transmission limited to higher value packets due to duty cycle,Radio,"Meteorcomm,LLC",Others,integer,string,{}
+0x4440,SD Card CRC Error Count,Count of SD Card CRC transfer errors that have occurred,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4441,SD Write Error Count,Count of SD Card write errors that have occurred,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4442,Average Noise,"One minute average of noise, in 19, for each receiver (Refer to Section 4.4.10) Deprecates 0x4401",Radio,"Meteorcomm,LLC",Others,signed integer,string,{}
+0x4443,Average Noise RX10,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4444,Average Noise Diversity RX10,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4445,Average Noise RX11,"One minute average of noise, in 19, for this receiver",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4446,Average Noise Diversity RX11,"One minute average of noise, in 19, for this receiver, diversity antenna",Radio,"Meteorcomm,LLC",Others,signed integer,dBm,{}
+0x4500,Wi-Fi #1 Health,The current health of the WiFi interface (Healthy/Pingable/None/Shutdown),OBN,Presidio,Others,string,string,{}
+0x4500,RAM Test Status,"The pass/fail status of the RAM test: 0 = Fail, 1 = Pass ",Radio,"Meteorcomm,LLC",Others,integer,boolean,"{""boolean"": [{""0"": ""Fail"",""1"": ""Pass""}]}"
+0x4501,Wi-Fi #1 Signal Strength,Access Point RSSI,OBN,Presidio,Others,signed integer,integer,{}
+0x4502,WiFi #1 SnR,Signal to Noise Ratio (1/100 dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4503,Wi-Fi #1 Transmit Rate,Negotiated Transmit Rate (kbps),OBN,Presidio,Others,integer,integer,{}
+0x4504,Wi-Fi #1 Signal Quality,Signal Quality (%),OBN,Presidio,Others,integer,integer,{}
+0x4505,Wi-Fi #1 Current IP,Wi-Fi #1 Current IP,OBN,Presidio,Others,string,string,{}
+0x4506,Wi-Fi #1 SSID,Associated SSID,OBN,Presidio,Others,string,string,{}
+0x4507,Wi-Fi #1 Parent MAC,Parent Access Point MAC Address,OBN,Presidio,Others,string,string,{}
+0x4508,Wi-Fi #1 Mobile IP Roaming Priority,Mobile IP Routing Priority,OBN,Presidio,Others,integer,integer,{}
+0x4600,Wi-Fi #2 Health,The current health of the WiFi interface (Healthy/Pingable/None/Shutdown),OBN,Presidio,Others,string,string,{}
+0x4600,GPS Software Version,GPS software version number (present on Base and Wayside radios),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4601,Wi-Fi #2 Signal Strength,Access Point RSSI,OBN,Presidio,Others,signed integer,integer,{}
+0x4601,GPS Hardware Version,GPS hardware version number (present on Base and Wayside radios),Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x4602,WiFi #2 SnR,Signal to Noise Ratio (1/100 dBm),OBN,Presidio,Others,signed integer,integer,{}
+0x4603,Wi-Fi #2 Transmit Rate,Negotiated Transmit Rate (kbps),OBN,Presidio,Others,integer,integer,{}
+0x4604,Wi-Fi #2 Signal Quality,Signal Quality (%),OBN,Presidio,Others,integer,integer,{}
+0x4605,Wi-Fi #2 Current IP,Wi-Fi #2 Current IP,OBN,Presidio,Others,string,string,{}
+0x4606,Wi-Fi #2 SSID,Associated SSID,OBN,Presidio,Others,string,string,{}
+0x4607,Wi-Fi #2 Parent MAC,Parent Access Point MAC Address,OBN,Presidio,Others,string,string,{}
+0x4608,Wi-Fi #2 Mobile IP Roaming Priority,Mobile IP Routing Priority,OBN,Presidio,Others,integer,integer,{}
+0x4c03,Satellites In-Use,Number of tracked GPS satellites,Radio,"Meteorcomm,LLC",Others,integer,count,{}
+0x4c04,Time Synchronization Failure Reason Code,Reason the time synchronization failed (Refer to Section 4.4.9) ,Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""No failure"",""1"": ""No time sync source found"",""2"": ""GPS 1PPS lost or failed"",""3"": ""Time of Day (TOD) signal lost or failed"",""4"": ""Class C time source lost or failed"",""5"": ""GPS antenna failed"",""6"": ""No GPS NMEA stream""}]}"
+0x4c05,NMEA Stream Valid,"Status of GPS NMEA Stream:  1 = Stream Valid, 0 = Stream Invalid",Radio,"Meteorcomm,LLC",Others,integer,boolean,"{""boolean"": [{""0"": ""Stream Invalid"",""1"": ""Stream Valid""}]}"
+0x4c81,Radio time and position data,"GPS position, time valid, speed, heading and status (Refer to Section 4.4.10) ",Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x5001,Dynamic Base Selection Information,List of Base nodes considered for master selection (Refer to Section 4.4.11) ,Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Device Type"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Flag"", ""fieldRank"": 3}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Hostmode"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Received Beacon Count"", ""fieldRank"": 5}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""RF Link Utilization"", ""fieldRank"": 6}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Last Detected RF value"", ""fieldRank"": 7}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Average Detected RF Value"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Distance to Node"", ""fieldRank"": 9}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Master Select Holdoff time"", ""fieldRank"": 10}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITC Protocol Version"", ""fieldRank"": 11}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Rank"", ""fieldRank"": 12}]}"
+0x5002,Dynamic Base Selection Information,List of Base nodes considered for master selection (Refer to Section 4.4.13) Deprecates 0x5001,Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Device Type"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Flag"", ""fieldRank"": 3}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""Hostmode"", ""fieldRank"": 4}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Received Beacon Count"", ""fieldRank"": 5}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""RF Link Utilization"", ""fieldRank"": 6}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Last Detected RF value"", ""fieldRank"": 7}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Average Detected RF Value"", ""fieldRank"": 8}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Distance to Node"", ""fieldRank"": 9}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""Master Select Holdoff time"", ""fieldRank"": 10}, {""fieldBytes"": 2, ""fieldDataType"": ""Integer"", ""fieldName"": ""ITC Protocol Version"", ""fieldRank"": 11}, {""fieldBytes"": 2, ""fieldDataType"": ""Bitmask"", ""fieldName"": ""Network Mode"", ""fieldRank"": 12}, {""fieldBytes"": 2, ""fieldDataType"": ""Signed Integer"", ""fieldName"": ""Network Hierarchy"", ""fieldRank"": 13}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Rank"", ""fieldRank"": 14}]}"
+0x5003,Dynamic Base Selection Information - Current Base,Dynamic base selection information available only on the currently selected base,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x5004,Dynamic Base Selection Information,List of Base nodes considered for master selection. Deprecates variable ID 0x5002.,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x5010,Monitored Radio 1 Status,Status information for monitored radio 1 (Refer to Section 4.4.14),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x5011,Monitored Radio 1 State,Connection state for monitored radio 1 (Refer to Section 4.4.15),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x5012,Monitored Radio 2 Status,Status information for monitored radio 2 (Refer to Section 4.4.16),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x5013,Monitored Radio 2 State,Connection state for monitored radio 2 (Refer to Section 4.4.17),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x5014,Monitored Radio 3 Status,Status information for monitored radio 3 (Refer to Section 4.4.18),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x5015,Monitored Radio 3 State,Connection state for monitored radio 3 (Refer to Section 4.4.19),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x5016,Monitored Radio 4 Status,Status information for monitored radio 4 (Refer to Section 4.4.20),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x5017,Monitored Radio 4 State,Connection state for monitored radio 4 (Refer to Section 4.4.21),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x5018,Monitored Radio 5 Status,Status information for monitored radio 5 (Refer to Section 4.4.22),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x5019,Monitored Radio 5 State,Connection state for monitored radio 5 (Refer to Section 4.4.23),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x501a,Monitored Radio 6 Status,Status information for monitored radio 6 (Refer to Section 4.4.24),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x501b,Monitored Radio 6 State,Connection state for monitored radio 6 (Refer to Section 4.4.25),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x501c,Monitored Radio 7 Status,Status information for monitored radio 7 (Refer to Section 4.4.26),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x501d,Monitored Radio 7 State,Connection state for monitored radio 7 (Refer to Section 4.4.27),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x501e,Monitored Radio 8 Status,Status information for monitored radio 8 (Refer to Section 4.4.28),Radio,"Meteorcomm,LLC",Others,binary,structure,"{""variableDataType"": [{""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Radio ID"", ""fieldRank"": 1}, {""fieldBytes"": 4, ""fieldDataType"": ""Integer"", ""fieldName"": ""Time radio has been disconnected"", ""fieldRank"": 2}, {""fieldBytes"": 1, ""fieldDataType"": ""Integer"", ""fieldName"": ""State"", ""fieldRank"": 3}]}"
+0x501f,Monitored Radio 8 State,Connection state for monitored radio 8 (Refer to Section 4.4.29),Radio,"Meteorcomm,LLC",Others,integer,enumeration,"{""enumeration"": [{""0"": ""Disconnected"",""1"": ""Connected"",""2"": ""Not monitored""}]}"
+0x5020,DSB slots requested for a base,Number of DSB slots requested from the base,Radio,"Meteorcomm,LLC",Others,string,string,{}
+0x5021,Superframe time allocated to DSB by the base,Amount of time allocated to DSB by the base.,Radio,"Meteorcomm,LLC",Others,string,string,{}

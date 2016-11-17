@@ -33,7 +33,7 @@ public class TransformMap {
 		for (HashMap.Entry entry : items.entrySet()) {
 			key = entry.getKey()+"";
 			if (key.equals("id"))
-				val = translate(entry.getValue()+"");
+				val = entry.getValue()+"" ;//translate(entry.getValue()+"");
 			if (key.equals("value"))
 				val = decode64(entry.getValue()+"");
 			
