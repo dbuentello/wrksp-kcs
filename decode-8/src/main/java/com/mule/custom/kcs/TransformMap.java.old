@@ -1,0 +1,45 @@
+package com.mule.custom.kcs;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class TransformMap {
+	
+	public String translate (String str) {
+		String outStr = "";
+		switch (str) {
+			case "11": outStr = "Hardware Type";
+				break;
+			case "12": outStr = "Hardware Vendor";
+				break;
+			case "13": outStr = "Hardware Model";
+				break;
+			case "16": outStr = "Hardware Serial Number";
+				break;
+			default: outStr = "empty";
+		}
+		return outStr;
+	}
+	
+	public String decode64 (String str) {
+		return new String (java.util.Base64.getDecoder().decode(str));
+	}
+	
+	public HashMap doTransform(HashMap<String, String> items) {
+	
+		String key = "";
+		String val = "";
+		
+		for (HashMap.Entry entry : items.entrySet()) {
+			key = entry.getKey()+"";
+			if (key.equals("id"))
+				val = translate(entry.getValue()+"");
+			if (key.equals("value"))
+				val = decode64(entry.getValue()+"");
+			
+			items.put(key, val);
+		}
+		return items;
+	}
+
+}

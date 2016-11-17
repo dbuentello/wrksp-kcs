@@ -12,6 +12,7 @@
 # Eclipse-specific (https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore) #
 # ------------------------------------------------------------------------------------------- #
 *.pydevproject
+*.metadata/
 bin/**
 tmp/**
 tmp/**/*
@@ -42,8 +43,7 @@ local.properties
 # Studio-specific #
 # --------------- #
 .studio/
-.mule/
+.mule
 flows/
 target/
 **/*.mflow
-.metadata/

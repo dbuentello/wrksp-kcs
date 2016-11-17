@@ -1,6 +1,0 @@
-#** GENERATED CONTENT ** Mule Application Deployment Descriptor
-#Fri Sep 09 16:42:39 EEST 2016
-redeployment.enabled=true
-encoding=UTF-8
-domain=default
-config.resources=example-servicenow-operations-demo-weave-views.xml

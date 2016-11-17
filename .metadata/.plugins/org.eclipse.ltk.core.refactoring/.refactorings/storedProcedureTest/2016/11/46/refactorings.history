@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;storedProcedureTest/src/main/app/testconnection.xml&apos; to &apos;storedprocedure.xml&apos;" description="Rename resource &apos;testconnection.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/app/testconnection.xml" name="storedprocedure.xml" stamp="1478709695707" updateReferences="true"/>
-</session>
