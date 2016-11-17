@@ -8,9 +8,9 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 http://www.mulesoft.org/schema/mule/ee/tracking http://www.mulesoft.org/schema/mule/ee/tracking/current/mule-tracking-ee.xsd">
-    <http:listener-config name="incident-api-httpListener" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
+    <http:listener-config name="incident-api-httpListener" host="0.0.0.0" port="8082" doc:name="HTTP Listener Configuration"/>
     <apikit:config name="incident-api-config" raml="incident-api.raml" consoleEnabled="false" doc:name="Router"/>
-    <servicenow:config name="ServiceNow__Basic_Configuration" username="${servicenow.username}" password="${servicenow.password}" serviceAddress="${servicenow.address}"  doc:name="ServiceNow: Basic Configuration">
+    <servicenow:config name="ServiceNow__Basic_Configuration" username="${servicenow.username}" password="${servicenow.password}" serviceAddress="${servicenow.address}"  doc:name="ServiceNow: Basic Configuration" >
         <servicenow:list-of-user-table>
             <servicenow:list-of-user-table>cmdb_ci</servicenow:list-of-user-table>
         </servicenow:list-of-user-table>

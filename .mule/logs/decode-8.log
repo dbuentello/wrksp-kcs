@@ -10898,3 +10898,233 @@ java.util.ConcurrentModificationException
 *   JMX Agent                                                        *
 *   Wrapper Manager                                                  *
 **********************************************************************
+2016-11-16 21:04:45,373 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'decode-8'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:04:45,481 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-16 21:04:45,589 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-16 21:04:45,703 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-16 21:04:45,703 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-16 21:04:45,791 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@226642a5: startup date [Wed Nov 16 21:04:45 CST 2016]; root of context hierarchy
+2016-11-16 21:04:46,843 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-16 21:04:47,695 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-16 21:04:47,936 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx2.log
+2016-11-16 21:04:47,946 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx2.log
+2016-11-16 21:04:48,018 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-16 21:04:48,021 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: custom-transFlow
+2016-11-16 21:04:48,021 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@4a8ffd75
+2016-11-16 21:04:48,042 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: custom-transFlow.stage1
+2016-11-16 21:04:48,379 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:04:48,379 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:04:51,405 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'decode-8'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:04:51,408 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-16 21:04:51,408 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-16 21:04:51,456 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-16 21:04:51,458 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:04:51,461 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-16 21:04:51,462 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: custom-transFlow
+2016-11-16 21:04:51,462 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: custom-transFlow.stage1
+2016-11-16 21:04:51,492 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-16 21:04:51,505 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: decode-8                                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-16 21:25:43,057 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'decode-8'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:25:43,155 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-16 21:25:43,260 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-16 21:25:43,366 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-16 21:25:43,366 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-16 21:25:43,441 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@573284a5: startup date [Wed Nov 16 21:25:43 CST 2016]; root of context hierarchy
+2016-11-16 21:25:44,479 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-16 21:25:45,500 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-16 21:25:45,706 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx2.log
+2016-11-16 21:25:45,717 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx2.log
+2016-11-16 21:25:45,788 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-16 21:25:45,791 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: custom-transFlow
+2016-11-16 21:25:45,791 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@17c53dfb
+2016-11-16 21:25:45,813 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: custom-transFlow.stage1
+2016-11-16 21:25:46,114 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:25:46,114 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:25:49,134 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'decode-8'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:25:49,136 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-16 21:25:49,136 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-16 21:25:49,182 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-16 21:25:49,184 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:25:49,186 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-16 21:25:49,187 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: custom-transFlow
+2016-11-16 21:25:49,188 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: custom-transFlow.stage1
+2016-11-16 21:25:49,225 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-16 21:25:49,240 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: decode-8                                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-16 21:36:22,103 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'decode-8'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:36:22,191 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-16 21:36:22,289 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-16 21:36:22,386 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-16 21:36:22,386 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-16 21:36:22,451 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1431267b: startup date [Wed Nov 16 21:36:22 CST 2016]; root of context hierarchy
+2016-11-16 21:36:23,554 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-16 21:36:24,540 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-16 21:36:24,763 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx2.log
+2016-11-16 21:36:24,772 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx2.log
+2016-11-16 21:36:24,845 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-16 21:36:24,848 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: custom-transFlow
+2016-11-16 21:36:24,848 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@43a7203e
+2016-11-16 21:36:24,869 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: custom-transFlow.stage1
+2016-11-16 21:36:25,188 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:36:25,188 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 21:36:28,209 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'decode-8'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:36:28,211 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-16 21:36:28,211 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-16 21:36:28,258 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-16 21:36:28,260 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 21:36:28,263 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-16 21:36:28,264 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: custom-transFlow
+2016-11-16 21:36:28,265 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: custom-transFlow.stage1
+2016-11-16 21:36:28,299 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-16 21:36:28,315 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: decode-8                                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-16 22:45:22,564 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'decode-8'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:45:22,661 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-16 22:45:22,761 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-16 22:45:22,851 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-16 22:45:22,851 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-16 22:45:22,915 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1cb7936c: startup date [Wed Nov 16 22:45:22 CST 2016]; root of context hierarchy
+2016-11-16 22:45:23,972 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-16 22:45:24,894 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-16 22:45:25,115 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx2.log
+2016-11-16 22:45:25,124 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx2.log
+2016-11-16 22:45:25,196 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-16 22:45:25,199 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: custom-transFlow
+2016-11-16 22:45:25,199 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@15186ce0
+2016-11-16 22:45:25,219 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: custom-transFlow.stage1
+2016-11-16 22:45:25,531 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 22:45:25,531 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 22:45:28,553 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'decode-8'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:45:28,555 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-16 22:45:28,555 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-16 22:45:28,603 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-16 22:45:28,606 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:45:28,608 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-16 22:45:28,609 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: custom-transFlow
+2016-11-16 22:45:28,610 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: custom-transFlow.stage1
+2016-11-16 22:45:28,644 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-16 22:45:28,659 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: decode-8                                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************
+2016-11-16 22:54:16,411 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'decode-8'                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:54:16,498 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising RegistryBroker
+2016-11-16 22:54:16,589 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Starting discovery of extensions
+2016-11-16 22:54:16,678 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Discovered 1 extensions
+2016-11-16 22:54:16,678 [main] INFO  org.mule.module.extension.internal.manager.DefaultExtensionManager - Registering extension validation (version 3.8)
+2016-11-16 22:54:16,739 [main] INFO  org.mule.config.spring.MuleArtifactContext - Refreshing org.mule.config.spring.MuleArtifactContext@1431267b: startup date [Wed Nov 16 22:54:16 CST 2016]; root of context hierarchy
+2016-11-16 22:54:17,745 [main] INFO  org.mule.config.spring.processors.NoDevkitInjectorProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2016-11-16 22:54:18,664 [main] WARN  org.mule.module.ognl.expression.OgnlExpressionEvaluator - OGNL module is deprecated and will be removed in Mule 4.0. Use MEL expressions instead.
+2016-11-16 22:54:18,871 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-tx-log/tx2.log
+2016-11-16 22:54:18,881 [main] INFO  org.mule.util.journal.TransactionJournal - Using files for tx logs /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx1.log and /Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/./.mule/decode-8/queue-xa-tx-log/tx2.log
+2016-11-16 22:54:18,955 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Initialising model: _muleSystemModel
+2016-11-16 22:54:18,958 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Initialising flow: custom-transFlow
+2016-11-16 22:54:18,958 [main] INFO  org.mule.exception.DefaultMessagingExceptionStrategy - Initialising exception listener: org.mule.exception.DefaultMessagingExceptionStrategy@a5e8260
+2016-11-16 22:54:18,979 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Initialising service: custom-transFlow.stage1
+2016-11-16 22:54:19,278 [main] INFO  org.mule.config.spring.SpringXmlConfigurationBuilder - Configured Mule using "org.mule.config.spring.SpringXmlConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 22:54:19,278 [main] INFO  org.mule.config.builders.AutoConfigurationBuilder - Configured Mule using "org.mule.config.builders.AutoConfigurationBuilder" with configuration resource(s): "[ConfigResource{resourceName='/Users/anweshrijal/opt/anypoint-studio-61/workspace/wrksp-kcs/.mule/apps/decode-8/decode-8.xml'}]"
+2016-11-16 22:54:22,297 [main] INFO  org.mule.module.launcher.application.DefaultMuleApplication - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'decode-8'                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:54:22,299 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Starting ResourceManager
+2016-11-16 22:54:22,299 [main] INFO  org.mule.util.queue.QueueXaResourceManager - Started ResourceManager
+2016-11-16 22:54:22,342 [main] INFO  org.mule.module.http.internal.listener.DefaultHttpListenerConfig - Listening for requests on http://0.0.0.0:8081
+2016-11-16 22:54:22,344 [main] INFO  org.mule.modules.oauth2.provider.agents.DefaultSplashScreenAgent - 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ DevKit Extensions (0) used in this application 
+                             +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2016-11-16 22:54:22,347 [main] INFO  org.mule.lifecycle.AbstractLifecycleManager - Starting model: _muleSystemModel
+2016-11-16 22:54:22,348 [main] INFO  org.mule.construct.FlowConstructLifecycleManager - Starting flow: custom-transFlow
+2016-11-16 22:54:22,349 [main] INFO  org.mule.processor.SedaStageLifecycleManager - Starting service: custom-transFlow.stage1
+2016-11-16 22:54:22,385 [main] INFO  org.mule.module.management.agent.WrapperManagerAgent - This JVM hasn't been launched by the wrapper, the agent will not run.
+2016-11-16 22:54:22,400 [main] INFO  org.mule.DefaultMuleContext - 
+**********************************************************************
+* Application: decode-8                                              *
+* OS encoding: /, Mule encoding: UTF-8                               *
+*                                                                    *
+* Agents Running:                                                    *
+*   Batch module default engine                                      *
+*   DevKit Extension Information                                     *
+*   JMX Agent                                                        *
+*   Wrapper Manager                                                  *
+**********************************************************************

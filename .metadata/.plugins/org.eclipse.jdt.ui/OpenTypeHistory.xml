@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=transformation-example/src\/main\/java&lt;com.mule.anw.custom{Transform2Nepali.java[Transform2Nepali" modifiers="1" timestamp="1479228696000"/>
-<typeInfo handle="=decode-8/src\/main\/java&lt;com.mule.custom.kcs{Hex2value.java[Hex2value" modifiers="1" timestamp="1479262586000"/>
-<typeInfo handle="=decode-8/src\/main\/java&lt;com.mule.custom.kcs{TransformMap.java[TransformMap" modifiers="1" timestamp="1479264623000"/>
+<typeInfo handle="=decode-8/src\/main\/java&lt;com.mule.custom.kcs{TransformMap.java[TransformMap" modifiers="1" timestamp="1479268629000"/>
 </typeInfoHistroy>
