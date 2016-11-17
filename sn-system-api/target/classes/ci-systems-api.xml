@@ -28,7 +28,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 ---
 payload]]></dw:set-payload>
             <dw:set-variable variableName="origPayload"><![CDATA[%dw 1.0
-%output application/java
+%output application/json
 ---
 payload]]></dw:set-variable>
         </dw:transform-message>

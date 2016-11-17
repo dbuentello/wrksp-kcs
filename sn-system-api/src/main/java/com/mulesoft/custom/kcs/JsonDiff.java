@@ -1,5 +1,7 @@
 package com.mulesoft.custom.kcs;
 
+import java.util.Map;
+
 import org.mule.api.MuleEventContext;
 import org.mule.api.MuleMessage;
 import org.mule.api.lifecycle.Callable;
@@ -17,7 +19,6 @@ public class JsonDiff implements Callable {
 	    MuleMessage msg = eventContext.getMessage();
 	    String path1 = msg.getPayloadAsString();
 	    String path2 = msg.getProperty("origPayload", PropertyScope.INVOCATION);
-
 	    
 		ObjectMapper mapper = new ObjectMapper();
 		JsonNode obj1 = mapper.readValue(path1, JsonNode.class);

@@ -17,12 +17,11 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
         <http:basic-authentication username="admin" password="sKNrcUPT5RFRAuM"/>
     </http:request-config>
     <spring:beans>
-        <spring:bean id="Bean" name="DiffMap" class="com.mulesoft.custom.kcs.DiffMap"/>
         <spring:bean id="bJsonDiff" name="nJsonDiff" class="com.flipkart.zjsonpatch.JsonDiff"/>
     </spring:beans>
 
     <flow name="ci-systems-apiFlow">
-        <http:listener config-ref="incident-api-httpListener" path="/test" doc:name="HTTP /test"/>
+        <http:listener config-ref="incident-api-httpListener" path="/ci/diff" doc:name="HTTP /ci/diff"/>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/java
@@ -31,7 +30,8 @@ payload]]></dw:set-payload>
             <dw:set-variable variableName="origPayload"><![CDATA[%dw 1.0
 %output application/java
 ---
-payload.ptc]]></dw:set-variable>
+payloadAsString()
+]]></dw:set-variable>
         </dw:transform-message>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
@@ -40,31 +40,28 @@ payload.ptc]]></dw:set-variable>
 ---
 {
 	ns0#getRecords: {
-		"__encoded_query": "serial_number=" ++ payload.locoid ++ "^sys_updated_onONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()"
+		"__encoded_query": "serial_number=" ++ payload.serial_number ++ "^sys_updated_onONThis week@javascript:gs.beginningOfThisWeek()@javascript:gs.endOfThisWeek()"
 		}
 }]]></dw:set-payload>
         </dw:transform-message>
                 <servicenow:invoke config-ref="ServiceNow__Basic_Configuration" type="cmdb_ci||getRecords" doc:name="ServiceNow"/>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
-%output application/java
+%output application/json
 %namespace ns0 http://www.service-now.com/incident
 ---
 {
-   	asset_tag: payload.getRecordsResponse.getRecordsResult.asset_tag,
-   	model_number: payload.getRecordsResponse.getRecordsResult.model_number
+	serial_number: payload.getRecordsResponse.getRecordsResult.serial_number,
+   	asset_tag: payload.getRecordsResponse.getRecordsResult.asset_tag
 }]]></dw:set-payload>
         </dw:transform-message>
-        <invoke name="Invoke" object-ref="DiffMap" method="showDiff" methodArguments="#[payload], #[flowVars.origPayload]" doc:name="Invoke"/>
+        <component class="com.mulesoft.custom.kcs.JsonDiff" doc:name="Java"/>
         <dw:transform-message doc:name="Transform Message">
             <dw:set-payload><![CDATA[%dw 1.0
 %output application/json
 ---
 payload]]></dw:set-payload>
         </dw:transform-message>
-        
-        
-        <logger level="INFO" doc:name="Logger"/>
     </flow>
     <flow name="ci-systems-apiFlow1">
         <http:listener config-ref="incident-api-httpListener" path="/compare" doc:name="HTTP /compare"/>
